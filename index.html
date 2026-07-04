@@ -83,3 +83,22 @@
         
         <div class="input-area" role="search">
           <div class="input-wrapper">
+            <label for="vibe-input" class="sr-only">Describe your vibe or mood</label>
+            <span class="input-sparkle" aria-hidden="true">✶</span>
+            <textarea
+              id="vibe-input"
+              class="input-field"
+              placeholder="e.g. the feeling of rain on a Sunday morning, quiet nostalgia with hints of hope…"
+              rows="3"
+              maxlength="500"
+              aria-describedby="input-hint"
+            ></textarea>
+            <div class="input-meta">
+              <span id="input-hint" class="input-hint">Try: &ldquo;golden hour jazz club&rdquo;, &ldquo;deep ocean melancholy&rdquo;</span>
+              <span class="char-counter" id="char-counter" aria-live="polite">0 / 500</span>
+            </div>
+
+          </div>
+          <div class="input-buttons">
+            <button id="generate-btn" class="generate-btn" type="button" aria-label="Generate color palette">
+              <span class="generate-btn__icon" aria-hidden="true">✶</span>
