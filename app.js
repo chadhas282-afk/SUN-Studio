@@ -38,3 +38,23 @@ const galleryCount      = document.getElementById('gallery-count');
 const storyModal        = document.getElementById('story-modal');
 const storyClose        = document.getElementById('story-close');
 const storyBg           = document.getElementById('story-bg');
+const storyProgress     = document.getElementById('story-progress');
+const storyHex          = document.getElementById('story-hex');
+const storyName         = document.getElementById('story-name');
+const storyRole         = document.getElementById('story-role');
+const storyPsych        = document.getElementById('story-psych');
+const storyPrev         = document.getElementById('story-prev');
+const storyNext         = document.getElementById('story-next');
+const storyDots         = document.getElementById('story-dots');
+const storyAuto         = document.getElementById('story-auto');
+
+
+let sessionHistory = [];
+try {
+  const stored = localStorage.getItem('chroma_mood_history');
+  if (stored) sessionHistory = JSON.parse(stored);
+} catch(e) {}
+let toastTimer       = null;
+
+let currentModalHex  = null;
+let lastPalette      = null;
