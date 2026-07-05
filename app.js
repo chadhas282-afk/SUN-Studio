@@ -418,3 +418,23 @@ function buildSwatchStrip(palette) {
     hexSpan.textContent = safeHex.toUpperCase();
 
     const nameSpan = document.createElement('span');
+    nameSpan.className = 'color-swatch__name';
+    nameSpan.textContent = color.name;
+
+    const textColor = isLightColor(safeHex) ? '#1a1a2e' : '#f0eff8';
+    hexSpan.style.color = textColor;
+    nameSpan.style.color = textColor;
+
+    info.appendChild(hexSpan);
+    info.appendChild(nameSpan);
+    block.appendChild(hint);
+    block.appendChild(info);
+    wrapper.appendChild(block);
+
+    const openModal = () => openColorModal(color, safeHex);
+    wrapper.addEventListener('click', openModal);
+    wrapper.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+    });
+
+    strip.appendChild(wrapper);
