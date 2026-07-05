@@ -198,3 +198,20 @@
   <div id="gallery-modal" class="gallery-modal" role="dialog" aria-modal="true" aria-label="Browse all palettes" hidden>
     <div class="gallery-modal__backdrop" id="gallery-modal-backdrop"></div>
     <div class="gallery-modal__panel">
+      <div class="gallery-modal__header">
+        <div class="gallery-modal__title-row">
+          <h2 class="gallery-modal__title">Palette Gallery</h2>
+          <span class="gallery-modal__count" id="gallery-count"></span>
+        </div>
+        <div class="gallery-modal__search-row">
+          <label for="gallery-search" class="sr-only">Search palettes</label>
+          <input id="gallery-search" class="gallery-search" type="search" placeholder="Search by name, mood, or tone…" autocomplete="off" />
+          <div class="gallery-filter-chips" id="gallery-filter-chips"></div>
+        </div>
+        <button id="gallery-modal-close" class="gallery-modal__close" type="button" aria-label="Close gallery">✕</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </div>
+
+  
