@@ -258,3 +258,23 @@ function renderPalette(palette, rawInput) {
   const mixer = buildPaletteMixer(palette);
   mixer.id = 'palette-mixer-section';
   paletteOutput.appendChild(mixer);
+
+  
+  if (ambientActive) applyAmbientColors(palette);
+}
+
+
+function buildBanner(palette) {
+  const banner = document.createElement('div');
+  banner.className = 'palette-banner';
+
+  const gradient = document.createElement('div');
+  gradient.className = 'palette-banner__gradient';
+  const validHexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
+  
+  gradient.style.background = 'linear-gradient(135deg, ' + validHexes.join(', ') + ')';
+
+  const overlay = document.createElement('div');
+  overlay.className = 'palette-banner__overlay';
+
+  const shimmer = document.createElement('div');
