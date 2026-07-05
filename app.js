@@ -158,3 +158,23 @@ function init() {
 
 function onInput() {
   const len = vibeInput.value.length;
+  updateCharCounter(len);
+}
+
+function updateCharCounter(len) {
+  charCounter.textContent = len + ' / 500';
+  charCounter.style.color = len > 450 ? 'var(--accent-rose)' : 'var(--text-muted)';
+}
+
+
+async function onGenerate() {
+  const rawInput = vibeInput.value.trim();
+  if (!rawInput) { showToast('✦ Describe a mood, feeling, or vibe to begin'); vibeInput.focus(); return; }
+  if (rawInput.length > 500) { showToast('⚠ Please keep your description under 500 characters'); return; }
+
+  const { palette } = findBestPalette(rawInput);
+  await showPalette(palette, rawInput);
+}
+
+async function onSurprise() {
+  const palette = getRandomPalette();
