@@ -178,3 +178,23 @@ async function onGenerate() {
 
 async function onSurprise() {
   const palette = getRandomPalette();
+  const vibes = palette.keywords;
+  const randomVibe = vibes[Math.floor(Math.random() * vibes.length)];
+  vibeInput.value = randomVibe;
+  updateCharCounter(randomVibe.length);
+  await showPalette(palette, randomVibe);
+}
+
+async function showPalette(palette, rawInput) {
+  generateBtn.disabled = true;
+  surpriseBtn.disabled = true;
+
+
+  setHidden(loadingState, false);
+  setHidden(paletteOutput, true);
+
+  await delay(5000);
+
+  loadingState.classList.add('fade-out');
+  
+  await delay(400);
