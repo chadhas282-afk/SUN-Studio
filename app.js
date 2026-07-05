@@ -298,3 +298,23 @@ function buildBanner(palette) {
   banner.appendChild(overlay);
   banner.appendChild(shimmer);
   banner.appendChild(content);
+  return banner;
+}
+
+
+function buildDNARow(palette) {
+  const row = document.createElement('div');
+  row.className = 'palette-dna-row';
+
+  
+  const canvas = document.createElement('canvas');
+  canvas.className = 'palette-dna-canvas';
+  canvas.width = 80;
+  canvas.height = 80;
+  canvas.setAttribute('aria-label', palette.name + ' color ring');
+  drawPaletteDNA(canvas, palette);
+  row.appendChild(canvas);
+
+  
+  const meta = document.createElement('div');
+  meta.className = 'palette-dna-meta';
