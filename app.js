@@ -278,3 +278,23 @@ function buildBanner(palette) {
   overlay.className = 'palette-banner__overlay';
 
   const shimmer = document.createElement('div');
+  shimmer.className = 'palette-banner__shimmer';
+  shimmer.setAttribute('aria-hidden', 'true');
+
+  const content = document.createElement('div');
+  content.className = 'palette-banner__content';
+
+  const name = document.createElement('h2');
+  name.className = 'palette-name';
+  name.textContent = palette.name; 
+
+  const desc = document.createElement('p');
+  desc.className = 'palette-mood-desc';
+  desc.textContent = palette.moodDesc; 
+
+  content.appendChild(name);
+  content.appendChild(desc);
+  banner.appendChild(gradient);
+  banner.appendChild(overlay);
+  banner.appendChild(shimmer);
+  banner.appendChild(content);
