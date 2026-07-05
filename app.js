@@ -438,3 +438,22 @@ function buildSwatchStrip(palette) {
     });
 
     strip.appendChild(wrapper);
+    });
+  return strip;
+}
+
+
+function buildColorDetails(palette) {
+  const grid = document.createElement('div');
+  grid.className = 'color-details';
+
+  palette.colors.forEach((color, idx) => {
+    const safeHex = sanitizeHex(color.hex);
+    if (!safeHex) return;
+
+    const card = document.createElement('div');
+    card.className = 'color-detail-card';
+    card.style.animationDelay = (idx * 0.07) + 's';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', 'View ' + color.name + ' details');
