@@ -318,3 +318,23 @@ function buildDNARow(palette) {
   
   const meta = document.createElement('div');
   meta.className = 'palette-dna-meta';
+
+  const label = document.createElement('div');
+  label.className = 'palette-dna-meta__label';
+  label.textContent = 'Palette Tones';
+  meta.appendChild(label);
+
+  const toneTags = document.createElement('div');
+  toneTags.className = 'palette-tone-tags';
+
+  (palette.tones || []).forEach((tone) => {
+    const tag = document.createElement('span');
+    tag.className = 'tone-tag';
+    tag.textContent = tone; 
+    toneTags.appendChild(tag);
+  });
+
+  
+  const countTag = document.createElement('span');
+  countTag.className = 'tone-tag';
+  countTag.textContent = palette.colors.length + ' colors';
