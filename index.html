@@ -32,7 +32,7 @@
   <div class="bg-grid" aria-hidden="true"></div>
 
   <div class="app-shell">
-        
+    
     <header class="header" role="banner">
       <div class="header__bar">
         <div class="header__logo">
@@ -65,7 +65,7 @@
         <div class="hero-sparkles" aria-hidden="true">
           <span class="sparkle sparkle--1">✦</span>
           <span class="sparkle sparkle--2">◆</span>
-           <span class="sparkle sparkle--3">✦</span>
+          <span class="sparkle sparkle--3">✦</span>
           <span class="sparkle sparkle--4">◆</span>
           <span class="sparkle sparkle--5">✦</span>
         </div>
@@ -132,6 +132,7 @@
 
       </section>
 
+      
       <div id="loading-state" class="loading-state" aria-live="polite" aria-atomic="true" hidden>
         <img src="logo.png" alt="Sun Studios" class="loading-logo" />
         <p class="loading-text" id="loading-text" style="font-family: 'DM Serif Display', serif; font-size: 24px; font-style: italic; margin-top: 16px;">SUN is mixing colors...</p>
@@ -149,7 +150,7 @@
           <button id="clear-history-btn" class="clear-history-btn" type="button">Clear</button>
         </div>
         <div id="history-grid" class="history-grid"></div>
-        </section>
+      </section>
     </main>
     <footer class="footer" role="contentinfo">
       <p class="footer__text" style="font-style: normal; font-size: 14px;">
@@ -174,6 +175,8 @@
       </div>
     </div>
   </div>
+
+  
   <div id="story-modal" class="story-modal" role="dialog" aria-modal="true" aria-label="Color story" hidden>
     <button id="story-close" class="story-modal__close" type="button" aria-label="Close color story">✕</button>
     <div class="story-modal__bg" id="story-bg"></div>
@@ -184,7 +187,7 @@
       <div class="story-modal__role" id="story-role"></div>
       <p class="story-modal__psych" id="story-psych"></p>
       <div class="story-modal__nav">
-         <button class="story-nav-btn" id="story-prev" type="button" aria-label="Previous color">←</button>
+        <button class="story-nav-btn" id="story-prev" type="button" aria-label="Previous color">←</button>
         <div class="story-dots" id="story-dots"></div>
         <button class="story-nav-btn" id="story-next" type="button" aria-label="Next color">→</button>
       </div>
@@ -214,7 +217,7 @@
     </div>
   </div>
 
-    
+  
   <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" hidden></div>
 
   
@@ -228,3 +231,23 @@
                                               0     0      0     1 0"/>
       </filter>
       
+      <filter id="cvd-protanopia">
+        <feColorMatrix type="matrix" values="0.152 1.053 -0.205 0 0
+                                              0.115 0.786  0.099 0 0
+                                             -0.004 -0.048 1.052 0 0
+                                              0     0      0     1 0"/>
+      </filter>
+      
+      <filter id="cvd-tritanopia">
+        <feColorMatrix type="matrix" values="1.256 -0.077 -0.180 0 0
+                                             -0.078  0.931  0.148 0 0
+                                              0.005  0.691  0.304 0 0
+                                              0      0      0     1 0"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="palettes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
