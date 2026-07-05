@@ -378,3 +378,23 @@ function drawPaletteDNA(canvas, palette) {
   ctx.arc(cx, cy, innerR, 0, Math.PI * 2);
   ctx.fillStyle = grad;
   ctx.fill();
+  }
+
+
+function buildSwatchStrip(palette) {
+  const strip = document.createElement('div');
+  strip.className = 'color-swatches';
+  strip.setAttribute('role', 'list');
+  strip.setAttribute('aria-label', 'Color swatches — click for details');
+
+  palette.colors.forEach((color, idx) => {
+    const safeHex = sanitizeHex(color.hex);
+    if (!safeHex) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'color-swatch';
+    wrapper.setAttribute('role', 'listitem');
+    wrapper.setAttribute('tabindex', '0');
+    wrapper.setAttribute('aria-label', color.name + ' — ' + safeHex.toUpperCase() + '. Click for details.');
+
+    const block = document.createElement('div');
