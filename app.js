@@ -118,3 +118,23 @@ function init() {
       showToast('✓ ' + currentModalHex.toUpperCase() + ' copied!');
     }
   });
+
+  clearHistoryBtn.addEventListener('click', clearHistory);
+
+  
+  browseBtn.addEventListener('click', openGalleryModal);
+  galleryModalClose.addEventListener('click', closeGalleryModal);
+  galleryBackdrop.addEventListener('click', closeGalleryModal);
+  gallerySearch.addEventListener('input', onGallerySearch);
+
+  
+  storyClose.addEventListener('click', closeColorStory);
+  storyPrev.addEventListener('click', () => { storyAutoPlay = false; prevStorySlide(); });
+  storyNext.addEventListener('click', () => { storyAutoPlay = false; nextStorySlide(); });
+  storyAuto.addEventListener('click', () => {
+    storyAutoPlay = !storyAutoPlay;
+    storyAuto.classList.toggle('active', storyAutoPlay);
+    if (storyAutoPlay) nextStorySlide();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!storyModal.hasAttribute('hidden')) {
