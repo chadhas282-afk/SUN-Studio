@@ -457,3 +457,24 @@ function buildColorDetails(palette) {
     card.setAttribute('tabindex', '0');
     card.setAttribute('role', 'button');
     card.setAttribute('aria-label', 'View ' + color.name + ' details');
+
+    const dot = document.createElement('div');
+    dot.className = 'color-detail-dot';
+    dot.style.backgroundColor = safeHex;
+    dot.setAttribute('aria-hidden', 'true');
+
+    const info = document.createElement('div');
+    info.className = 'color-detail-info';
+
+    const hexEl = document.createElement('div');
+    hexEl.className = 'color-detail-hex';
+    hexEl.textContent = safeHex.toUpperCase();
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'color-detail-name';
+    nameEl.textContent = color.name;
+
+    const badges = document.createElement('div');
+    badges.className = 'color-detail-badges';
+
+    const roleEl = document.createElement('span');
