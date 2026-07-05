@@ -97,3 +97,24 @@ function init() {
       if (typeof vibe === 'string') {
         vibeInput.value = vibe;
         updateCharCounter(vibe.length);
+
+        onGenerate();
+      }
+    });
+  });
+
+  colorModalClose.addEventListener('click', closeColorModal);
+  colorModal.addEventListener('click', (e) => { if (e.target === colorModal) closeColorModal(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeColorModal();
+      closeGalleryModal();
+    }
+  });
+
+  colorModalCopy.addEventListener('click', () => {
+    if (currentModalHex) {
+      copyTextToClipboard(currentModalHex);
+      showToast('✓ ' + currentModalHex.toUpperCase() + ' copied!');
+    }
+  });
