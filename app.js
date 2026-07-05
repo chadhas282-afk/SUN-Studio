@@ -218,3 +218,22 @@ async function showPalette(palette, rawInput) {
 function renderPalette(palette, rawInput) {
   paletteOutput.replaceChildren();
   activeCVD = 'normal'; 
+
+  const card = document.createElement('div');
+  card.className = 'palette-card fade-up-enter';
+
+  
+  card.appendChild(buildBanner(palette));
+
+  
+  card.appendChild(buildDNARow(palette));
+
+  
+  const swatchStrip = buildSwatchStrip(palette);
+  card.appendChild(swatchStrip);
+
+  
+  card.appendChild(buildCVDToolbar(swatchStrip));
+
+  
+  card.appendChild(buildColorDetails(palette));
