@@ -58,3 +58,23 @@ let toastTimer       = null;
 
 let currentModalHex  = null;
 let lastPalette      = null;
+let ambientActive    = false;
+let activeCVD        = 'normal';
+let activeGalleryFilter = 'all';
+
+
+let storyPalette = null;
+let storyIndex = 0;
+let storyTimer = null;
+let storyAutoPlay = true;
+
+
+const LOADING_MESSAGES = [
+  'Summoning your palette…',
+  'Reading the emotional undertones…',
+  'Mixing light and shadow…',
+  'Consulting the color wheel…',
+  'Translating feelings into hues…',
+  'Finding the perfect shade of feeling…',
+  'Composing your chromatic story…',
+];
