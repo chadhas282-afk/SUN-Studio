@@ -398,3 +398,23 @@ function buildSwatchStrip(palette) {
     wrapper.setAttribute('aria-label', color.name + ' — ' + safeHex.toUpperCase() + '. Click for details.');
 
     const block = document.createElement('div');
+    block.className = 'color-swatch__block';
+    block.style.backgroundColor = safeHex; 
+
+    
+    block.style.animationDelay = (idx * 0.06) + 's';
+    wrapper.classList.add('color-swatch--animate');
+
+    const hint = document.createElement('span');
+    hint.className = 'color-swatch__copy-hint';
+    hint.setAttribute('aria-hidden', 'true');
+    hint.textContent = 'View';
+
+    const info = document.createElement('div');
+    info.className = 'color-swatch__info';
+
+    const hexSpan = document.createElement('span');
+    hexSpan.className = 'color-swatch__hex';
+    hexSpan.textContent = safeHex.toUpperCase();
+
+    const nameSpan = document.createElement('span');
