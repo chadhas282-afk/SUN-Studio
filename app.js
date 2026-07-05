@@ -358,3 +358,23 @@ function drawPaletteDNA(canvas, palette) {
 
   palette.colors.forEach((color, i) => {
     const safeHex = sanitizeHex(color.hex);
+    if (!safeHex) return;
+    const startAngle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    const endAngle   = ((i + 1) / n) * Math.PI * 2 - Math.PI / 2 - gap;
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, startAngle, endAngle);
+    ctx.arc(cx, cy, innerR, endAngle, startAngle, true);
+    ctx.closePath();
+    ctx.fillStyle = safeHex; 
+    ctx.fill();
+  });
+
+  
+  const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, innerR * 0.9);
+  grad.addColorStop(0, 'rgba(124,93,244,0.15)');
+  grad.addColorStop(1, 'transparent');
+  ctx.beginPath();
+  ctx.arc(cx, cy, innerR, 0, Math.PI * 2);
+  ctx.fillStyle = grad;
+  ctx.fill();
