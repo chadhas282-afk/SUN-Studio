@@ -478,3 +478,23 @@ function buildColorDetails(palette) {
     badges.className = 'color-detail-badges';
 
     const roleEl = document.createElement('span');
+    roleEl.className = 'color-detail-role';
+    roleEl.textContent = color.role;
+    badges.appendChild(roleEl);
+
+    
+    const wcag = wcagRating(safeHex);
+    const wcagEl = document.createElement('span');
+    wcagEl.className = 'wcag-badge ' + wcag.cls;
+    wcagEl.textContent = 'WCAG ' + wcag.label + ' ' + wcag.ratio + ':1';
+    wcagEl.setAttribute('title', 'Contrast ratio: ' + wcag.ratio + ':1 (best against white or black)');
+    badges.appendChild(wcagEl);
+
+    const psychEl = document.createElement('p');
+    psychEl.className = 'color-detail-psychology';
+    psychEl.textContent = color.psychology;
+
+    info.appendChild(hexEl);
+    info.appendChild(nameEl);
+    info.appendChild(badges);
+    info.appendChild(psychEl);
