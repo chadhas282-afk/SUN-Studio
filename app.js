@@ -338,3 +338,23 @@ function buildDNARow(palette) {
   const countTag = document.createElement('span');
   countTag.className = 'tone-tag';
   countTag.textContent = palette.colors.length + ' colors';
+  toneTags.appendChild(countTag);
+
+  meta.appendChild(toneTags);
+  row.appendChild(meta);
+  return row;
+}
+
+function drawPaletteDNA(canvas, palette) {
+  const ctx = canvas.getContext('2d');
+  const size = canvas.width;
+  const cx = size / 2, cy = size / 2;
+  const outerR = size * 0.44;
+  const innerR = size * 0.26;
+  const n = palette.colors.length;
+  const gap = 0.06;
+
+  ctx.clearRect(0, 0, size, size);
+
+  palette.colors.forEach((color, i) => {
+    const safeHex = sanitizeHex(color.hex);
