@@ -138,3 +138,23 @@ function init() {
   });
   document.addEventListener('keydown', (e) => {
     if (!storyModal.hasAttribute('hidden')) {
+        if (e.key === 'Escape') closeColorStory();
+      if (e.key === 'ArrowLeft') { storyAutoPlay = false; prevStorySlide(); }
+      if (e.key === 'ArrowRight') { storyAutoPlay = false; nextStorySlide(); }
+    }
+  });
+
+  
+  ambientBtn.addEventListener('click', toggleAmbientMode);
+
+  
+  loadFromHash();
+
+  
+  renderHistory();
+}
+
+
+
+function onInput() {
+  const len = vibeInput.value.length;
