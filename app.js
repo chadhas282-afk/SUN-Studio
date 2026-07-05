@@ -18,3 +18,23 @@ const toastEl           = document.getElementById('toast');
 const colorModal        = document.getElementById('color-modal');
 const colorModalBg      = document.getElementById('color-modal-bg');
 const colorModalClose   = document.getElementById('color-modal-close');
+const colorModalHex     = document.getElementById('color-modal-hex');
+const colorModalName    = document.getElementById('color-modal-name');
+const colorModalRole    = document.getElementById('color-modal-role');
+const colorModalPsych   = document.getElementById('color-modal-psychology');
+const colorModalWcag    = document.getElementById('color-modal-wcag');
+const colorModalCopy    = document.getElementById('color-modal-copy');
+
+
+const galleryModal      = document.getElementById('gallery-modal');
+const galleryModalClose = document.getElementById('gallery-modal-close');
+const galleryBackdrop   = document.getElementById('gallery-modal-backdrop');
+const galleryGrid       = document.getElementById('gallery-grid');
+const gallerySearch     = document.getElementById('gallery-search');
+const galleryFilterChips = document.getElementById('gallery-filter-chips');
+const galleryCount      = document.getElementById('gallery-count');
+
+
+const storyModal        = document.getElementById('story-modal');
+const storyClose        = document.getElementById('story-close');
+const storyBg           = document.getElementById('story-bg');
