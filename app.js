@@ -78,3 +78,22 @@ const LOADING_MESSAGES = [
   'Finding the perfect shade of feeling…',
   'Composing your chromatic story…',
 ];
+
+
+function init() {
+
+  vibeInput.addEventListener('input', onInput);
+
+  generateBtn.addEventListener('click', onGenerate);
+  surpriseBtn.addEventListener('click', onSurprise);
+
+  vibeInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); onGenerate(); }
+  });
+
+  document.querySelectorAll('.mood-tag').forEach((tag) => {
+    tag.addEventListener('click', () => {
+      const vibe = tag.dataset.vibe;
+      if (typeof vibe === 'string') {
+        vibeInput.value = vibe;
+        updateCharCounter(vibe.length);
