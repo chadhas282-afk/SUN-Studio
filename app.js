@@ -198,3 +198,23 @@ async function showPalette(palette, rawInput) {
   loadingState.classList.add('fade-out');
   
   await delay(400);
+
+  setHidden(loadingState, true);
+  loadingState.classList.remove('fade-out');
+  
+  lastPalette = palette;
+  renderPalette(palette, rawInput);
+  setHidden(paletteOutput, false);
+
+  generateBtn.disabled = false;
+  surpriseBtn.disabled = false;
+
+  addToHistory(palette, rawInput);
+
+  paletteOutput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+function renderPalette(palette, rawInput) {
+  paletteOutput.replaceChildren();
+  activeCVD = 'normal'; 
