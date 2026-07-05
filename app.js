@@ -237,3 +237,24 @@ function renderPalette(palette, rawInput) {
 
   
   card.appendChild(buildColorDetails(palette));
+
+  
+  card.appendChild(buildGradientStudio(palette));
+
+  
+  card.appendChild(buildInsights(palette));
+
+  
+  card.appendChild(buildFollowUp(palette));
+
+  
+  card.appendChild(buildActions(palette, rawInput));
+
+  paletteOutput.appendChild(card);
+
+  
+  const mixerEl = document.getElementById('palette-mixer-section');
+  if (mixerEl) mixerEl.remove();
+  const mixer = buildPaletteMixer(palette);
+  mixer.id = 'palette-mixer-section';
+  paletteOutput.appendChild(mixer);
