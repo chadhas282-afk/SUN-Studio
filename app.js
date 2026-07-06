@@ -578,3 +578,23 @@ function buildFollowUp(palette) {
         vibeInput.value = current + ' — ' + option;
         updateCharCounter(vibeInput.value.length);
         onGenerate();
+        });
+      optionsDiv.appendChild(btn);
+    });
+    section.appendChild(optionsDiv);
+  }
+
+  return section;
+}
+
+function buildFollowUpText(container, text) {
+  
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  parts.forEach((part, i) => {
+    if (i % 2 === 1) {
+      
+      const strong = document.createElement('strong');
+      strong.textContent = part;
+      container.appendChild(strong);
+    } else {
+      container.appendChild(document.createTextNode(part));
