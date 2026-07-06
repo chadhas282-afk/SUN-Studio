@@ -898,3 +898,22 @@ function loadFromHash() {
   );
   if (match) {
     setTimeout(() => showPalette(match, match.keywords[0]), 400);
+    history.replaceState(null, '', window.location.pathname);
+  }
+}
+
+function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).catch(() => {});
+  } else {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none;top:0;left:0;';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    } catch (_) {}
+  }
+}
