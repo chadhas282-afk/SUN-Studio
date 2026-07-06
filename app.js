@@ -738,3 +738,23 @@ function buildHistoryCard(palette, vibe) {
 
   const vibeEl = document.createElement('div');
   vibeEl.className = 'history-card__vibe';
+  vibeEl.textContent = vibe; 
+
+  meta.appendChild(nameEl);
+  meta.appendChild(vibeEl);
+  card.appendChild(meta);
+
+  const clickHandler = () => {
+    renderPalette(palette, vibe);
+    setHidden(paletteOutput, false);
+    paletteOutput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  card.addEventListener('click', clickHandler);
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); clickHandler(); }
+  });
+  return card;
+}
+
+function drawHistoryGradient(canvas, palette) {
+  const ctx = canvas.getContext('2d');
