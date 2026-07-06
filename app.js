@@ -638,3 +638,22 @@ function buildActions(palette, rawInput) {
 
 function makeActionBtn(label, icon, variant, onClick) {
   const btn = document.createElement('button');
+  btn.className = 'action-btn action-btn--' + variant;
+  btn.type = 'button';
+
+  const iconSpan = document.createElement('span');
+  iconSpan.setAttribute('aria-hidden', 'true');
+  iconSpan.textContent = icon;
+
+  const labelSpan = document.createElement('span');
+  labelSpan.textContent = label;
+
+  btn.appendChild(iconSpan);
+  btn.appendChild(labelSpan);
+  btn.addEventListener('click', onClick);
+  return btn;
+}
+
+
+function openColorModal(color, safeHex) {
+  currentModalHex = safeHex;
