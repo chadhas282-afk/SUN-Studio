@@ -678,3 +678,24 @@ function openColorModal(color, safeHex) {
   colorModalWcag.replaceChildren();
   const wcag = wcagRating(safeHex);
   const badge = document.createElement('span');
+  badge.className = 'wcag-badge ' + wcag.cls;
+  badge.textContent = 'WCAG ' + wcag.label + '  ' + wcag.ratio + ':1';
+  colorModalWcag.appendChild(badge);
+
+  
+  colorModalCopy.textContent = 'Copy ' + safeHex.toUpperCase();
+
+  colorModal.hidden = false;
+  colorModalClose.focus();
+  document.body.style.overflow = 'hidden';
+}
+
+function closeColorModal() {
+  colorModal.hidden = true;
+  currentModalHex = null;
+  document.body.style.overflow = '';
+}
+
+function addToHistory(palette, rawInput) {
+  if (sessionHistory.length > 0 && sessionHistory[sessionHistory.length - 1].palette.name === palette.name) return;
+ 
