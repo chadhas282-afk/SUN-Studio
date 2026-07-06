@@ -817,3 +817,24 @@ function exportPNG(palette) {
   
   ctx.fillStyle = '#0a0a12';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  palette.colors.forEach((color, i) => {
+    const safeHex = sanitizeHex(color.hex);
+    if (!safeHex) return;
+    const x = i * swatchW;
+
+    
+    ctx.fillStyle = safeHex;
+    ctx.fillRect(x, 0, swatchW, swatchH);
+
+    
+    const grad = ctx.createLinearGradient(x, swatchH * 0.5, x, swatchH);
+    grad.addColorStop(0, 'transparent');
+    grad.addColorStop(1, 'rgba(0,0,0,0.5)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(x, 0, swatchW, swatchH);
+
+    
+    const textCol = isLightColor(safeHex) ? '#1a1a2e' : '#f0eff8';
+    ctx.fillStyle = textCol;
+    ctx.font = 'bold 10px monospace';
