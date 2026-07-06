@@ -938,3 +938,23 @@ function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
 function buildCVDToolbar(swatchStripEl) {
   const toolbar = document.createElement('div');
   toolbar.className = 'cvd-toolbar';
+  toolbar.setAttribute('role', 'group');
+  toolbar.setAttribute('aria-label', 'Color vision deficiency simulation');
+
+  const label = document.createElement('span');
+  label.className = 'cvd-toolbar__label';
+  label.textContent = '👁 Vision Simulation';
+  toolbar.appendChild(label);
+
+  const modes = [
+    { id: 'normal',        label: 'Normal' },
+    { id: 'deuteranopia',  label: 'Deuteranopia' },
+    { id: 'protanopia',    label: 'Protanopia' },
+    { id: 'tritanopia',    label: 'Tritanopia' },
+    { id: 'achromatopsia', label: 'Greyscale' },
+  ];
+
+  modes.forEach((mode) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cvd-btn' + (activeCVD === mode.id ? ' cvd-btn--active' : '');
