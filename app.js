@@ -698,4 +698,23 @@ function closeColorModal() {
 
 function addToHistory(palette, rawInput) {
   if (sessionHistory.length > 0 && sessionHistory[sessionHistory.length - 1].palette.name === palette.name) return;
- 
+ if (sessionHistory.length >= 8) sessionHistory.shift();
+  sessionHistory.push({ palette, vibe: rawInput });
+  try { localStorage.setItem('chroma_mood_history', JSON.stringify(sessionHistory)); } catch(e) {}
+  renderHistory();
+}
+
+function renderHistory() {
+  if (sessionHistory.length === 0) { setHidden(historySection, true); return; }
+  setHidden(historySection, false);
+  historyGrid.replaceChildren();
+
+  [...sessionHistory].reverse().forEach(({ palette, vibe }) => {
+    historyGrid.appendChild(buildHistoryCard(palette, vibe));
+  });
+}
+
+function buildHistoryCard(palette, vibe) {
+  const card = document.createElement('div');
+  card.className = 'history-card';
+  card.setAttribute('tabindex', '0');
