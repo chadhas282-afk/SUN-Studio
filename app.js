@@ -518,3 +518,23 @@ function buildInsights(palette) {
   section.className = 'palette-insights';
   section.appendChild(buildInsightBlock('✦', 'Design Contexts', palette.designs));
   section.appendChild(buildInsightBlock('◎', 'Complementary Elements', palette.complementary));
+  return section;
+}
+
+function buildInsightBlock(icon, title, items) {
+  const block = document.createElement('div');
+  block.className = 'insight-block';
+
+  const titleEl = document.createElement('h3');
+  titleEl.className = 'insight-block__title';
+
+  const iconSpan = document.createElement('span');
+  iconSpan.setAttribute('aria-hidden', 'true');
+  iconSpan.textContent = icon;
+
+  titleEl.appendChild(iconSpan);
+  titleEl.appendChild(document.createTextNode(' ' + title));
+  block.appendChild(titleEl);
+
+  const list = document.createElement('ul');
+  list.className = 'insight-list';
