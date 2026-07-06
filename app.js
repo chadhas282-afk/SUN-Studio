@@ -1078,3 +1078,22 @@ function buildGradientStudio(palette) {
   });
 
   section.appendChild(grid);
+  return section;
+}
+
+
+function buildPaletteMixer(currentPalette) {
+  const section = document.createElement('div');
+  section.className = 'palette-mixer';
+
+  const header = document.createElement('div');
+  header.className = 'palette-mixer__header';
+
+  const icon = document.createElement('span');
+  icon.className = 'palette-mixer__icon';
+  icon.setAttribute('aria-hidden', 'true');
+  icon.textContent = '⊕';
+
+  const title = document.createElement('span');
+  title.className = 'palette-mixer__title';
+  title.textContent = 'Palette Mixer';
