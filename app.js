@@ -798,3 +798,22 @@ function exportJSON(palette) {
       hex:         sanitizeHex(c.hex) || c.hex,
       name:        c.name,
       role:        c.role,
+      psychology:  c.psychology,
+      wcag:        wcagRating(sanitizeHex(c.hex) || c.hex)
+    }))
+  };
+  copyTextToClipboard(JSON.stringify(data, null, 2));
+  showToast('✓ JSON copied to clipboard!');
+}
+
+function exportPNG(palette) {
+  const swatchW = 120, swatchH = 180, infoH = 110;
+  const n = palette.colors.length;
+  const canvas = document.createElement('canvas');
+  canvas.width  = swatchW * n;
+  canvas.height = swatchH + infoH;
+  const ctx = canvas.getContext('2d');
+
+  
+  ctx.fillStyle = '#0a0a12';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
