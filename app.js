@@ -978,3 +978,23 @@ function buildCVDToolbar(swatchStripEl) {
 
   return toolbar;
 }
+
+
+function buildGradientStudio(palette) {
+  const validHexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
+  if (validHexes.length < 2) return document.createDocumentFragment();
+
+  
+  const gradients = [
+    {
+      label: 'Linear →',
+      css: 'linear-gradient(90deg, ' + validHexes.join(', ') + ')',
+    },
+    {
+      label: 'Linear ↗',
+      css: 'linear-gradient(135deg, ' + validHexes.join(', ') + ')',
+    },
+    {
+      label: 'Radial',
+      css: 'radial-gradient(ellipse at center, ' + validHexes.slice(0,4).join(', ') + ')',
+    },
