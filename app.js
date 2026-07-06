@@ -958,3 +958,23 @@ function buildCVDToolbar(swatchStripEl) {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'cvd-btn' + (activeCVD === mode.id ? ' cvd-btn--active' : '');
+    btn.textContent = mode.label;
+    btn.setAttribute('aria-pressed', String(activeCVD === mode.id));
+    btn.addEventListener('click', () => {
+      activeCVD = mode.id;
+      
+      swatchStripEl.classList.remove('cvd-deuteranopia','cvd-protanopia','cvd-tritanopia','cvd-achromatopsia');
+      if (mode.id !== 'normal') swatchStripEl.classList.add('cvd-' + mode.id);
+      
+      toolbar.querySelectorAll('.cvd-btn').forEach((b, i) => {
+        const isActive = modes[i].id === mode.id;
+        b.classList.toggle('cvd-btn--active', isActive);
+        b.setAttribute('aria-pressed', String(isActive));
+      });
+      showToast('👁 Viewing as: ' + mode.label);
+    });
+    toolbar.appendChild(btn);
+  });
+
+  return toolbar;
+}
