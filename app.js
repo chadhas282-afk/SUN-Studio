@@ -1038,3 +1038,23 @@ function buildGradientStudio(palette) {
     card.setAttribute('role', 'button');
     card.setAttribute('tabindex', '0');
     card.setAttribute('aria-label', grad.label + ' gradient — click to copy CSS');
+
+    const preview = document.createElement('div');
+    preview.className = 'gradient-card__preview';
+    preview.style.background = grad.css; 
+
+    const meta = document.createElement('div');
+    meta.className = 'gradient-card__meta';
+
+    const lbl = document.createElement('span');
+    lbl.className = 'gradient-card__label';
+    lbl.textContent = grad.label; 
+
+    const copyBtn = document.createElement('button');
+    copyBtn.type = 'button';
+    copyBtn.className = 'gradient-card__copy';
+    copyBtn.textContent = 'Copy CSS';
+    const cssValue = 'background: ' + grad.css + ';'; 
+    copyBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      copyTextToClipboard(cssValue);
