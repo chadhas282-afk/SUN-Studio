@@ -998,3 +998,22 @@ function buildGradientStudio(palette) {
       label: 'Radial',
       css: 'radial-gradient(ellipse at center, ' + validHexes.slice(0,4).join(', ') + ')',
     },
+    {
+      label: 'Conic',
+      css: 'conic-gradient(' + validHexes.join(', ') + ')',
+    },
+    {
+      label: 'Split Primary',
+      css: 'linear-gradient(90deg, ' + validHexes[0] + ' 0%, ' + validHexes[0] + ' 50%, ' + validHexes[1] + ' 50%, ' + validHexes[1] + ' 100%)',
+    },
+    {
+      label: 'Soft Fade',
+      css: 'linear-gradient(180deg, ' + validHexes[0] + '00 0%, ' + validHexes[Math.min(2, validHexes.length-1)] + ' 100%)',
+    },
+  ];
+
+  const section = document.createElement('div');
+  section.className = 'gradient-studio';
+
+  const header = document.createElement('div');
+  header.className = 'gradient-studio__header';
