@@ -718,3 +718,23 @@ function buildHistoryCard(palette, vibe) {
   const card = document.createElement('div');
   card.className = 'history-card';
   card.setAttribute('tabindex', '0');
+  card.setAttribute('role', 'button');
+  card.setAttribute('aria-label', 'Revisit palette: ' + palette.name);
+
+  
+  const canvas = document.createElement('canvas');
+  canvas.className = 'history-card__gradient';
+  canvas.width = 300; canvas.height = 56;
+  canvas.setAttribute('aria-hidden', 'true');
+  drawHistoryGradient(canvas, palette);
+  card.appendChild(canvas);
+
+  const meta = document.createElement('div');
+  meta.className = 'history-card__meta';
+
+  const nameEl = document.createElement('div');
+  nameEl.className = 'history-card__name';
+  nameEl.textContent = palette.name;
+
+  const vibeEl = document.createElement('div');
+  vibeEl.className = 'history-card__vibe';
