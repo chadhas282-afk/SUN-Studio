@@ -498,3 +498,23 @@ function buildColorDetails(palette) {
     info.appendChild(nameEl);
     info.appendChild(badges);
     info.appendChild(psychEl);
+      card.appendChild(dot);
+    card.appendChild(info);
+
+    const openModal = () => openColorModal(color, safeHex);
+    card.addEventListener('click', openModal);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+    });
+
+    grid.appendChild(card);
+  });
+  return grid;
+}
+
+
+function buildInsights(palette) {
+  const section = document.createElement('div');
+  section.className = 'palette-insights';
+  section.appendChild(buildInsightBlock('✦', 'Design Contexts', palette.designs));
+  section.appendChild(buildInsightBlock('◎', 'Complementary Elements', palette.complementary));
