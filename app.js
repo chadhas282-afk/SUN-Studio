@@ -557,3 +557,24 @@ function buildFollowUp(palette) {
   label.className = 'follow-up__label';
   label.textContent = '✦ Iterate';
   section.appendChild(label);
+
+  const question = document.createElement('p');
+  question.className = 'follow-up__question';
+  buildFollowUpText(question, palette.followUp || '');
+  section.appendChild(question);
+
+  if (palette.followUpOptions && palette.followUpOptions.length) {
+    const optionsDiv = document.createElement('div');
+    optionsDiv.className = 'follow-up-options';
+
+    palette.followUpOptions.forEach((option) => {
+      const btn = document.createElement('button');
+      btn.className = 'follow-up-option';
+      btn.type = 'button';
+      btn.textContent = option; 
+      btn.addEventListener('click', () => {
+        
+        const current = vibeInput.value.trim();
+        vibeInput.value = current + ' — ' + option;
+        updateCharCounter(vibeInput.value.length);
+        onGenerate();
