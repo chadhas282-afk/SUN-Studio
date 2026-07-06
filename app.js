@@ -1017,3 +1017,24 @@ function buildGradientStudio(palette) {
 
   const header = document.createElement('div');
   header.className = 'gradient-studio__header';
+
+  const title = document.createElement('div');
+  title.className = 'gradient-studio__title';
+  const titleIcon = document.createElement('span');
+  titleIcon.setAttribute('aria-hidden', 'true');
+  titleIcon.textContent = '∿';
+  const titleText = document.createTextNode(' Gradient Studio');
+  title.appendChild(titleIcon);
+  title.appendChild(titleText);
+  header.appendChild(title);
+  section.appendChild(header);
+
+  const grid = document.createElement('div');
+  grid.className = 'gradient-previews';
+
+  gradients.forEach((grad) => {
+    const card = document.createElement('div');
+    card.className = 'gradient-card';
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', grad.label + ' gradient — click to copy CSS');
