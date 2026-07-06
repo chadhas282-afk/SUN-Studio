@@ -778,3 +778,23 @@ function clearHistory() {
 
 function exportCSS(palette) {
   const lines = ['/* ' + palette.name + ' — Sun Studios */\n:root {'];
+  palette.colors.forEach((color) => {
+    const safeHex = sanitizeHex(color.hex);
+    if (!safeHex) return;
+    const varName = '--color-' + color.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    lines.push('  ' + varName + ': ' + safeHex + '; ');
+  });
+  lines.push('}');
+  copyTextToClipboard(lines.join('\n'));
+  showToast('✓ CSS variables copied to clipboard!');
+}
+
+function exportJSON(palette) {
+  const data = {
+    name: palette.name,
+    mood: palette.moodDesc,
+    tones: palette.tones,
+    colors: palette.colors.map(c => ({
+      hex:         sanitizeHex(c.hex) || c.hex,
+      name:        c.name,
+      role:        c.role,
