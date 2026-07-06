@@ -917,3 +917,24 @@ function copyTextToClipboard(text) {
     } catch (_) {}
   }
 }
+
+
+function showToast(message) {
+  if (toastTimer) clearTimeout(toastTimer);
+  toastEl.hidden = false;
+  toastEl.textContent = message; 
+  toastEl.classList.add('toast--visible');
+  toastTimer = setTimeout(() => {
+    toastEl.classList.remove('toast--visible');
+    setTimeout(() => { toastEl.hidden = true; }, 300);
+  }, 2600);
+}
+
+
+function setHidden(el, hidden) { el.hidden = hidden; }
+function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+
+function buildCVDToolbar(swatchStripEl) {
+  const toolbar = document.createElement('div');
+  toolbar.className = 'cvd-toolbar';
