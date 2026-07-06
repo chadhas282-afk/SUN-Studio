@@ -538,3 +538,22 @@ function buildInsightBlock(icon, title, items) {
 
   const list = document.createElement('ul');
   list.className = 'insight-list';
+  items.forEach((item) => {
+    const li = document.createElement('li');
+    li.className = 'insight-list__item';
+    li.textContent = item;
+    list.appendChild(li);
+  });
+  block.appendChild(list);
+  return block;
+}
+
+
+function buildFollowUp(palette) {
+  const section = document.createElement('div');
+  section.className = 'follow-up';
+
+  const label = document.createElement('div');
+  label.className = 'follow-up__label';
+  label.textContent = '✦ Iterate';
+  section.appendChild(label);
