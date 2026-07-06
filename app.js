@@ -1,65 +1,65 @@
 'use strict';
 
 
-const vibeInput         = document.getElementById('vibe-input');
-const generateBtn       = document.getElementById('generate-btn');
-const surpriseBtn       = document.getElementById('surprise-btn');
-const browseBtn         = document.getElementById('browse-btn');
-const ambientBtn        = document.getElementById('ambient-btn');
-const charCounter       = document.getElementById('char-counter');
-const loadingState      = document.getElementById('loading-state');
-const loadingText       = document.getElementById('loading-text');
-const paletteOutput     = document.getElementById('palette-output');
-const historySection    = document.getElementById('history-section');
-const historyGrid       = document.getElementById('history-grid');
-const clearHistoryBtn   = document.getElementById('clear-history-btn');
-const toastEl           = document.getElementById('toast');
+const vibeInput = document.getElementById('vibe-input');
+const generateBtn = document.getElementById('generate-btn');
+const surpriseBtn = document.getElementById('surprise-btn');
+const browseBtn = document.getElementById('browse-btn');
+const ambientBtn = document.getElementById('ambient-btn');
+const charCounter = document.getElementById('char-counter');
+const loadingState = document.getElementById('loading-state');
+const loadingText = document.getElementById('loading-text');
+const paletteOutput = document.getElementById('palette-output');
+const historySection = document.getElementById('history-section');
+const historyGrid = document.getElementById('history-grid');
+const clearHistoryBtn = document.getElementById('clear-history-btn');
+const toastEl = document.getElementById('toast');
 
-const colorModal        = document.getElementById('color-modal');
-const colorModalBg      = document.getElementById('color-modal-bg');
-const colorModalClose   = document.getElementById('color-modal-close');
-const colorModalHex     = document.getElementById('color-modal-hex');
-const colorModalName    = document.getElementById('color-modal-name');
-const colorModalRole    = document.getElementById('color-modal-role');
-const colorModalPsych   = document.getElementById('color-modal-psychology');
-const colorModalWcag    = document.getElementById('color-modal-wcag');
-const colorModalCopy    = document.getElementById('color-modal-copy');
+const colorModal = document.getElementById('color-modal');
+const colorModalBg = document.getElementById('color-modal-bg');
+const colorModalClose = document.getElementById('color-modal-close');
+const colorModalHex = document.getElementById('color-modal-hex');
+const colorModalName = document.getElementById('color-modal-name');
+const colorModalRole = document.getElementById('color-modal-role');
+const colorModalPsych = document.getElementById('color-modal-psychology');
+const colorModalWcag = document.getElementById('color-modal-wcag');
+const colorModalCopy = document.getElementById('color-modal-copy');
 
 
-const galleryModal      = document.getElementById('gallery-modal');
+const galleryModal = document.getElementById('gallery-modal');
 const galleryModalClose = document.getElementById('gallery-modal-close');
-const galleryBackdrop   = document.getElementById('gallery-modal-backdrop');
-const galleryGrid       = document.getElementById('gallery-grid');
-const gallerySearch     = document.getElementById('gallery-search');
+const galleryBackdrop = document.getElementById('gallery-modal-backdrop');
+const galleryGrid = document.getElementById('gallery-grid');
+const gallerySearch = document.getElementById('gallery-search');
 const galleryFilterChips = document.getElementById('gallery-filter-chips');
-const galleryCount      = document.getElementById('gallery-count');
+const galleryCount = document.getElementById('gallery-count');
 
 
-const storyModal        = document.getElementById('story-modal');
-const storyClose        = document.getElementById('story-close');
-const storyBg           = document.getElementById('story-bg');
-const storyProgress     = document.getElementById('story-progress');
-const storyHex          = document.getElementById('story-hex');
-const storyName         = document.getElementById('story-name');
-const storyRole         = document.getElementById('story-role');
-const storyPsych        = document.getElementById('story-psych');
-const storyPrev         = document.getElementById('story-prev');
-const storyNext         = document.getElementById('story-next');
-const storyDots         = document.getElementById('story-dots');
-const storyAuto         = document.getElementById('story-auto');
+const storyModal = document.getElementById('story-modal');
+const storyClose = document.getElementById('story-close');
+const storyBg = document.getElementById('story-bg');
+const storyProgress = document.getElementById('story-progress');
+const storyHex = document.getElementById('story-hex');
+const storyName = document.getElementById('story-name');
+const storyRole = document.getElementById('story-role');
+const storyPsych = document.getElementById('story-psych');
+const storyPrev = document.getElementById('story-prev');
+const storyNext = document.getElementById('story-next');
+const storyDots = document.getElementById('story-dots');
+const storyAuto = document.getElementById('story-auto');
 
 
 let sessionHistory = [];
 try {
   const stored = localStorage.getItem('chroma_mood_history');
   if (stored) sessionHistory = JSON.parse(stored);
-} catch(e) {}
-let toastTimer       = null;
+} catch (e) { }
+let toastTimer = null;
 
-let currentModalHex  = null;
-let lastPalette      = null;
-let ambientActive    = false;
-let activeCVD        = 'normal';
+let currentModalHex = null;
+let lastPalette = null;
+let ambientActive = false;
+let activeCVD = 'normal';
 let activeGalleryFilter = 'all';
 
 
@@ -121,13 +121,13 @@ function init() {
 
   clearHistoryBtn.addEventListener('click', clearHistory);
 
-  
+
   browseBtn.addEventListener('click', openGalleryModal);
   galleryModalClose.addEventListener('click', closeGalleryModal);
   galleryBackdrop.addEventListener('click', closeGalleryModal);
   gallerySearch.addEventListener('input', onGallerySearch);
 
-  
+
   storyClose.addEventListener('click', closeColorStory);
   storyPrev.addEventListener('click', () => { storyAutoPlay = false; prevStorySlide(); });
   storyNext.addEventListener('click', () => { storyAutoPlay = false; nextStorySlide(); });
@@ -138,19 +138,19 @@ function init() {
   });
   document.addEventListener('keydown', (e) => {
     if (!storyModal.hasAttribute('hidden')) {
-        if (e.key === 'Escape') closeColorStory();
+      if (e.key === 'Escape') closeColorStory();
       if (e.key === 'ArrowLeft') { storyAutoPlay = false; prevStorySlide(); }
       if (e.key === 'ArrowRight') { storyAutoPlay = false; nextStorySlide(); }
     }
   });
 
-  
+
   ambientBtn.addEventListener('click', toggleAmbientMode);
 
-  
+
   loadFromHash();
 
-  
+
   renderHistory();
 }
 
@@ -196,12 +196,12 @@ async function showPalette(palette, rawInput) {
   await delay(5000);
 
   loadingState.classList.add('fade-out');
-  
+
   await delay(400);
 
   setHidden(loadingState, true);
   loadingState.classList.remove('fade-out');
-  
+
   lastPalette = palette;
   renderPalette(palette, rawInput);
   setHidden(paletteOutput, false);
@@ -217,49 +217,49 @@ async function showPalette(palette, rawInput) {
 
 function renderPalette(palette, rawInput) {
   paletteOutput.replaceChildren();
-  activeCVD = 'normal'; 
+  activeCVD = 'normal';
 
   const card = document.createElement('div');
   card.className = 'palette-card fade-up-enter';
 
-  
+
   card.appendChild(buildBanner(palette));
 
-  
+
   card.appendChild(buildDNARow(palette));
 
-  
+
   const swatchStrip = buildSwatchStrip(palette);
   card.appendChild(swatchStrip);
 
-  
+
   card.appendChild(buildCVDToolbar(swatchStrip));
 
-  
+
   card.appendChild(buildColorDetails(palette));
 
-  
+
   card.appendChild(buildGradientStudio(palette));
 
-  
+
   card.appendChild(buildInsights(palette));
 
-  
+
   card.appendChild(buildFollowUp(palette));
 
-  
+
   card.appendChild(buildActions(palette, rawInput));
 
   paletteOutput.appendChild(card);
 
-  
+
   const mixerEl = document.getElementById('palette-mixer-section');
   if (mixerEl) mixerEl.remove();
   const mixer = buildPaletteMixer(palette);
   mixer.id = 'palette-mixer-section';
   paletteOutput.appendChild(mixer);
 
-  
+
   if (ambientActive) applyAmbientColors(palette);
 }
 
@@ -271,7 +271,7 @@ function buildBanner(palette) {
   const gradient = document.createElement('div');
   gradient.className = 'palette-banner__gradient';
   const validHexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
-  
+
   gradient.style.background = 'linear-gradient(135deg, ' + validHexes.join(', ') + ')';
 
   const overlay = document.createElement('div');
@@ -286,11 +286,11 @@ function buildBanner(palette) {
 
   const name = document.createElement('h2');
   name.className = 'palette-name';
-  name.textContent = palette.name; 
+  name.textContent = palette.name;
 
   const desc = document.createElement('p');
   desc.className = 'palette-mood-desc';
-  desc.textContent = palette.moodDesc; 
+  desc.textContent = palette.moodDesc;
 
   content.appendChild(name);
   content.appendChild(desc);
@@ -306,7 +306,7 @@ function buildDNARow(palette) {
   const row = document.createElement('div');
   row.className = 'palette-dna-row';
 
-  
+
   const canvas = document.createElement('canvas');
   canvas.className = 'palette-dna-canvas';
   canvas.width = 80;
@@ -315,7 +315,7 @@ function buildDNARow(palette) {
   drawPaletteDNA(canvas, palette);
   row.appendChild(canvas);
 
-  
+
   const meta = document.createElement('div');
   meta.className = 'palette-dna-meta';
 
@@ -330,11 +330,11 @@ function buildDNARow(palette) {
   (palette.tones || []).forEach((tone) => {
     const tag = document.createElement('span');
     tag.className = 'tone-tag';
-    tag.textContent = tone; 
+    tag.textContent = tone;
     toneTags.appendChild(tag);
   });
 
-  
+
   const countTag = document.createElement('span');
   countTag.className = 'tone-tag';
   countTag.textContent = palette.colors.length + ' colors';
@@ -360,17 +360,17 @@ function drawPaletteDNA(canvas, palette) {
     const safeHex = sanitizeHex(color.hex);
     if (!safeHex) return;
     const startAngle = (i / n) * Math.PI * 2 - Math.PI / 2;
-    const endAngle   = ((i + 1) / n) * Math.PI * 2 - Math.PI / 2 - gap;
+    const endAngle = ((i + 1) / n) * Math.PI * 2 - Math.PI / 2 - gap;
 
     ctx.beginPath();
     ctx.arc(cx, cy, outerR, startAngle, endAngle);
     ctx.arc(cx, cy, innerR, endAngle, startAngle, true);
     ctx.closePath();
-    ctx.fillStyle = safeHex; 
+    ctx.fillStyle = safeHex;
     ctx.fill();
   });
 
-  
+
   const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, innerR * 0.9);
   grad.addColorStop(0, 'rgba(124,93,244,0.15)');
   grad.addColorStop(1, 'transparent');
@@ -378,7 +378,7 @@ function drawPaletteDNA(canvas, palette) {
   ctx.arc(cx, cy, innerR, 0, Math.PI * 2);
   ctx.fillStyle = grad;
   ctx.fill();
-  }
+}
 
 
 function buildSwatchStrip(palette) {
@@ -399,9 +399,9 @@ function buildSwatchStrip(palette) {
 
     const block = document.createElement('div');
     block.className = 'color-swatch__block';
-    block.style.backgroundColor = safeHex; 
+    block.style.backgroundColor = safeHex;
 
-    
+
     block.style.animationDelay = (idx * 0.06) + 's';
     wrapper.classList.add('color-swatch--animate');
 
@@ -438,7 +438,7 @@ function buildSwatchStrip(palette) {
     });
 
     strip.appendChild(wrapper);
-    });
+  });
   return strip;
 }
 
@@ -482,7 +482,7 @@ function buildColorDetails(palette) {
     roleEl.textContent = color.role;
     badges.appendChild(roleEl);
 
-    
+
     const wcag = wcagRating(safeHex);
     const wcagEl = document.createElement('span');
     wcagEl.className = 'wcag-badge ' + wcag.cls;
@@ -498,7 +498,7 @@ function buildColorDetails(palette) {
     info.appendChild(nameEl);
     info.appendChild(badges);
     info.appendChild(psychEl);
-      card.appendChild(dot);
+    card.appendChild(dot);
     card.appendChild(info);
 
     const openModal = () => openColorModal(color, safeHex);
@@ -571,14 +571,14 @@ function buildFollowUp(palette) {
       const btn = document.createElement('button');
       btn.className = 'follow-up-option';
       btn.type = 'button';
-      btn.textContent = option; 
+      btn.textContent = option;
       btn.addEventListener('click', () => {
-        
+
         const current = vibeInput.value.trim();
         vibeInput.value = current + ' — ' + option;
         updateCharCounter(vibeInput.value.length);
         onGenerate();
-        });
+      });
       optionsDiv.appendChild(btn);
     });
     section.appendChild(optionsDiv);
@@ -588,17 +588,17 @@ function buildFollowUp(palette) {
 }
 
 function buildFollowUpText(container, text) {
-  
+
   const parts = text.split(/\*\*(.*?)\*\*/g);
   parts.forEach((part, i) => {
     if (i % 2 === 1) {
-      
+
       const strong = document.createElement('strong');
       strong.textContent = part;
       container.appendChild(strong);
     } else {
       container.appendChild(document.createTextNode(part));
-      }
+    }
   });
 }
 
@@ -658,23 +658,23 @@ function makeActionBtn(label, icon, variant, onClick) {
 function openColorModal(color, safeHex) {
   currentModalHex = safeHex;
 
-  
-  colorModalBg.style.backgroundColor = safeHex; 
 
-  
-  colorModalHex.textContent  = safeHex.toUpperCase();
+  colorModalBg.style.backgroundColor = safeHex;
+
+
+  colorModalHex.textContent = safeHex.toUpperCase();
   colorModalName.textContent = color.name;
   colorModalRole.textContent = color.role;
   colorModalPsych.textContent = color.psychology;
 
-  
+
   const textColor = isLightColor(safeHex) ? 'rgba(26,26,46,0.95)' : 'rgba(255,255,255,0.95)';
-  colorModalHex.style.color  = textColor;
+  colorModalHex.style.color = textColor;
   colorModalName.style.color = textColor;
   colorModalRole.style.color = textColor;
   colorModalPsych.style.color = textColor;
 
-  
+
   colorModalWcag.replaceChildren();
   const wcag = wcagRating(safeHex);
   const badge = document.createElement('span');
@@ -682,7 +682,7 @@ function openColorModal(color, safeHex) {
   badge.textContent = 'WCAG ' + wcag.label + '  ' + wcag.ratio + ':1';
   colorModalWcag.appendChild(badge);
 
-  
+
   colorModalCopy.textContent = 'Copy ' + safeHex.toUpperCase();
 
   colorModal.hidden = false;
@@ -698,9 +698,9 @@ function closeColorModal() {
 
 function addToHistory(palette, rawInput) {
   if (sessionHistory.length > 0 && sessionHistory[sessionHistory.length - 1].palette.name === palette.name) return;
- if (sessionHistory.length >= 8) sessionHistory.shift();
+  if (sessionHistory.length >= 8) sessionHistory.shift();
   sessionHistory.push({ palette, vibe: rawInput });
-  try { localStorage.setItem('chroma_mood_history', JSON.stringify(sessionHistory)); } catch(e) {}
+  try { localStorage.setItem('chroma_mood_history', JSON.stringify(sessionHistory)); } catch (e) { }
   renderHistory();
 }
 
@@ -721,7 +721,7 @@ function buildHistoryCard(palette, vibe) {
   card.setAttribute('role', 'button');
   card.setAttribute('aria-label', 'Revisit palette: ' + palette.name);
 
-  
+
   const canvas = document.createElement('canvas');
   canvas.className = 'history-card__gradient';
   canvas.width = 300; canvas.height = 56;
@@ -738,7 +738,7 @@ function buildHistoryCard(palette, vibe) {
 
   const vibeEl = document.createElement('div');
   vibeEl.className = 'history-card__vibe';
-  vibeEl.textContent = vibe; 
+  vibeEl.textContent = vibe;
 
   meta.appendChild(nameEl);
   meta.appendChild(vibeEl);
@@ -771,7 +771,7 @@ function drawHistoryGradient(canvas, palette) {
 
 function clearHistory() {
   sessionHistory.length = 0;
-  try { localStorage.removeItem('chroma_mood_history'); } catch(e) {}
+  try { localStorage.removeItem('chroma_mood_history'); } catch (e) { }
   renderHistory();
 }
 
@@ -795,11 +795,11 @@ function exportJSON(palette) {
     mood: palette.moodDesc,
     tones: palette.tones,
     colors: palette.colors.map(c => ({
-      hex:         sanitizeHex(c.hex) || c.hex,
-      name:        c.name,
-      role:        c.role,
-      psychology:  c.psychology,
-      wcag:        wcagRating(sanitizeHex(c.hex) || c.hex)
+      hex: sanitizeHex(c.hex) || c.hex,
+      name: c.name,
+      role: c.role,
+      psychology: c.psychology,
+      wcag: wcagRating(sanitizeHex(c.hex) || c.hex)
     }))
   };
   copyTextToClipboard(JSON.stringify(data, null, 2));
@@ -810,11 +810,11 @@ function exportPNG(palette) {
   const swatchW = 120, swatchH = 180, infoH = 110;
   const n = palette.colors.length;
   const canvas = document.createElement('canvas');
-  canvas.width  = swatchW * n;
+  canvas.width = swatchW * n;
   canvas.height = swatchH + infoH;
   const ctx = canvas.getContext('2d');
 
-  
+
   ctx.fillStyle = '#0a0a12';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -823,43 +823,43 @@ function exportPNG(palette) {
     if (!safeHex) return;
     const x = i * swatchW;
 
-    
+
     ctx.fillStyle = safeHex;
     ctx.fillRect(x, 0, swatchW, swatchH);
 
-    
+
     const grad = ctx.createLinearGradient(x, swatchH * 0.5, x, swatchH);
     grad.addColorStop(0, 'transparent');
     grad.addColorStop(1, 'rgba(0,0,0,0.5)');
     ctx.fillStyle = grad;
     ctx.fillRect(x, 0, swatchW, swatchH);
 
-    
+
     const textCol = isLightColor(safeHex) ? '#1a1a2e' : '#f0eff8';
     ctx.fillStyle = textCol;
     ctx.font = 'bold 10px monospace';
     ctx.fillText(safeHex.toUpperCase(), x + 8, swatchH - 28);
     ctx.font = '10px sans-serif';
-    
+
     const displayName = color.name.length > 14 ? color.name.slice(0, 13) + '…' : color.name;
     ctx.fillText(displayName, x + 8, swatchH - 12);
   });
 
-  
+
   ctx.fillStyle = '#111120';
   ctx.fillRect(0, swatchH, canvas.width, infoH);
 
-  
+
   ctx.fillStyle = '#f0eff8';
   ctx.font = 'bold 18px serif';
   ctx.fillText(palette.name, 20, swatchH + 38);
 
-  
+
   ctx.fillStyle = '#9b9ab8';
   ctx.font = '12px sans-serif';
   ctx.fillText('Generated by Sun Studios', 20, swatchH + 58);
 
-  
+
   ctx.font = '10px monospace';
   palette.colors.forEach((color, i) => {
     const safeHex = sanitizeHex(color.hex);
@@ -870,7 +870,7 @@ function exportPNG(palette) {
     ctx.fillText(safeHex.toUpperCase(), 20 + i * 50, swatchH + 96);
   });
 
-  
+
   try {
     const link = document.createElement('a');
     link.download = palette.name.toLowerCase().replace(/\s+/g, '-') + '.png';
@@ -884,7 +884,7 @@ function exportPNG(palette) {
 
 
 function updateHash(paletteName) {
-  
+
   const slug = paletteName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   history.replaceState(null, '', '#' + slug);
 }
@@ -904,7 +904,7 @@ function loadFromHash() {
 
 function copyTextToClipboard(text) {
   if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(text).catch(() => {});
+    navigator.clipboard.writeText(text).catch(() => { });
   } else {
     try {
       const ta = document.createElement('textarea');
@@ -914,7 +914,7 @@ function copyTextToClipboard(text) {
       ta.focus(); ta.select();
       document.execCommand('copy');
       document.body.removeChild(ta);
-    } catch (_) {}
+    } catch (_) { }
   }
 }
 
@@ -922,7 +922,7 @@ function copyTextToClipboard(text) {
 function showToast(message) {
   if (toastTimer) clearTimeout(toastTimer);
   toastEl.hidden = false;
-  toastEl.textContent = message; 
+  toastEl.textContent = message;
   toastEl.classList.add('toast--visible');
   toastTimer = setTimeout(() => {
     toastEl.classList.remove('toast--visible');
@@ -947,10 +947,10 @@ function buildCVDToolbar(swatchStripEl) {
   toolbar.appendChild(label);
 
   const modes = [
-    { id: 'normal',        label: 'Normal' },
-    { id: 'deuteranopia',  label: 'Deuteranopia' },
-    { id: 'protanopia',    label: 'Protanopia' },
-    { id: 'tritanopia',    label: 'Tritanopia' },
+    { id: 'normal', label: 'Normal' },
+    { id: 'deuteranopia', label: 'Deuteranopia' },
+    { id: 'protanopia', label: 'Protanopia' },
+    { id: 'tritanopia', label: 'Tritanopia' },
     { id: 'achromatopsia', label: 'Greyscale' },
   ];
 
@@ -962,10 +962,10 @@ function buildCVDToolbar(swatchStripEl) {
     btn.setAttribute('aria-pressed', String(activeCVD === mode.id));
     btn.addEventListener('click', () => {
       activeCVD = mode.id;
-      
-      swatchStripEl.classList.remove('cvd-deuteranopia','cvd-protanopia','cvd-tritanopia','cvd-achromatopsia');
+
+      swatchStripEl.classList.remove('cvd-deuteranopia', 'cvd-protanopia', 'cvd-tritanopia', 'cvd-achromatopsia');
       if (mode.id !== 'normal') swatchStripEl.classList.add('cvd-' + mode.id);
-      
+
       toolbar.querySelectorAll('.cvd-btn').forEach((b, i) => {
         const isActive = modes[i].id === mode.id;
         b.classList.toggle('cvd-btn--active', isActive);
@@ -984,7 +984,7 @@ function buildGradientStudio(palette) {
   const validHexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
   if (validHexes.length < 2) return document.createDocumentFragment();
 
-  
+
   const gradients = [
     {
       label: 'Linear →',
@@ -996,7 +996,7 @@ function buildGradientStudio(palette) {
     },
     {
       label: 'Radial',
-      css: 'radial-gradient(ellipse at center, ' + validHexes.slice(0,4).join(', ') + ')',
+      css: 'radial-gradient(ellipse at center, ' + validHexes.slice(0, 4).join(', ') + ')',
     },
     {
       label: 'Conic',
@@ -1008,7 +1008,7 @@ function buildGradientStudio(palette) {
     },
     {
       label: 'Soft Fade',
-      css: 'linear-gradient(180deg, ' + validHexes[0] + '00 0%, ' + validHexes[Math.min(2, validHexes.length-1)] + ' 100%)',
+      css: 'linear-gradient(180deg, ' + validHexes[0] + '00 0%, ' + validHexes[Math.min(2, validHexes.length - 1)] + ' 100%)',
     },
   ];
 
@@ -1041,20 +1041,40 @@ function buildGradientStudio(palette) {
 
     const preview = document.createElement('div');
     preview.className = 'gradient-card__preview';
-    preview.style.background = grad.css; 
+    preview.style.background = grad.css;
 
     const meta = document.createElement('div');
     meta.className = 'gradient-card__meta';
 
     const lbl = document.createElement('span');
     lbl.className = 'gradient-card__label';
-    lbl.textContent = grad.label; 
+    lbl.textContent = grad.label;
 
     const copyBtn = document.createElement('button');
     copyBtn.type = 'button';
     copyBtn.className = 'gradient-card__copy';
     copyBtn.textContent = 'Copy CSS';
-    const cssValue = 'background: ' + grad.css + ';'; 
+    const cssValue = 'background: ' + grad.css + ';';
     copyBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       copyTextToClipboard(cssValue);
+      showToast('✓ Gradient CSS copied!');
+    });
+
+    meta.appendChild(lbl);
+    meta.appendChild(copyBtn);
+    card.appendChild(preview);
+    card.appendChild(meta);
+
+    card.addEventListener('click', () => {
+      copyTextToClipboard(cssValue);
+      showToast('✓ Gradient CSS copied!');
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyTextToClipboard(cssValue); showToast('✓ Gradient CSS copied!'); }
+    });
+
+    grid.appendChild(card);
+  });
+
+  section.appendChild(grid);
