@@ -598,3 +598,23 @@ function buildFollowUpText(container, text) {
       container.appendChild(strong);
     } else {
       container.appendChild(document.createTextNode(part));
+      }
+  });
+}
+
+
+function buildActions(palette, rawInput) {
+  const div = document.createElement('div');
+  div.className = 'palette-actions';
+
+  div.appendChild(makeActionBtn('Play Story', '▶', 'primary', () => {
+    openColorStory(palette);
+  }));
+
+  div.appendChild(makeActionBtn('Share Link', '🔗', 'primary', () => {
+    copyShareLink(palette);
+  }));
+
+  div.appendChild(makeActionBtn('Share Card', '📸', 'primary', () => {
+    exportShareCard(palette);
+  }));
