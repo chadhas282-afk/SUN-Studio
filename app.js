@@ -618,3 +618,23 @@ function buildActions(palette, rawInput) {
   div.appendChild(makeActionBtn('Share Card', '📸', 'primary', () => {
     exportShareCard(palette);
   }));
+
+  div.appendChild(makeActionBtn('Copy All Hex', '⊕', 'secondary', () => {
+    const allHex = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean).join('  ');
+    copyTextToClipboard(allHex);
+    showToast('✓ All hex codes copied!');
+  }));
+
+  div.appendChild(makeActionBtn('Export CSS', '↓', 'secondary', () => exportCSS(palette)));
+  div.appendChild(makeActionBtn('Export PNG', '◼', 'secondary', () => exportPNG(palette)));
+
+  div.appendChild(makeActionBtn('Try Again', '↻', 'secondary', () => {
+    setTimeout(() => { vibeInput.focus(); vibeInput.select(); }, 100);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }));
+
+  return div;
+}
+
+function makeActionBtn(label, icon, variant, onClick) {
+  const btn = document.createElement('button');
