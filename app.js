@@ -657,3 +657,24 @@ function makeActionBtn(label, icon, variant, onClick) {
 
 function openColorModal(color, safeHex) {
   currentModalHex = safeHex;
+
+  
+  colorModalBg.style.backgroundColor = safeHex; 
+
+  
+  colorModalHex.textContent  = safeHex.toUpperCase();
+  colorModalName.textContent = color.name;
+  colorModalRole.textContent = color.role;
+  colorModalPsych.textContent = color.psychology;
+
+  
+  const textColor = isLightColor(safeHex) ? 'rgba(26,26,46,0.95)' : 'rgba(255,255,255,0.95)';
+  colorModalHex.style.color  = textColor;
+  colorModalName.style.color = textColor;
+  colorModalRole.style.color = textColor;
+  colorModalPsych.style.color = textColor;
+
+  
+  colorModalWcag.replaceChildren();
+  const wcag = wcagRating(safeHex);
+  const badge = document.createElement('span');
