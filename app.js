@@ -878,3 +878,23 @@ function exportPNG(palette) {
     link.click();
     showToast('✓ PNG downloaded!');
   } catch {
+    showToast('⚠ PNG export failed — try a different browser');
+  }
+}
+
+
+function updateHash(paletteName) {
+  
+  const slug = paletteName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  history.replaceState(null, '', '#' + slug);
+}
+
+function loadFromHash() {
+  const hash = window.location.hash.replace('#', '').trim();
+  if (!hash) return;
+  const slug = hash.replace(/[^a-z0-9-]/g, '');
+  const match = PALETTE_LIBRARY.find(p =>
+    p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === slug
+  );
+  if (match) {
+    setTimeout(() => showPalette(match, match.keywords[0]), 400);
