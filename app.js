@@ -758,3 +758,23 @@ function buildHistoryCard(palette, vibe) {
 
 function drawHistoryGradient(canvas, palette) {
   const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  const validHexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
+  if (validHexes.length === 0) return;
+  const grad = ctx.createLinearGradient(0, 0, w, 0);
+  validHexes.forEach((hex, i) => {
+    grad.addColorStop(i / (validHexes.length - 1 || 1), hex);
+  });
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+}
+
+function clearHistory() {
+  sessionHistory.length = 0;
+  try { localStorage.removeItem('chroma_mood_history'); } catch(e) {}
+  renderHistory();
+}
+
+
+function exportCSS(palette) {
+  const lines = ['/* ' + palette.name + ' — Sun Studios */\n:root {'];
