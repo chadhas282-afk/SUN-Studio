@@ -1298,3 +1298,23 @@ function filterGallery() {
              (p.tones || []).some(t => t.toLowerCase().includes(query)) ||
              (p.keywords || []).some(k => k.toLowerCase().includes(query));
     });
+      }
+
+  renderGalleryGrid(results);
+}
+
+function renderGalleryGrid(palettes) {
+  galleryGrid.replaceChildren();
+  galleryCount.textContent = palettes.length + ' palettes';
+
+  if (palettes.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'gallery-no-results';
+    empty.textContent = 'No palettes match your search.';
+    galleryGrid.appendChild(empty);
+    return;
+  }
+
+  palettes.forEach((palette, idx) => {
+    const card = document.createElement('div');
+    card.className = 'gallery-card';
