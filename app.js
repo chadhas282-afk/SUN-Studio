@@ -1238,3 +1238,23 @@ header.appendChild(icon);
 
 function openGalleryModal() {
   galleryModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  buildGalleryFilterChips();
+  renderGalleryGrid(PALETTE_LIBRARY);
+  gallerySearch.value = '';
+  gallerySearch.focus();
+}
+
+function closeGalleryModal() {
+  galleryModal.hidden = true;
+  document.body.style.overflow = '';
+}
+
+function buildGalleryFilterChips() {
+  galleryFilterChips.replaceChildren();
+
+  const toneSet = new Set();
+  PALETTE_LIBRARY.forEach(p => (p.tones || []).forEach(t => toneSet.add(t)));
+
+  toneSet.forEach((tone) => {
+    const chip = document.createElement('button');
