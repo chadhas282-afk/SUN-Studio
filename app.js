@@ -1398,3 +1398,23 @@ function toggleAmbientMode() {
 
     showToast('◉ Ambient mode off');
   }
+  }
+
+function applyAmbientColors(palette) {
+  const hexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
+  if (hexes.length < 2) return;
+
+  const orb1 = document.querySelector('.bg-orb--1');
+  const orb2 = document.querySelector('.bg-orb--2');
+  const orb3 = document.querySelector('.bg-orb--3');
+
+  
+  const primary = hexes[1] || hexes[0];
+  const accent  = hexes[2] || hexes[1];
+  const shadow  = hexes[hexes.length - 1] || hexes[0];
+
+  if (orb1) { orb1.style.background = 'radial-gradient(circle, ' + primary + '99, ' + primary + '00)'; orb1.style.opacity = '0.9'; }
+  if (orb2) { orb2.style.background = 'radial-gradient(circle, ' + accent  + '77, ' + accent  + '00)'; orb2.style.opacity = '0.85'; }
+  if (orb3) { orb3.style.background = 'radial-gradient(circle, ' + shadow  + '66, ' + shadow  + '00)'; orb3.style.opacity = '0.8'; }
+
+  
