@@ -1318,3 +1318,23 @@ function renderGalleryGrid(palettes) {
   palettes.forEach((palette, idx) => {
     const card = document.createElement('div');
     card.className = 'gallery-card';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', 'Load palette: ' + palette.name);
+    card.style.animationDelay = (idx * 0.04) + 's';
+
+    
+    const strip2 = document.createElement('div');
+    strip2.className = 'gallery-card__strip';
+    palette.colors.forEach((color) => {
+      const safeHex = sanitizeHex(color.hex);
+      if (!safeHex) return;
+      const sw = document.createElement('div');
+      sw.className = 'gallery-card__swatch';
+      sw.style.backgroundColor = safeHex; 
+      strip2.appendChild(sw);
+    });
+    card.appendChild(strip2);
+
+    
+    const info = document.createElement('div');
