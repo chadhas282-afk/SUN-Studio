@@ -1117,3 +1117,23 @@ header.appendChild(icon);
   
   const selectB = document.createElement('select');
   selectB.className = 'palette-mixer__select';
+  selectB.setAttribute('aria-label', 'Second palette to blend');
+
+  
+  PALETTE_LIBRARY.forEach((p, idx) => {
+    const optA = document.createElement('option');
+    optA.value = String(idx);
+    optA.textContent = p.name; 
+    if (p.name === currentPalette.name) optA.selected = true;
+    selectA.appendChild(optA);
+
+    const optB = document.createElement('option');
+    optB.value = String(idx);
+    optB.textContent = p.name; 
+    
+    if (idx === 1) optB.selected = true;
+    selectB.appendChild(optB);
+  });
+
+  const operator = document.createElement('span');
+  operator.className = 'palette-mixer__operator';
