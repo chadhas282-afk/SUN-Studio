@@ -1178,3 +1178,23 @@ header.appendChild(icon);
 
   blendBtn.addEventListener('click', () => {
     const idxA = parseInt(selectA.value, 10);
+    const idxB = parseInt(selectB.value, 10);
+    if (isNaN(idxA) || isNaN(idxB)) return;
+    const pA = PALETTE_LIBRARY[idxA];
+    const pB = PALETTE_LIBRARY[idxB];
+    if (!pA || !pB) return;
+
+    
+    const maxLen = Math.max(pA.colors.length, pB.colors.length);
+    const mixed = [];
+    for (let i = 0; i < maxLen; i++) {
+      if (pA.colors[i]) mixed.push(pA.colors[i]);
+      if (pB.colors[i]) mixed.push(pB.colors[i]);
+    }
+    
+    const seen = new Set();
+    const unique = mixed.filter(c => {
+      const h = sanitizeHex(c.hex);
+      if (!h || seen.has(h)) return false;
+      seen.add(h); return true;
+    }).slice(0, 10);
