@@ -1558,3 +1558,23 @@ function exportShareCard(palette) {
     let line = '';
     let currentY = y;
     for(let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      const metrics = context.measureText(testLine);
+      const testWidth = metrics.width;
+      if (testWidth > maxWidth && n > 0) {
+        context.fillText(line, x, currentY);
+        line = words[n] + ' ';
+        currentY += lineHeight;
+      }
+      else {
+        line = testLine;
+      }
+    }
+    context.fillText(line, x, currentY);
+  }
+
+  ctx.fillStyle = 'rgba(255,255,255,0.7)';
+  ctx.font = '300 28px "Outfit", sans-serif';
+  wrapText(ctx, palette.mood_description, 100, 220, 1000, 38);
+
+  
