@@ -1198,3 +1198,23 @@ header.appendChild(icon);
       if (!h || seen.has(h)) return false;
       seen.add(h); return true;
     }).slice(0, 10);
+
+    
+    strip.replaceChildren();
+    const hexList = [];
+    unique.forEach((color) => {
+      const safeHex = sanitizeHex(color.hex);
+      if (!safeHex) return;
+      hexList.push(safeHex);
+
+      const sw = document.createElement('div');
+      sw.className = 'mixer-result__swatch';
+      sw.style.backgroundColor = safeHex; 
+      sw.setAttribute('title', color.name + ' — ' + safeHex.toUpperCase());
+
+      const lbl2 = document.createElement('span');
+      lbl2.className = 'mixer-result__swatch-label';
+      lbl2.textContent = safeHex.toUpperCase();
+      sw.appendChild(lbl2);
+
+      sw.addEventListener('click', () => {
