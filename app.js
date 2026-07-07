@@ -1258,3 +1258,23 @@ function buildGalleryFilterChips() {
 
   toneSet.forEach((tone) => {
     const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'gallery-chip' + (tone === activeGalleryFilter ? ' gallery-chip--active' : '');
+    chip.textContent = tone;
+    chip.addEventListener('click', () => {
+      
+      if (activeGalleryFilter === tone) {
+        activeGalleryFilter = 'all';
+      } else {
+        activeGalleryFilter = tone;
+      }
+      
+      galleryFilterChips.querySelectorAll('.gallery-chip').forEach((c, i) => {
+        const isActive = [...toneSet][i] === activeGalleryFilter;
+        c.classList.toggle('gallery-chip--active', isActive);
+      });
+      filterGallery();
+    });
+    galleryFilterChips.appendChild(chip);
+  });
+}
