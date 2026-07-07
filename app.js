@@ -1378,3 +1378,23 @@ function toggleAmbientMode() {
   if (ambientActive) {
     showToast('✦ Ambient mode on — background adapts to your palette');
     if (lastPalette) applyAmbientColors(lastPalette);
+    } else {
+    
+    const orb1 = document.querySelector('.bg-orb--1');
+    const orb2 = document.querySelector('.bg-orb--2');
+    const orb3 = document.querySelector('.bg-orb--3');
+    if (orb1) { orb1.style.background = ''; orb1.style.opacity = '0.6'; }
+    if (orb2) { orb2.style.background = ''; orb2.style.opacity = '0.6'; }
+    if (orb3) { orb3.style.background = ''; orb3.style.opacity = '0.6'; }
+    
+    
+    document.body.style.removeProperty('--ambient-bg');
+    document.body.style.removeProperty('--ambient-opacity');
+    document.body.style.removeProperty('--ambient-border');
+    document.body.style.removeProperty('--ambient-glow');
+
+    const card = document.querySelector('.palette-card');
+    if (card) card.classList.remove('ambient-breathing');
+
+    showToast('◉ Ambient mode off');
+  }
