@@ -58,3 +58,23 @@ const PALETTE_LIBRARY = [
     complementary: ["Typography: Inter", "Textures: Frost patterns", "Elements: Sharp edges"],
     followUp: "More white snow or blue ice?", followUpOptions: ["Snow", "Ice"]
   },
+    
+  {
+    keywords: ["royal", "elegant", "luxury", "gold", "navy", "burgundy", "king", "queen", "wealth"],
+    name: "Imperial Velvet",
+    moodDesc: "The heavy, quiet luxury of a royal court draped in velvet and gold leaf.",
+    tones: ["Rich", "Dark", "Luxurious", "Classic"],
+    colors: [
+      { hex: "#0f172a", name: "Midnight Navy", role: "Background", psychology: "Authority and extreme depth." },
+      { hex: "#d4af37", name: "Crown Gold", role: "Primary", psychology: "Wealth, power, and illumination." },
+      { hex: "#800020", name: "Burgundy Wine", role: "Secondary", psychology: "Passion, history, and status." },
+      { hex: "#1e3a8a", name: "Royal Blue", role: "Accent", psychology: "Trust and tradition." },
+      { hex: "#fde047", name: "Gold Leaf", role: "Highlight", psychology: "Attention and brilliance." },
+      { hex: "#f8fafc", name: "Marble White", role: "Neutral", psychology: "Purity and structure." },
+      { hex: "#020617", name: "Throne Shadow", role: "Shadow", psychology: "Weight and permanence." }
+    ],
+    designs: ["Luxury real estate", "High-end jewelry", "Law firm"],
+    complementary: ["Typography: Cinzel + Lora", "Textures: Velvet, polished marble", "Elements: Gold foil borders"],
+    followUp: "Focus on gold or burgundy?", followUpOptions: ["Gold", "Burgundy"]
+  },
+  
