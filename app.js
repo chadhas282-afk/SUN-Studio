@@ -1418,3 +1418,23 @@ function applyAmbientColors(palette) {
   if (orb3) { orb3.style.background = 'radial-gradient(circle, ' + shadow  + '66, ' + shadow  + '00)'; orb3.style.opacity = '0.8'; }
 
   
+  document.body.style.setProperty('--ambient-bg', 'linear-gradient(135deg, ' + hexes.join(', ') + ')'); 
+  document.body.style.setProperty('--ambient-opacity', '0.25'); 
+  document.body.style.setProperty('--ambient-border', primary + '40'); 
+  document.body.style.setProperty('--ambient-glow', primary + '33'); 
+
+  const card = document.querySelector('.palette-card');
+  if (card) card.classList.add('ambient-breathing');
+}
+
+
+function openColorStory(palette) {
+  if (!palette || !palette.colors || !palette.colors.length) return;
+  storyPalette = palette;
+  storyIndex = 0;
+  storyAutoPlay = true;
+  storyAuto.classList.add('active');
+
+  
+  storyDots.innerHTML = '';
+  palette.colors.forEach((c, idx) => {
