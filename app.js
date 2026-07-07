@@ -1137,3 +1137,44 @@ header.appendChild(icon);
 
   const operator = document.createElement('span');
   operator.className = 'palette-mixer__operator';
+  operator.className = 'palette-mixer__operator';
+  operator.setAttribute('aria-hidden', 'true');
+  operator.textContent = '⊕';
+
+  const blendBtn = document.createElement('button');
+  blendBtn.type = 'button';
+  blendBtn.className = 'palette-mixer__blend-btn';
+  blendBtn.textContent = 'Blend';
+
+  controls.appendChild(selectA);
+  controls.appendChild(operator);
+  controls.appendChild(selectB);
+  controls.appendChild(blendBtn);
+  section.appendChild(controls);
+
+  
+  const resultEl = document.createElement('div');
+  resultEl.className = 'mixer-result';
+
+  const strip = document.createElement('div');
+  strip.className = 'mixer-result__strip';
+
+  const resultLabel = document.createElement('div');
+  resultLabel.className = 'mixer-result__label';
+
+  const resultName = document.createElement('span');
+  resultName.className = 'mixer-result__name';
+
+  const copyMixBtn = document.createElement('button');
+  copyMixBtn.type = 'button';
+  copyMixBtn.className = 'gradient-card__copy';
+  copyMixBtn.textContent = 'Copy All Hex';
+
+  resultLabel.appendChild(resultName);
+  resultLabel.appendChild(copyMixBtn);
+  resultEl.appendChild(strip);
+  resultEl.appendChild(resultLabel);
+  section.appendChild(resultEl);
+
+  blendBtn.addEventListener('click', () => {
+    const idxA = parseInt(selectA.value, 10);
