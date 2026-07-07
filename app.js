@@ -1478,3 +1478,23 @@ function renderStorySlide(index) {
   });
 
   
+    storyProgress.style.transition = 'none';
+  storyProgress.style.width = '0%';
+  
+  clearTimeout(storyTimer);
+  if (storyAutoPlay) {
+    
+    void storyProgress.offsetWidth;
+    storyProgress.style.transition = 'width 3.5s linear';
+    storyProgress.style.width = '100%';
+    
+    storyTimer = setTimeout(() => {
+      nextStorySlide();
+    }, 3500);
+  }
+}
+
+function nextStorySlide() {
+  if (!storyPalette) return;
+  let next = storyIndex + 1;
+  if (next >= storyPalette.colors.length) {
