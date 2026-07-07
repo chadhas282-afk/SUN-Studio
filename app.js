@@ -1358,3 +1358,23 @@ function renderGalleryGrid(palettes) {
 
     const clickHandler = () => {
       closeGalleryModal();
+      showPalette(palette, palette.keywords[0] || palette.name);
+    };
+    card.addEventListener('click', clickHandler);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); clickHandler(); }
+    });
+
+    galleryGrid.appendChild(card);
+  });
+}
+
+
+function toggleAmbientMode() {
+  ambientActive = !ambientActive;
+  ambientBtn.classList.toggle('ambient-btn--active', ambientActive);
+  ambientBtn.setAttribute('aria-pressed', String(ambientActive));
+
+  if (ambientActive) {
+    showToast('✦ Ambient mode on — background adapts to your palette');
+    if (lastPalette) applyAmbientColors(lastPalette);
