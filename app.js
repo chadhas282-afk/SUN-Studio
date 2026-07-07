@@ -1458,3 +1458,23 @@ function closeColorStory() {
 }
 
 function renderStorySlide(index) {
+  if (!storyPalette) return;
+  storyIndex = index;
+  const color = storyPalette.colors[index];
+  if (!color) return;
+
+  const hex = sanitizeHex(color.hex);
+  if (!hex) return;
+
+  storyBg.style.background = hex;
+
+  storyHex.textContent = hex;
+  storyName.textContent = color.name;
+  storyRole.textContent = color.role;
+  storyPsych.textContent = color.psychology;
+
+  Array.from(storyDots.children).forEach((dot, idx) => {
+    dot.classList.toggle('active', idx === index);
+  });
+
+  
