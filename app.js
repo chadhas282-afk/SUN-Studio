@@ -1097,3 +1097,23 @@ function buildPaletteMixer(currentPalette) {
   const title = document.createElement('span');
   title.className = 'palette-mixer__title';
   title.textContent = 'Palette Mixer';
+header.appendChild(icon);
+  header.appendChild(title);
+  section.appendChild(header);
+
+  const subtitle = document.createElement('p');
+  subtitle.className = 'palette-mixer__subtitle';
+  subtitle.textContent = 'Blend two palettes together to create a unique hybrid combination.';
+  section.appendChild(subtitle);
+
+  const controls = document.createElement('div');
+  controls.className = 'palette-mixer__controls';
+
+  
+  const selectA = document.createElement('select');
+  selectA.className = 'palette-mixer__select';
+  selectA.setAttribute('aria-label', 'First palette to blend');
+
+  
+  const selectB = document.createElement('select');
+  selectB.className = 'palette-mixer__select';
