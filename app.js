@@ -1498,3 +1498,23 @@ function nextStorySlide() {
   if (!storyPalette) return;
   let next = storyIndex + 1;
   if (next >= storyPalette.colors.length) {
+     if (storyAutoPlay) closeColorStory();
+    else next = storyPalette.colors.length - 1;
+  }
+  if (next < storyPalette.colors.length) renderStorySlide(next);
+}
+
+function prevStorySlide() {
+  if (!storyPalette) return;
+  let prev = storyIndex - 1;
+  if (prev < 0) prev = 0;
+  renderStorySlide(prev);
+}
+
+
+function copyShareLink(palette) {
+  const slug = encodeURIComponent(palette.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'));
+  updateHash(slug);
+  const url = window.location.href;
+  copyTextToClipboard(url);
+  showToast('🔗 Link copied to clipboard!');
