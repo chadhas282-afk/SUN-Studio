@@ -1278,3 +1278,23 @@ function buildGalleryFilterChips() {
     galleryFilterChips.appendChild(chip);
   });
 }
+
+function onGallerySearch() {
+  filterGallery();
+}
+
+function filterGallery() {
+  const query = (gallerySearch.value || '').toLowerCase().trim();
+  let results = PALETTE_LIBRARY;
+
+  if (activeGalleryFilter !== 'all') {
+    results = results.filter(p => (p.tones || []).includes(activeGalleryFilter));
+  }
+
+  if (query.length > 1) {
+    results = results.filter(p => {
+      return p.name.toLowerCase().includes(query) ||
+             p.moodDesc.toLowerCase().includes(query) ||
+             (p.tones || []).some(t => t.toLowerCase().includes(query)) ||
+             (p.keywords || []).some(k => k.toLowerCase().includes(query));
+    });
