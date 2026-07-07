@@ -1598,3 +1598,23 @@ function exportShareCard(palette) {
   ctx.font = '600 18px "Space Grotesk", monospace';
   ctx.textAlign = 'center';
   hexes.forEach((hex, i) => {
+        
+    const rgb = parseInt(hex.slice(1), 16);
+    const r = (rgb >> 16) & 0xff;
+    const g = (rgb >>  8) & 0xff;
+    const b = (rgb >>  0) & 0xff;
+    const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    ctx.fillStyle = luma > 140 ? 'rgba(0,0,0,0.6)' : 'rgba(255,255,255,0.8)';
+    
+    ctx.fillText(hex.toUpperCase(), 100 + (i * swatchW) + (swatchW/2), startY + stripHeight - 20);
+  });
+
+  
+  ctx.textAlign = 'left';
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.font = '600 20px "Outfit", sans-serif';
+  ctx.fillText('✦ Sun Studios', 100, 560);
+
+  
+  try {
+    const dataUrl = canvas.toDataURL('image/png');
