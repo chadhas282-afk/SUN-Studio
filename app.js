@@ -1218,3 +1218,23 @@ header.appendChild(icon);
       sw.appendChild(lbl2);
 
       sw.addEventListener('click', () => {
+        copyTextToClipboard(safeHex);
+        showToast('✓ ' + safeHex.toUpperCase() + ' copied!');
+      });
+      strip.appendChild(sw);
+    });
+
+    resultName.textContent = pA.name + ' × ' + pB.name; 
+    copyMixBtn.onclick = () => {
+      copyTextToClipboard(hexList.join('  '));
+      showToast('✓ Blended hex codes copied!');
+    };
+    resultEl.classList.add('mixer-result--visible');
+  });
+
+  return section;
+}
+
+
+function openGalleryModal() {
+  galleryModal.hidden = false;
