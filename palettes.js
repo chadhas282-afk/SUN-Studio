@@ -38,3 +38,23 @@ const PALETTE_LIBRARY = [
     designs: ["Boho apparel brand", "Travel blog", "Ceramics store"],
     complementary: ["Typography: Playfair Display", "Textures: Sand grain, baked clay", "Elements: Soft arches"],
     followUp: "More orange heat or purple dusk?", followUpOptions: ["Orange", "Purple"]
+     },
+  
+  {
+    keywords: ["arctic", "winter", "ice", "snow", "cold", "frost", "glacier", "polar"],
+    name: "Glacial Silence",
+    moodDesc: "Vast expanses of untouched snow and the blinding blue reflection of ancient ice.",
+    tones: ["Cool", "Bright", "Sterile", "Crisp"],
+    colors: [
+      { hex: "#f0f4f8", name: "Snowfield", role: "Background", psychology: "Endless, sterile white." },
+      { hex: "#a4c2f4", name: "Glacier Blue", role: "Primary", psychology: "Cold, clear, and calm." },
+      { hex: "#cfe2f3", name: "Frost Breath", role: "Secondary", psychology: "Subtle chill." },
+      { hex: "#6fa8dc", name: "Deep Ice", role: "Accent", psychology: "Solid and freezing." },
+      { hex: "#ffffff", name: "Blinding Sun", role: "Highlight", psychology: "Pure reflection." },
+      { hex: "#d9eaee", name: "Overcast Sky", role: "Neutral", psychology: "Muted and soft." },
+      { hex: "#4a6b8c", name: "Crevasse", role: "Shadow", psychology: "The hidden depths of the ice." }
+    ],
+    designs: ["Winter sports gear", "Minimalist skincare", "Climate organization"],
+    complementary: ["Typography: Inter", "Textures: Frost patterns", "Elements: Sharp edges"],
+    followUp: "More white snow or blue ice?", followUpOptions: ["Snow", "Ice"]
+  },
