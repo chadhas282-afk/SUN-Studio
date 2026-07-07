@@ -1538,3 +1538,23 @@ function exportShareCard(palette) {
   grad.addColorStop(0, hexes[0] + '33');
   grad.addColorStop(0.5, hexes[Math.floor(hexes.length/2)] + '11');
   grad.addColorStop(1, hexes[hexes.length-1] + '44');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, 1200, 630);
+
+  
+  ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+  ctx.lineWidth = 1;
+  for(let i=0; i<1200; i+=40) { ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, 630); ctx.stroke(); }
+  for(let i=0; i<630; i+=40) { ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(1200, i); ctx.stroke(); }
+
+  
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'italic 72px "DM Serif Display", Georgia, serif';
+  ctx.fillText(palette.name, 100, 160);
+
+  
+  function wrapText(context, text, x, y, maxWidth, lineHeight) {
+    const words = text.split(' ');
+    let line = '';
+    let currentY = y;
+    for(let n = 0; n < words.length; n++) {
