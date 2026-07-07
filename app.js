@@ -1338,3 +1338,23 @@ function renderGalleryGrid(palettes) {
 
     
     const info = document.createElement('div');
+    info.className = 'gallery-card__info';
+
+    const name = document.createElement('div');
+    name.className = 'gallery-card__name';
+    name.textContent = palette.name; 
+    info.appendChild(name);
+
+    const tones = document.createElement('div');
+    tones.className = 'gallery-card__tones';
+    (palette.tones || []).slice(0, 3).forEach((tone) => {
+      const t = document.createElement('span');
+      t.className = 'gallery-card__tone';
+      t.textContent = tone; 
+      tones.appendChild(t);
+    });
+    info.appendChild(tones);
+    card.appendChild(info);
+
+    const clickHandler = () => {
+      closeGalleryModal();
