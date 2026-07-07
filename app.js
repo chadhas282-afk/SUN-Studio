@@ -1578,3 +1578,23 @@ function exportShareCard(palette) {
   wrapText(ctx, palette.mood_description, 100, 220, 1000, 38);
 
   
+  const stripWidth = 1000;
+  const stripHeight = 120;
+  const startY = 360;
+  const swatchW = stripWidth / hexes.length;
+
+  
+  ctx.save();
+  ctx.beginPath();
+  ctx.roundRect(100, startY, stripWidth, stripHeight, 20);
+  ctx.clip();
+  hexes.forEach((hex, i) => {
+    ctx.fillStyle = hex;
+    ctx.fillRect(100 + (i * swatchW), startY, Math.ceil(swatchW), stripHeight);
+  });
+  ctx.restore();
+
+  
+  ctx.font = '600 18px "Space Grotesk", monospace';
+  ctx.textAlign = 'center';
+  hexes.forEach((hex, i) => {
