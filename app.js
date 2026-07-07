@@ -1618,3 +1618,17 @@ function exportShareCard(palette) {
   
   try {
     const dataUrl = canvas.toDataURL('image/png');
+    const link = document.createElement('a');
+    link.href = dataUrl;
+    link.download = `sun-studios-${palette.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast('📸 Share Card saved!');
+  } catch (e) {
+    showToast('Error generating share card.');
+  }
+}
+
+
+init();
