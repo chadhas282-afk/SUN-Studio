@@ -1438,3 +1438,23 @@ function openColorStory(palette) {
   
   storyDots.innerHTML = '';
   palette.colors.forEach((c, idx) => {
+    const dot = document.createElement('div');
+    dot.className = 'story-dot';
+    dot.addEventListener('click', () => {
+      storyAutoPlay = false;
+      renderStorySlide(idx);
+    });
+    storyDots.appendChild(dot);
+  });
+
+  storyModal.removeAttribute('hidden');
+  renderStorySlide(0);
+}
+
+function closeColorStory() {
+  storyModal.setAttribute('hidden', '');
+  clearTimeout(storyTimer);
+  storyPalette = null;
+}
+
+function renderStorySlide(index) {
