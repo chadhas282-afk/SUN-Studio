@@ -1518,3 +1518,23 @@ function copyShareLink(palette) {
   const url = window.location.href;
   copyTextToClipboard(url);
   showToast('🔗 Link copied to clipboard!');
+  }
+
+function exportShareCard(palette) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 1200;
+  canvas.height = 630;
+  const ctx = canvas.getContext('2d');
+
+  const hexes = palette.colors.map(c => sanitizeHex(c.hex)).filter(Boolean);
+  if (!hexes.length) return;
+
+  
+  ctx.fillStyle = '#0f0f16';
+  ctx.fillRect(0, 0, 1200, 630);
+
+  
+  const grad = ctx.createLinearGradient(0, 0, 1200, 630);
+  grad.addColorStop(0, hexes[0] + '33');
+  grad.addColorStop(0.5, hexes[Math.floor(hexes.length/2)] + '11');
+  grad.addColorStop(1, hexes[hexes.length-1] + '44');
