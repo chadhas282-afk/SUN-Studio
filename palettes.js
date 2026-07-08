@@ -378,3 +378,23 @@ const PALETTE_LIBRARY = [
       { hex: "#8c5b3f", name: "Long Shadow", role: "Shadow", psychology: "The approaching evening." }
     ],
     designs: ["Photography portfolio", "Wedding site", "Skincare brand"],
+    complementary: ["Typography: Lora", "Textures: Light leaks, soft blurs", "Elements: Soft glows"],
+    followUp: "More yellow/gold or more peach/orange?", followUpOptions: ["Gold", "Peach"]
+  },
+  
+  {
+    keywords: ["romance", "love", "passion", "pink", "red", "heart", "blush", "crush", "intimate", "affection", "valentine"],
+    name: "Crimson heartbeat",
+    moodDesc: "The rush of blood, the warmth of a touch, and the electric tension of a gaze. This palette pulses with the intense, vulnerable energy of falling in love.",
+    tones: ["Warm", "Passionate", "Soft", "Vibrant"],
+    colors: [
+      { hex: "#2B0007", name: "Deep Longing",      role: "Background", psychology: "Grounds the bright passion with a heavy, intense depth." },
+      { hex: "#8A0521", name: "Venous Red",        role: "Primary",    psychology: "The color of adrenaline and heartbeat; signals bold, undeniable affection." },
+      { hex: "#D62849", name: "First Kiss",        role: "Secondary",  psychology: "Vibrant and alive; represents the sudden spark of romantic tension." },
+      { hex: "#FF5E7E", name: "Fever Pink",        role: "Accent",     psychology: "Flirtatious, warm, and highly emotional." },
+      { hex: "#FF99B1", name: "Soft Blush",        role: "Highlight",  psychology: "The vulnerable, tender side of love; soft, gentle, and intimate." },
+      { hex: "#FFE6EA", name: "Silk Sheets",       role: "Neutral",    psychology: "A comforting, clean canvas for the emotional intensity of the reds." },
+      { hex: "#4A0B1A", name: "Shadowed Rose",     role: "Shadow",     psychology: "The secrecy and privacy of an intimate romantic moment." }
+    ],
+    designs: [
+      "Wedding or event photography portfolio",
