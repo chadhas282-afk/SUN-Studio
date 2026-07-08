@@ -78,3 +78,23 @@ const PALETTE_LIBRARY = [
     followUp: "Focus on gold or burgundy?", followUpOptions: ["Gold", "Burgundy"]
   },
   
+  {
+    keywords: ["retro", "80s", "arcade", "vintage", "pixel", "outrun", "vaporwave", "nostalgia"],
+    name: "Arcade Glow",
+    moodDesc: "The sticky carpets and glowing CRT screens of a 1980s video game arcade.",
+    tones: ["Vibrant", "Dark", "Nostalgic"],
+    colors: [
+      { hex: "#1a0b2e", name: "Arcade Carpet", role: "Background", psychology: "Nostalgic dark foundation." },
+      { hex: "#ff0055", name: "Insert Coin Red", role: "Primary", psychology: "Urgency and action." },
+      { hex: "#fadb0f", name: "Pac Yellow", role: "Secondary", psychology: "Fun, high score energy." },
+      { hex: "#00d2ff", name: "Vector Blue", role: "Accent", psychology: "Technological optimism." },
+      { hex: "#ff77ff", name: "Laser Pink", role: "Highlight", psychology: "Pure 80s aesthetic." },
+      { hex: "#4b2e83", name: "Cabinet Purple", role: "Neutral", psychology: "Muted retro vibes." },
+      { hex: "#0d041a", name: "Screen Off", role: "Shadow", psychology: "The dark corner of the room." }
+    ],
+    designs: ["Indie game site", "Retro apparel", "Event poster"],
+    complementary: ["Typography: Press Start 2P", "Textures: CRT scanlines, grid patterns", "Elements: Blocky borders"],
+    followUp: "More pinks or more yellows?", followUpOptions: ["Pink", "Yellow"]
+  },
+  
+  {
