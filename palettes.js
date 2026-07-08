@@ -238,3 +238,23 @@ const PALETTE_LIBRARY = [
     colors: [
       { hex: "#faf9f6", name: "Rice Paper", role: "Background", psychology: "Ultimate simplicity and peace." },
       { hex: "#8c857d", name: "Warm Stone", role: "Primary", psychology: "Grounded, natural strength." },
+      { hex: "#b5b0a1", name: "Dried Reed", role: "Secondary", psychology: "Organic, muted life." },
+      { hex: "#d6d2c4", name: "Soft Clay", role: "Accent", psychology: "Tactile warmth." },
+      { hex: "#ffffff", name: "Pure Light", role: "Highlight", psychology: "Clarity and emptiness." },
+      { hex: "#e8e6df", name: "Linen", role: "Neutral", psychology: "Soft texture." },
+      { hex: "#4a4742", name: "Cast Iron", role: "Shadow", psychology: "Heavy, anchoring contrast." }
+    ],
+    designs: ["Architecture portfolio", "High-end ceramics", "Meditation app"],
+    complementary: ["Typography: Inter (Light weight)", "Textures: Linen, unglazed pottery", "Elements: Huge whitespace"],
+    followUp: "Warmer or cooler neutrals?", followUpOptions: ["Warmer", "Cooler"]
+  },
+  
+  {
+    keywords: ["sunset", "la", "vaporwave", "orange", "magenta", "violet", "summer", "evening"],
+    name: "Malibu Dusk",
+    moodDesc: "Cruising down the coast as the sky explodes into neon pinks and oranges.",
+    tones: ["Vibrant", "Warm", "Saturated", "Nostalgic"],
+    colors: [
+      { hex: "#2b1055", name: "Deep Violet", role: "Background", psychology: "The encroaching night sky." },
+      { hex: "#ff2a5f", name: "Hot Magenta", role: "Primary", psychology: "Vibrant, nostalgic energy." },
+      { hex: "#ff7b54", name: "Sunset Orange", role: "Secondary", psychology: "The fading warmth of the sun." },
