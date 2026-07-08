@@ -358,3 +358,23 @@ const PALETTE_LIBRARY = [
       { hex: "#cbd5e1", name: "Mist", role: "Neutral", psychology: "The haze between peaks." },
       { hex: "#0f172a", name: "Gorge Shadow", role: "Shadow", psychology: "Deep, intimidating drops." }
     ],
+    designs: ["Outdoor gear brand", "Hiking app", "Travel documentary"],
+    complementary: ["Typography: Inter", "Textures: Rock grain", "Elements: Geometric triangles"],
+    followUp: "More blue or more slate?", followUpOptions: ["Blue", "Slate"]
+  },
+  
+  {
+    keywords: ["golden hour", "warm", "amber", "peach", "sun", "glow", "evening", "photography"],
+    name: "Last Light",
+    moodDesc: "That magical, fleeting window of time when the world is bathed in soft, golden honey.",
+    tones: ["Warm", "Soft", "Glowing", "Nostalgic"],
+    colors: [
+      { hex: "#fff8f0", name: "Soft Haze", role: "Background", psychology: "Gentle, diffused light." },
+      { hex: "#f5a623", name: "Sun Halo", role: "Primary", psychology: "Warmth, joy, and illumination." },
+      { hex: "#f8e71c", name: "Liquid Gold", role: "Secondary", psychology: "Precious, fleeting moments." },
+      { hex: "#e36e39", name: "Peach Glow", role: "Accent", psychology: "Soft romance and end of day." },
+      { hex: "#ffffff", name: "Sun Flare", role: "Highlight", psychology: "Blinding, beautiful light." },
+      { hex: "#fde3c8", name: "Dust Motes", role: "Neutral", psychology: "Textural warmth." },
+      { hex: "#8c5b3f", name: "Long Shadow", role: "Shadow", psychology: "The approaching evening." }
+    ],
+    designs: ["Photography portfolio", "Wedding site", "Skincare brand"],
