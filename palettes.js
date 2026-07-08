@@ -658,3 +658,43 @@ const PALETTE_LIBRARY = [
       { hex: "#c4916a", name: "Fox-Tone Tan",    role: "Accent",     psychology: "The foxing on old paper; beautiful imperfection, marks of a life well-read." }
     ],
     designs: [
+      "Book subscription service, literary magazine, or reading app with editorial warmth",
+      "Academic publishing house branding with timeless intellectual authority",
+      "Personal blog or newsletter for thoughtful long-form writing and essays"
+    ],
+    complementary: [
+      "Typography: Libre Baskerville (headings) + Georgia (body) — deeply legible serif pair",
+      "Textures: Aged paper grain, leather embossing, linen endpapers, marbled paper",
+      "Elements: Decorative chapter dividers, footnote-style annotations, vintage map borders"
+    ],
+    followUp: "Should this feel more **academic and classical** (cooler tones, more formal) or more **romantic and personal** (warmer, cozier, handwritten touches)?",
+    followUpOptions: ["More academic — cooler, formal", "More romantic — cozy, handwritten"]
+  },
+
+  
+  {
+    keywords: ["desert", "dusk", "sunset", "sand", "orange", "vast", "silence", "heat", "dry", "arid", "cactus", "canyon", "golden hour", "barren", "horizon"],
+    name: "Ochre Silence",
+    moodDesc: "The desert at golden hour — the sun turning everything to fire and shadow, absolute silence broken only by wind, the profound peace of a landscape that needs nothing from you.",
+    tones: ["Warm", "Dark", "Saturated", "Expansive"],
+    colors: [
+      { hex: "#1a0c05", name: "Canyon Midnight",     role: "Background", psychology: "The absolute dark of desert canyons at night; ancient, contained, vast." },
+      { hex: "#c45c1a", name: "Burning Mesa",        role: "Primary",    psychology: "The orange fire of sun-baked clay; raw earth at its most elemental and bold." },
+      { hex: "#e88a3a", name: "Ember Horizon",       role: "Accent",     psychology: "A sun caught between day and night — transformation, endings, radiant beauty." },
+      { hex: "#f2c07a", name: "Sand Pale",           role: "Highlight",  psychology: "The glow of dunes in late light — serene vastness and timeless patience." },
+      { hex: "#8b3a1a", name: "Terracotta Shadow",   role: "Shadow",     psychology: "Long shadows of rock formations; depth that makes light more precious." },
+      { hex: "#6b4c2a", name: "Dust Storm",          role: "Neutral",    psychology: "Fine particles of a thousand years; the in-between of earth and air." },
+      { hex: "#3d1f0a", name: "Arroyo Dark",         role: "Surface",    psychology: "The cool dark of a dry riverbed — hidden pathways, underground persistence." }
+    ],
+    designs: [
+      "Artisanal ceramics or handmade goods brand with earthy, sun-baked materiality",
+      "Travel magazine editorial for American Southwest or Saharan destinations",
+      "Architecture or interior design studio with warm, adobe-inspired aesthetic"
+    ],
+    complementary: [
+      "Typography: Freight Display Pro (serif) + Acumin Pro (clean sans-serif)",
+      "Textures: Cracked clay, rough sandstone, woven basket patterns, sun-bleached linen",
+      "Elements: Stretched horizon compositions, long shadow graphics, rock strata motifs"
+    ],
+    followUp: "Should the palette feel more **hot and intense** (deeper reds, burning midtones) or more **pale and ethereal** (bleached golds, cool purples at the edges)?",
+    followUpOptions: ["Hotter — deeper reds, burning", "Paler — bleached golds, ethereal"]
