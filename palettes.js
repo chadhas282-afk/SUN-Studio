@@ -538,3 +538,23 @@ const PALETTE_LIBRARY = [
       { hex: "#a8c4dc", name: "Pale Horizon",    role: "Secondary",  psychology: "The soft blue of a winter sky — detached, elevated, quietly hopeful." },
       { hex: "#7ba7c4", name: "Frost Current",   role: "Accent",     psychology: "Crisp and precise; intellectual clarity and cool-headed confidence." },
       { hex: "#e8eef7", name: "Snow Whisper",    role: "Surface",    psychology: "Barely-there warmth in the whiteness — the quiet comfort of being indoors." },
+      { hex: "#c5d8e8", name: "Frozen Lake",     role: "Neutral",    psychology: "Something solid beneath the surface; trust, stillness, depth beneath serenity." },
+      { hex: "#b4cfe5", name: "Dusk Pearl",      role: "Shadow",     psychology: "The faint shadow on snow at dusk — lavender-tinged, magical, ephemeral." }
+    ],
+    designs: [
+      "Minimalist meditation or mindfulness app with airy, breathable layouts",
+      "Luxury skincare or wellness brand with clean, clinical elegance",
+      "Editorial magazine spread for winter fashion or poetry anthology"
+    ],
+    complementary: [
+      "Typography: Cormorant Garamond (light italic) + Inter (300 weight UI text)",
+      "Textures: Vellum paper, snowflake crystalline micro-patterns, frosted glass",
+      "Elements: Generous whitespace, hairline dividers, subtle silver foil effects"
+    ],
+    followUp: "Should it feel more **stark and minimalist** (almost monochrome) or add **warmth and softness** (hints of cream, pale lavender)?",
+    followUpOptions: ["Starker — near-monochrome", "Softer — add pale lavender warmth"]
+  },
+
+  
+  {
+    keywords: ["neon", "cyberpunk", "city", "3am", "electric", "future", "tech", "night", "rain", "urban", "dystopia", "futuristic", "sci-fi", "cyber", "solitude", "lonely"],
