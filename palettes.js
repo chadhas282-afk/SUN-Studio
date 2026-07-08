@@ -318,3 +318,23 @@ const PALETTE_LIBRARY = [
       { hex: "#a0a0a0", name: "Brushed Steel", role: "Accent", psychology: "Industrial strength." },
       { hex: "#e0e0e0", name: "Zinc", role: "Highlight", psychology: "Harsh, unpolished light." },
       { hex: "#3d3d3d", name: "Asphalt", role: "Neutral", psychology: "The street level." },
+      { hex: "#0a0a0a", name: "Drain Shadow", role: "Shadow", psychology: "Deep urban darkness." }
+    ],
+    designs: ["Streetwear brand", "Architecture firm", "Music venue"],
+    complementary: ["Typography: Anton", "Textures: Concrete, grunge brushes", "Elements: Thick borders"],
+    followUp: "More rust or more concrete?", followUpOptions: ["Rust", "Concrete"]
+  },
+  
+  {
+    keywords: ["candy", "pop", "bubblegum", "sweet", "fun", "kids", "colorful", "bright"],
+    name: "Sugar Rush",
+    moodDesc: "A burst of pure, unadulterated joy, sugar, and hyper-colored fun.",
+    tones: ["Vibrant", "Bright", "Playful", "Loud"],
+    colors: [
+      { hex: "#ffffff", name: "Pure Sugar", role: "Background", psychology: "A clean slate for bright colors." },
+      { hex: "#ff1493", name: "Bubblegum", role: "Primary", psychology: "Loud, unabashed fun." },
+      { hex: "#00bfff", name: "Blue Raspberry", role: "Secondary", psychology: "Electric and sweet." },
+      { hex: "#ffd700", name: "Lemon Drop", role: "Accent", psychology: "High energy and happiness." },
+      { hex: "#ffb6c1", name: "Cotton Candy", role: "Highlight", psychology: "Soft sweetness." },
+      { hex: "#e6e6fa", name: "Grape Taffy", role: "Neutral", psychology: "Playful backing." },
+      { hex: "#ff4500", name: "Cherry Pop", role: "Shadow", psychology: "Intense flavor." }
