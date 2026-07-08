@@ -158,3 +158,23 @@ const PALETTE_LIBRARY = [
     keywords: ["space", "galaxy", "universe", "stars", "nebula", "cosmos", "astronomy", "purple"],
     name: "Deep Cosmos",
     moodDesc: "The infinite, terrifying, and beautiful expanse of the universe.",
+    tones: ["Dark", "Mysterious", "Vibrant", "Deep"],
+    colors: [
+      { hex: "#030014", name: "Void Black", role: "Background", psychology: "The infinite emptiness of space." },
+      { hex: "#4a00e0", name: "Nebula Purple", role: "Primary", psychology: "Mystery, magic, and the unknown." },
+      { hex: "#8e2de2", name: "Cosmic Violet", role: "Secondary", psychology: "Vibrant stellar energy." },
+      { hex: "#00c9ff", name: "Quasar Blue", role: "Accent", psychology: "Intense, radiating heat and light." },
+      { hex: "#ffffff", name: "Starlight", role: "Highlight", psychology: "Piercing clarity in the dark." },
+      { hex: "#2c3e50", name: "Dark Matter", role: "Neutral", psychology: "Invisible weight." },
+      { hex: "#010008", name: "Event Horizon", role: "Shadow", psychology: "Absolute darkness." }
+    ],
+    designs: ["Astrology app", "Sci-fi portfolio", "Event landing page"],
+    complementary: ["Typography: Space Grotesk", "Textures: Starfields, glowing dust", "Elements: Glowing orbs"],
+    followUp: "More purple or more blue?", followUpOptions: ["Purple", "Blue"]
+  },
+  
+  {
+    keywords: ["coffee", "cafe", "mocha", "espresso", "latte", "brown", "cream", "warm", "morning"],
+    name: "Morning Roast",
+    moodDesc: "The rich aroma of espresso and the quiet hum of a morning cafe.",
+    tones: ["Warm", "Earthy", "Comforting", "Rich"],
