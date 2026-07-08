@@ -398,3 +398,23 @@ const PALETTE_LIBRARY = [
     ],
     designs: [
       "Wedding or event photography portfolio",
+      "Boutique lingerie or luxury cosmetic brand identity",
+      "A dating app interface focusing on deep connections"
+    ],
+    complementary: [
+      "Typography: Playfair Display + Lato (clean, elegant contrast)",
+      "Textures: Silk drapery, crushed velvet, rose petal softness",
+      "Elements: Soft gradients, rounded corners, subtle bloom effects"
+    ],
+    followUp: "Do you want this to feel more **innocent and sweet** (more light pinks) or more **intense and passionate** (more dark crimson)?",
+    followUpOptions: ["Innocent and sweet", "Intense and passionate"]
+  },
+
+  
+  {
+    keywords: ["hate", "anger", "fury", "rage", "blood", "fire", "intense", "aggression", "rebel", "dark red", "villain"],
+    name: "Boiling Point",
+    moodDesc: "The sharp, uncompromising edge of rage and rebellion. A hostile, cinematic atmosphere built on the tension between absolute darkness and searing heat.",
+    tones: ["Aggressive", "Harsh", "Dark", "High Contrast"],
+    colors: [
+      { hex: "#0A0000", name: "Void Black",        role: "Background", psychology: "Total absence of light; creates an oppressive, heavy, and formidable atmosphere." },
