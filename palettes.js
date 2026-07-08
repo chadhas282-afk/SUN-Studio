@@ -598,3 +598,23 @@ const PALETTE_LIBRARY = [
       { hex: "#9ab8a0", name: "Sage Mist",        role: "Neutral",      psychology: "Calm amid abundance; the refreshing counterpoint to lush, saturated vitality." },
       { hex: "#c8856f", name: "Terra Rosa",       role: "Warm Neutral",  psychology: "Grounding warmth; old clay pots and sun-baked terracotta — timeless and honest." },
       { hex: "#8b4f6e", name: "Lavender Dusk",    role: "Complement",   psychology: "The sweet mystery of evening gardens; adds sophistication to unguarded joy." }
+      ],
+    designs: [
+      "Farm-to-table restaurant branding or organic food marketplace with earthy vitality",
+      "Botanical illustration app or plant-care guide with warm, handcrafted feel",
+      "Summer lifestyle brand or artisanal goods shop with joyful, abundant energy"
+    ],
+    complementary: [
+      "Typography: Playfair Display (headings) + Lora (body text) — warm serif warmth",
+      "Textures: Linen weave, botanical watercolor washes, pressed flower illustrations",
+      "Elements: Hand-drawn botanical borders, organic shapes, dappled light overlays"
+    ],
+    followUp: "Should this feel more **wildflower and untamed** (brighter, more chaotic) or more **curated English garden** (more muted, ordered, classic)?",
+    followUpOptions: ["Wilder — brighter and untamed", "Curated — muted and ordered"]
+  },
+
+  
+  {
+    keywords: ["forest", "moss", "wood", "trees", "nature", "dark green", "mysterious", "ancient", "earth", "dusk", "woodland", "fairy", "fern", "mushroom"],
+    name: "Moss Whisper",
+    moodDesc: "An ancient forest at the edge of dusk — the hush of things growing slowly, light filtering green through a thousand leaves, the sense that the trees remember everything.",
