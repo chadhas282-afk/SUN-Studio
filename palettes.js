@@ -458,3 +458,23 @@ const PALETTE_LIBRARY = [
       "Sustainable fashion brand e-commerce site",
       "Organic skincare or wellness app",
       "Environmental non-profit campaign page"
+      ],
+    complementary: [
+      "Typography: Lora + Inter (organic serif paired with clean sans)",
+      "Textures: Linen weave, watercolor paper, subtle leaf shadows",
+      "Elements: Soft organic shapes, plenty of negative space, botanical illustrations"
+    ],
+    followUp: "Do you prefer a **misty, muted pine forest** or a **vibrant, sunlit jungle**?",
+    followUpOptions: ["Misty pine forest", "Vibrant sunlit jungle"]
+  },
+
+  
+  {
+    keywords: ["jazz", "velvet", "amber", "cigarette", "smoke", "club", "lounge", "speakeasy", "bourbon", "whiskey", "warm light", "bar"],
+    name: "Velvet Twilight",
+    moodDesc: "The last hour before midnight in a dimly lit jazz bar — amber light catching smoke, the smell of old wood and good whiskey, conversations that feel like confessions.",
+    tones: ["Warm", "Dark", "Saturated", "Nostalgic"],
+    colors: [
+      { hex: "#1a0f0a", name: "Midnight Mahogany", role: "Background", psychology: "Grounds the palette in rich depth and intimacy; signals exclusivity and warmth." },
+      { hex: "#8b3a2f", name: "Ember Bloom",       role: "Primary",    psychology: "Evokes burning coals and slow desire — passionate but controlled." },
+      { hex: "#d4893a", name: "Burnished Amber",   role: "Accent",     psychology: "The warmth of candlelight; triggers nostalgia, comfort, and golden-era longing." },
