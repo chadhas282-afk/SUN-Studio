@@ -218,4 +218,23 @@ const PALETTE_LIBRARY = [
     tones: ["Dark", "Elegant", "Moody", "Sharp"],
     colors: [
       { hex: "#111111", name: "Obsidian", role: "Background", psychology: "Absolute darkness and mystery." },
-      
+      { hex: "#720e1e", name: "Dried Blood", role: "Primary", psychology: "Danger, passion, and the macabre." },
+      { hex: "#4a4a4a", name: "Tarnished Silver", role: "Secondary", psychology: "Age, elegance, and coldness." },
+      { hex: "#9b111e", name: "Ruby Amulet", role: "Accent", psychology: "A striking, wealthy focal point." },
+      { hex: "#e0e0e0", name: "Moonlight", role: "Highlight", psychology: "Pale, ghostly illumination." },
+      { hex: "#2b2b2b", name: "Stone Wall", role: "Neutral", psychology: "Cold, unyielding structure." },
+      { hex: "#000000", name: "Pitch Black", role: "Shadow", psychology: "The void." }
+    ],
+    designs: ["Horror book cover", "Alternative fashion", "Escape room site"],
+    complementary: ["Typography: Cinzel", "Textures: Lace, stone, fog", "Elements: Sharp borders, ornate frames"],
+    followUp: "More red or more silver?", followUpOptions: ["Red", "Silver"]
+  },
+  
+  {
+    keywords: ["minimalist", "zen", "neutral", "beige", "clean", "simple", "peaceful", "calm", "wabi-sabi"],
+    name: "Wabi-Sabi",
+    moodDesc: "The beauty of imperfection, natural materials, and absolute simplicity.",
+    tones: ["Muted", "Earthy", "Calm", "Light"],
+    colors: [
+      { hex: "#faf9f6", name: "Rice Paper", role: "Background", psychology: "Ultimate simplicity and peace." },
+      { hex: "#8c857d", name: "Warm Stone", role: "Primary", psychology: "Grounded, natural strength." },
