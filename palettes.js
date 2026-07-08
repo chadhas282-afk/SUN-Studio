@@ -198,3 +198,24 @@ const PALETTE_LIBRARY = [
     moodDesc: "Crystal clear waters, warm sand, and the vibrant life of a coral reef.",
     tones: ["Vibrant", "Warm", "Refreshing", "Bright"],
     colors: [
+      { hex: "#f0f8ff", name: "Sea Foam", role: "Background", psychology: "Airy, fresh, and clean." },
+      { hex: "#00ced1", name: "Turquoise Water", role: "Primary", psychology: "Refreshing, clear, and calming." },
+      { hex: "#ff7f50", name: "Living Coral", role: "Secondary", psychology: "Vibrant, energetic life." },
+      { hex: "#ffd700", name: "Sunlight", role: "Accent", psychology: "Joy, warmth, and vacation." },
+      { hex: "#ffffff", name: "White Sand", role: "Highlight", psychology: "Purity and heat." },
+      { hex: "#f5deb3", name: "Wet Sand", role: "Neutral", psychology: "Earthy grounding." },
+      { hex: "#005f69", name: "Deep Reef", role: "Shadow", psychology: "The cool depths of the ocean." }
+    ],
+    designs: ["Travel agency", "Swimwear brand", "Resort website"],
+    complementary: ["Typography: Montserrat", "Textures: Water ripples, sand", "Elements: Wavy dividers"],
+    followUp: "More blue or more coral?", followUpOptions: ["Blue", "Coral"]
+  },
+  
+  {
+    keywords: ["gothic", "mystery", "dark", "vampire", "crimson", "silver", "victorian", "spooky", "halloween"],
+    name: "Victorian Shadow",
+    moodDesc: "A candlelit manor, secrets in the dark, and the sharp elegance of gothic architecture.",
+    tones: ["Dark", "Elegant", "Moody", "Sharp"],
+    colors: [
+      { hex: "#111111", name: "Obsidian", role: "Background", psychology: "Absolute darkness and mystery." },
+      
