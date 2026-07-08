@@ -618,3 +618,23 @@ const PALETTE_LIBRARY = [
     keywords: ["forest", "moss", "wood", "trees", "nature", "dark green", "mysterious", "ancient", "earth", "dusk", "woodland", "fairy", "fern", "mushroom"],
     name: "Moss Whisper",
     moodDesc: "An ancient forest at the edge of dusk — the hush of things growing slowly, light filtering green through a thousand leaves, the sense that the trees remember everything.",
+    tones: ["Cool-Warm", "Dark", "Muted", "Earthy"],
+    colors: [
+      { hex: "#0f1c0d", name: "Old Growth Dark",    role: "Background", psychology: "The primal dark of dense canopy; protective, ancient, teeming with hidden life." },
+      { hex: "#2a5c2a", name: "Verdant Depth",      role: "Primary",    psychology: "Living, breathing vitality; the color of endurance and quiet, persistent growth." },
+      { hex: "#5c8c3e", name: "Canopy Light",       role: "Secondary",  psychology: "Filtered sunlight through leaves — hope that filters through even dense cover." },
+      { hex: "#8fae60", name: "New Fern",           role: "Accent",     psychology: "The bright urgency of fresh growth; renewal after long dormancy." },
+      { hex: "#3d2e1a", name: "Forest Floor",       role: "Warm Shadow",psychology: "Decomposing leaves and rich soil — the dark generativity that feeds new life." },
+      { hex: "#7a9e7e", name: "Lichen Grey-Green",  role: "Neutral",    psychology: "Patient coexistence; the slow collaboration of fungi and rock over centuries." },
+      { hex: "#c4b98e", name: "Birch Pale",         role: "Highlight",  psychology: "The pale bark of birch trees — graceful contrast in darkness, delicate resilience." }
+    ],
+    designs: [
+      "Eco-conscious brand or environmental nonprofit with grounded, earthy authority",
+      "Fantasy RPG game UI or nature-themed journaling app with deep atmospheric immersion",
+      "Sustainable fashion label or artisanal outdoor goods with ancient-craft aesthetic"
+    ],
+    complementary: [
+      "Typography: EB Garamond (italic headings) + Source Serif Pro (body)",
+      "Textures: Bark rubbing, watercolor moss, scratched wood grain, aged paper",
+      "Elements: Intricate leaf vein patterns, circular tree-ring motifs, spore cloud particles"
+    ],
