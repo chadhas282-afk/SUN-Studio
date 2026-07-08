@@ -638,3 +638,23 @@ const PALETTE_LIBRARY = [
       "Textures: Bark rubbing, watercolor moss, scratched wood grain, aged paper",
       "Elements: Intricate leaf vein patterns, circular tree-ring motifs, spore cloud particles"
     ],
+    followUp: "Should it lean more **dark and mystical** (deeper blacks, bioluminescent accents) or more **sunlit and peaceful** (warmer greens, golden highlights)?",
+    followUpOptions: ["Darker — mystical, bioluminescent", "Sunnier — warmer greens, gold"]
+  },
+
+  
+  {
+    keywords: ["library", "cozy", "books", "reading", "rain", "coffee", "warm", "safe", "thoughtful", "intellectual", "quiet", "indoors"],
+    name: "Amber Stacks",
+    moodDesc: "A rainy afternoon in a library that smells of old books — the particular contentment of being surrounded by ideas, with a warm drink, going nowhere, needing nothing.",
+    tones: ["Warm", "Dark", "Muted", "Safe"],
+    colors: [
+      { hex: "#1e1610", name: "Binding Dark",    role: "Background", psychology: "The deep brown of wooden shelves and tooled leather; shelter and accumulated wisdom." },
+      { hex: "#8b5e3c", name: "Walnut Warm",     role: "Primary",    psychology: "Solid, learned, trustworthy — the color of old desks and used encyclopedias." },
+      { hex: "#d4a574", name: "Tawny Page",      role: "Secondary",  psychology: "The golden aging of beloved books; time made beautiful through use and love." },
+      { hex: "#e8c99a", name: "Reading Light",   role: "Highlight",  psychology: "The warm glow of a lamp on an autumn afternoon — focused, inviting, safe." },
+      { hex: "#4a3728", name: "Dark Oak",        role: "Surface",    psychology: "Structural depth; the grounding presence of old furniture and settled convictions." },
+      { hex: "#9e8268", name: "Dusty Spine",     role: "Neutral",    psychology: "A well-loved middle tone — neither new nor ancient, perfectly worn-in." },
+      { hex: "#c4916a", name: "Fox-Tone Tan",    role: "Accent",     psychology: "The foxing on old paper; beautiful imperfection, marks of a life well-read." }
+    ],
+    designs: [
