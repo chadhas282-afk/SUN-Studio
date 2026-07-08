@@ -118,3 +118,23 @@ const PALETTE_LIBRARY = [
   
   {
     keywords: ["corporate", "tech", "business", "saas", "professional", "clean", "trust", "blue"],
+    name: "Enterprise Blue",
+    moodDesc: "Clean, efficient, and trustworthy. The visual language of modern software and global business.",
+    tones: ["Cool", "Professional", "Clean", "Minimal"],
+    colors: [
+      { hex: "#f8f9fa", name: "Cloud White", role: "Background", psychology: "Cleanliness and space." },
+      { hex: "#0056b3", name: "Trust Blue", role: "Primary", psychology: "Reliability, security, and professionalism." },
+      { hex: "#007bff", name: "Action Blue", role: "Secondary", psychology: "Clarity and communication." },
+      { hex: "#17a2b8", name: "Innovation Cyan", role: "Accent", psychology: "Modernity and technology." },
+      { hex: "#ffffff", name: "Pure White", role: "Highlight", psychology: "Absolute clarity." },
+      { hex: "#6c757d", name: "Slate Gray", role: "Neutral", psychology: "Balance and neutrality." },
+      { hex: "#343a40", name: "Charcoal Text", role: "Shadow", psychology: "Legibility and structure." }
+    ],
+    designs: ["B2B SaaS dashboard", "Corporate website", "Banking app"],
+    complementary: ["Typography: Inter or Roboto", "Textures: Smooth gradients", "Elements: Sharp cards, soft shadows"],
+    followUp: "Dark mode or light mode preference?", followUpOptions: ["Light", "Dark"]
+  },
+  
+  {
+    keywords: ["pastel", "dream", "soft", "baby", "cute", "kawaii", "lavender", "mint", "cotton candy"],
+    name: "Cotton Candy Haze",
