@@ -298,3 +298,23 @@ const PALETTE_LIBRARY = [
       { hex: "#5a3a29", name: "Old Leather", role: "Secondary", psychology: "History and tactile comfort." },
       { hex: "#cda434", name: "Brass Lamp", role: "Accent", psychology: "Illumination and classic elegance." },
       { hex: "#e8dcc4", name: "Parchment", role: "Highlight", psychology: "The pages of an old book." },
+      { hex: "#8b7e66", name: "Dusty Spine", role: "Neutral", psychology: "Aged paper and bindings." },
+      { hex: "#11120f", name: "Ink Black", role: "Shadow", psychology: "The written word." }
+    ],
+    designs: ["University website", "Bookstore", "Historical blog"],
+    complementary: ["Typography: EB Garamond", "Textures: Paper, leather", "Elements: Serif drop caps"],
+    followUp: "More green or more brown?", followUpOptions: ["Green", "Brown"]
+  },
+  
+  {
+    keywords: ["industrial", "grunge", "concrete", "rust", "steel", "urban", "decay", "gray"],
+    name: "Urban Decay",
+    moodDesc: "The raw, unfinished texture of concrete, rust, and exposed steel in a city.",
+    tones: ["Cool", "Harsh", "Muted", "Gritty"],
+    colors: [
+      { hex: "#1c1c1c", name: "Soot", role: "Background", psychology: "Dirt and urban grime." },
+      { hex: "#595959", name: "Concrete", role: "Primary", psychology: "Cold, unyielding structure." },
+      { hex: "#b7410e", name: "Rust", role: "Secondary", psychology: "Decay and the passage of time." },
+      { hex: "#a0a0a0", name: "Brushed Steel", role: "Accent", psychology: "Industrial strength." },
+      { hex: "#e0e0e0", name: "Zinc", role: "Highlight", psychology: "Harsh, unpolished light." },
+      { hex: "#3d3d3d", name: "Asphalt", role: "Neutral", psychology: "The street level." },
