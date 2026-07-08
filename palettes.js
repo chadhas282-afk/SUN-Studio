@@ -578,3 +578,23 @@ const PALETTE_LIBRARY = [
     complementary: [
       "Typography: Rajdhani Bold + IBM Plex Mono (for data/code elements)",
       "Textures: Scanline CRT patterns, holographic foil, rain-on-glass blur",
+      "Elements: Glitch animations, neon glow box-shadows, hexagonal grid overlays"
+    ],
+    followUp: "Should this lean more **cold and corporate dystopia** (more blues, chrome) or more **warm and chaotic underground** (more purples and hot pinks)?",
+    followUpOptions: ["Colder — corporate dystopia blues", "Warmer — chaotic underground pinks"]
+  },
+
+  
+  {
+    keywords: ["garden", "bloom", "summer", "flower", "nature", "green", "botanical", "sun", "warm", "cottage", "floral", "lush", "abundant"],
+    name: "Sunlit Abundance",
+    moodDesc: "A cottage garden in full summer — every color competing joyfully, bees in lavender, the smell of warm earth and ripe tomatoes, the sense that life is genuinely good.",
+    tones: ["Warm", "Saturated", "Joyful", "Earthy"],
+    colors: [
+      { hex: "#faf4e8", name: "Afternoon Linen",  role: "Background",   psychology: "Warm, unhurried, inviting — the light through gauze curtains on a summer afternoon." },
+      { hex: "#4a7c59", name: "Garden Deep",      role: "Primary",      psychology: "Rooted, vital, generative; the satisfaction of growing things and tended soil." },
+      { hex: "#e8603c", name: "Poppy Fire",       role: "Accent",       psychology: "Exuberant joy and bold presence; the confidence to be vivid and unashamed." },
+      { hex: "#f2c94c", name: "Buttercup Gold",   role: "Secondary",    psychology: "Radiant optimism; the color of afternoon sunlight and simple happiness." },
+      { hex: "#9ab8a0", name: "Sage Mist",        role: "Neutral",      psychology: "Calm amid abundance; the refreshing counterpoint to lush, saturated vitality." },
+      { hex: "#c8856f", name: "Terra Rosa",       role: "Warm Neutral",  psychology: "Grounding warmth; old clay pots and sun-baked terracotta — timeless and honest." },
+      { hex: "#8b4f6e", name: "Lavender Dusk",    role: "Complement",   psychology: "The sweet mystery of evening gardens; adds sophistication to unguarded joy." }
