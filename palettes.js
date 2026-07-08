@@ -558,3 +558,23 @@ const PALETTE_LIBRARY = [
   
   {
     keywords: ["neon", "cyberpunk", "city", "3am", "electric", "future", "tech", "night", "rain", "urban", "dystopia", "futuristic", "sci-fi", "cyber", "solitude", "lonely"],
+    name: "Neon Solace",
+    moodDesc: "3 AM in a city that never sleeps — neon signs bleeding into rain-slicked streets, the loneliness of a crowd, the electric hum of a world running on caffeine and data.",
+    tones: ["Cool", "Dark", "Vivid", "Electric"],
+    colors: [
+      { hex: "#080b14", name: "Void Black",        role: "Background", psychology: "The darkness between stars; the city's unconscious, full of potential energy." },
+      { hex: "#7000ff", name: "UV Signal",         role: "Primary",    psychology: "High-energy, transgressive; the color of systems operating outside normal bounds." },
+      { hex: "#00d4ff", name: "Cyan Ghost",        role: "Accent",     psychology: "Cold digital light; the alien beauty of screens reflecting on wet pavement." },
+      { hex: "#ff2d87", name: "Glitch Rose",       role: "Secondary",  psychology: "Warmth corrupted by electricity; intimacy filtered through a neon lens." },
+      { hex: "#1a1a2e", name: "Circuit Shadow",    role: "Surface",    psychology: "The deep blue-black of server rooms and back alleys — industrial and contained." },
+      { hex: "#ff9c00", name: "Warning Amber",     role: "Alert",      psychology: "Caution and attention; the color of emergency lights and desire." },
+      { hex: "#4d00b3", name: "Deep Ultraviolet",  role: "Shadow",     psychology: "The subterranean layer beneath consciousness — menacing and hypnotic." }
+    ],
+    designs: [
+      "Cyberpunk video game UI or dark-mode developer tool with neon accents",
+      "Music festival brand for electronic/techno events with intense visual identity",
+      "Sci-fi novel or graphic novel cover with hard-boiled noir atmosphere"
+    ],
+    complementary: [
+      "Typography: Rajdhani Bold + IBM Plex Mono (for data/code elements)",
+      "Textures: Scanline CRT patterns, holographic foil, rain-on-glass blur",
