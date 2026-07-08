@@ -498,3 +498,23 @@ const PALETTE_LIBRARY = [
   },
 
   
+  {
+    keywords: ["ocean", "sea", "melancholy", "deep", "water", "vast", "cold", "blue", "underwater", "waves", "marine", "abyss", "grief"],
+    name: "Abyssal Longing",
+    moodDesc: "Standing at the edge of something vast and unknowable — the ocean at night, beautiful and indifferent, its depth a mirror for everything you haven't said.",
+    tones: ["Cool", "Dark", "Muted", "Contemplative"],
+    colors: [
+      { hex: "#050d1a", name: "Midnight Fathom",       role: "Background", psychology: "The absolute dark of deep water; evokes existential depth and oceanic calm." },
+      { hex: "#0d2e4a", name: "Trench Blue",           role: "Primary",    psychology: "Cold, vast, and melancholic — the color of unexplored interiors." },
+      { hex: "#1a5a82", name: "Current Pulse",         role: "Secondary",  psychology: "Slow-moving force; suggests constancy, resilience, and quiet strength." },
+      { hex: "#2a8fae", name: "Surface Light",         role: "Accent",     psychology: "The electric shimmer of sunlight reaching through dark water — hope at depth." },
+      { hex: "#5bc4d6", name: "Bioluminescent Wisp",  role: "Highlight",  psychology: "Ethereal and rare; signals wonder, the beautiful things found in darkness." },
+      { hex: "#8eb8c8", name: "Fog Drift",             role: "Neutral",    psychology: "The haze between sky and sea; ambiguity, contemplation, open questions." },
+      { hex: "#0a1929", name: "Hadal Shadow",          role: "Shadow",     psychology: "Crushingly deep; the weight of silence and the comfort of invisibility." }
+    ],
+    designs: [
+      "Environmental storytelling game or interactive narrative with ocean themes",
+      "Mental wellness app with calming, introspective interface",
+      "Photography portfolio for underwater or seascape artists"
+    ],
+    complementary: [
