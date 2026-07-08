@@ -178,3 +178,23 @@ const PALETTE_LIBRARY = [
     name: "Morning Roast",
     moodDesc: "The rich aroma of espresso and the quiet hum of a morning cafe.",
     tones: ["Warm", "Earthy", "Comforting", "Rich"],
+    colors: [
+      { hex: "#fdfbf7", name: "Steamed Milk", role: "Background", psychology: "Clean, warm, and inviting canvas." },
+      { hex: "#3e2723", name: "Espresso Shot", role: "Primary", psychology: "Strong, grounding, and energizing." },
+      { hex: "#5d4037", name: "Mocha Swirl", role: "Secondary", psychology: "Richness and reliability." },
+      { hex: "#8d6e63", name: "Latte Foam", role: "Accent", psychology: "Softness and comfort." },
+      { hex: "#d7ccc8", name: "Warm Mug", role: "Highlight", psychology: "Cozy, tactile warmth." },
+      { hex: "#efebe9", name: "Oat Milk", role: "Neutral", psychology: "Smooth transition." },
+      { hex: "#1b100c", name: "Roasted Bean", role: "Shadow", psychology: "Deep, bitter contrast." }
+    ],
+    designs: ["Coffee roaster e-commerce", "Local cafe website", "Morning routine app"],
+    complementary: ["Typography: Merriweather + Lato", "Textures: Paper, wood grain", "Elements: Warm drop shadows"],
+    followUp: "Lighter (latte) or darker (espresso)?", followUpOptions: ["Lighter", "Darker"]
+  },
+  
+  {
+    keywords: ["tropical", "beach", "summer", "ocean", "sand", "turquoise", "coral", "vacation"],
+    name: "Island Getaway",
+    moodDesc: "Crystal clear waters, warm sand, and the vibrant life of a coral reef.",
+    tones: ["Vibrant", "Warm", "Refreshing", "Bright"],
+    colors: [
