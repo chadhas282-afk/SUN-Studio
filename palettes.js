@@ -518,3 +518,23 @@ const PALETTE_LIBRARY = [
       "Photography portfolio for underwater or seascape artists"
     ],
     complementary: [
+      "Typography: Spectral (light weight) + Space Grotesk (UI elements)",
+      "Textures: Watercolor washes, caustic light patterns, salt-crystal grain",
+      "Elements: Flowing wave animations, depth gradient overlays, sparse negative space"
+    ],
+    followUp: "Should it lean more **poetic and introspective** (softer grays, misty blues) or more **dramatic and cinematic** (deeper contrasts, electric cyan accents)?",
+    followUpOptions: ["More poetic — softer, mistier", "More dramatic — darker contrasts"]
+  },
+
+  
+  {
+    keywords: ["snow", "winter", "cold", "ice", "frost", "silence", "white", "pure", "crisp", "frozen", "arctic", "first snow"],
+    name: "Crystalline Hush",
+    moodDesc: "The morning after the first snowfall — a world held in suspension, every sound swallowed by white, the air sharp and clean with the weight of something beginning.",
+    tones: ["Cool", "Light", "Minimal", "Serene"],
+    colors: [
+      { hex: "#f5f7fc", name: "Blank Canvas",    role: "Background", psychology: "Infinite potential; the breath before a word — pure and expectant." },
+      { hex: "#d6e4f0", name: "Ice Veil",        role: "Primary",    psychology: "Transparent winter calm; equanimity and the beauty of empty spaces." },
+      { hex: "#a8c4dc", name: "Pale Horizon",    role: "Secondary",  psychology: "The soft blue of a winter sky — detached, elevated, quietly hopeful." },
+      { hex: "#7ba7c4", name: "Frost Current",   role: "Accent",     psychology: "Crisp and precise; intellectual clarity and cool-headed confidence." },
+      { hex: "#e8eef7", name: "Snow Whisper",    role: "Surface",    psychology: "Barely-there warmth in the whiteness — the quiet comfort of being indoors." },
