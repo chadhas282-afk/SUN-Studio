@@ -478,3 +478,23 @@ const PALETTE_LIBRARY = [
       { hex: "#1a0f0a", name: "Midnight Mahogany", role: "Background", psychology: "Grounds the palette in rich depth and intimacy; signals exclusivity and warmth." },
       { hex: "#8b3a2f", name: "Ember Bloom",       role: "Primary",    psychology: "Evokes burning coals and slow desire — passionate but controlled." },
       { hex: "#d4893a", name: "Burnished Amber",   role: "Accent",     psychology: "The warmth of candlelight; triggers nostalgia, comfort, and golden-era longing." },
+      { hex: "#f0c87e", name: "Honey Mist",        role: "Highlight",  psychology: "Soft luminosity that lifts the palette without breaking the smoky spell." },
+      { hex: "#3d2b1f", name: "Old Leather",       role: "Surface",    psychology: "Worn, trusted, familiar — the patina of beautiful things with history." },
+      { hex: "#c4a882", name: "Aged Parchment",    role: "Neutral",    psychology: "The color of paper letters and old photographs; evokes time and tenderness." },
+      { hex: "#6b2d2d", name: "Velvet Dusk",       role: "Shadow",     psychology: "A deep wine-like shadow that adds theatrical depth and mystery." }
+    ],
+    designs: [
+      "Upscale whiskey brand or cocktail bar website with rich texture overlays",
+      "Vintage jazz album cover or music streaming app with dark editorial aesthetic",
+      "Luxury memoir or noir novel interior design with serif typography"
+    ],
+    complementary: [
+      "Typography: DM Serif Display + Cormorant Garamond (italic for headings)",
+      "Textures: Aged leather grain, canvas weave, subtle wood knot pattern",
+      "Elements: Geometric art deco frames, vintage record grooves, candlelight halos"
+    ],
+    followUp: "Should it feel more **cinematic and moody** (deeper shadows, less warm glow) or more **romantically golden** (brighter ambers, ivory highlights)?",
+    followUpOptions: ["More cinematic — deepen the shadows", "More romantic — warmer golds"]
+  },
+
+  
