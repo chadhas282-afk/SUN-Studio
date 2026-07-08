@@ -418,3 +418,23 @@ const PALETTE_LIBRARY = [
     tones: ["Aggressive", "Harsh", "Dark", "High Contrast"],
     colors: [
       { hex: "#0A0000", name: "Void Black",        role: "Background", psychology: "Total absence of light; creates an oppressive, heavy, and formidable atmosphere." },
+      { hex: "#520000", name: "Coagulated Blood",  role: "Primary",    psychology: "Signals danger and deep, simmering resentment." },
+      { hex: "#9E0000", name: "Raw Fury",          role: "Secondary",  psychology: "Aggressive and demanding of attention; the color of a warning sign." },
+      { hex: "#E60000", name: "Searing Heat",      role: "Accent",     psychology: "Explosive, uncontrollable energy breaking through the dark." },
+      { hex: "#FF4D4D", name: "Warning Light",     role: "Highlight",  psychology: "A sharp, uncomfortable brightness that creates visual tension." },
+      { hex: "#2B1A1A", name: "Ash and Rust",      role: "Neutral",    psychology: "Corroded and exhausted; the aftermath of burning emotion." },
+      { hex: "#1F0000", name: "Abyss",             role: "Shadow",     psychology: "Swallowing light and hope; absolute hostility." }
+    ],
+    designs: [
+      "Heavy metal band merchandise or tour website",
+      "High-intensity gaming UI for a combat or horror game",
+      "A provocative editorial spread on rebellion and protest"
+    ],
+    complementary: [
+      "Typography: Impact or Anton + JetBrains Mono (harsh, structural typography)",
+      "Textures: Scratched metal, concrete, static noise",
+      "Elements: Sharp diagonal cuts, glitch effects, brutalist UI components"
+    ],
+    followUp: "Should this feel more like **cold, calculated villainy** or **explosive, chaotic rage**?",
+    followUpOptions: ["Cold calculated villainy", "Explosive chaotic rage"]
+  },
