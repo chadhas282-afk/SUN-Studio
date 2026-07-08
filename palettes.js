@@ -258,3 +258,23 @@ const PALETTE_LIBRARY = [
       { hex: "#2b1055", name: "Deep Violet", role: "Background", psychology: "The encroaching night sky." },
       { hex: "#ff2a5f", name: "Hot Magenta", role: "Primary", psychology: "Vibrant, nostalgic energy." },
       { hex: "#ff7b54", name: "Sunset Orange", role: "Secondary", psychology: "The fading warmth of the sun." },
+      { hex: "#ffd966", name: "Golden Glow", role: "Accent", psychology: "The last ray of light." },
+      { hex: "#ffb4c4", name: "Pink Cloud", role: "Highlight", psychology: "Soft reflection." },
+      { hex: "#753a88", name: "Twilight Purple", role: "Neutral", psychology: "The blending of day and night." },
+      { hex: "#14042b", name: "Ocean Dark", role: "Shadow", psychology: "Depth and mystery." }
+    ],
+    designs: ["Music festival site", "Cocktail brand", "Summer apparel"],
+    complementary: ["Typography: Outfit", "Textures: Gradients, palm silhouettes", "Elements: Gradient text"],
+    followUp: "More pink or more orange?", followUpOptions: ["Pink", "Orange"]
+  },
+  
+  {
+    keywords: ["neon", "nightlife", "party", "club", "lime", "pink", "dark", "rave"],
+    name: "Electric Underground",
+    moodDesc: "The pulsing bass and blinding strobe lights of an underground rave.",
+    tones: ["Neon", "Dark", "High Contrast", "Aggressive"],
+    colors: [
+      { hex: "#0a0a0a", name: "Pitch", role: "Background", psychology: "The dark room." },
+      { hex: "#39ff14", name: "Toxic Lime", role: "Primary", psychology: "Piercing, unnatural energy." },
+      { hex: "#ff00ff", name: "Rave Pink", role: "Secondary", psychology: "Wild, uninhibited fun." },
+      { hex: "#00ffff", name: "Laser Cyan", role: "Accent", psychology: "Electric sharpness." },
