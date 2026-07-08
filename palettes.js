@@ -438,3 +438,23 @@ const PALETTE_LIBRARY = [
     followUp: "Should this feel more like **cold, calculated villainy** or **explosive, chaotic rage**?",
     followUpOptions: ["Cold calculated villainy", "Explosive chaotic rage"]
   },
+
+  
+  {
+    keywords: ["green", "forest", "nature", "leaves", "earth", "calm", "growth", "life", "moss", "pine", "botanical"],
+    name: "Canopy Whisper",
+    moodDesc: "The quiet hush of an ancient forest after rainfall. Sunlight filtering through layers of pine needles, breathing life, growth, and absolute stillness.",
+    tones: ["Earthy", "Calm", "Organic", "Lush"],
+    colors: [
+      { hex: "#0A1F11", name: "Deep Roots",        role: "Background", psychology: "Grounding and ancient; the dark soil from which everything grows." },
+      { hex: "#1C4024", name: "Pine Shadow",       role: "Primary",    psychology: "Quiet strength and endurance; a mature, stable energy." },
+      { hex: "#2F6B3A", name: "Fern Frond",        role: "Secondary",  psychology: "Life, vitality, and natural harmony." },
+      { hex: "#56A35F", name: "Sunlit Moss",       role: "Accent",     psychology: "Inviting and refreshing; triggers feelings of renewal and health." },
+      { hex: "#A6DCAE", name: "Morning Dew",       role: "Highlight",  psychology: "Crisp and delicate; the gentle start of a new day." },
+      { hex: "#E8F5E9", name: "Birch Bark",        role: "Neutral",    psychology: "Clean, organic, and airy; gives the heavy greens room to breathe." },
+      { hex: "#112E1B", name: "Undergrowth",       role: "Shadow",     psychology: "The cool, damp spaces hidden away from the sun." }
+    ],
+    designs: [
+      "Sustainable fashion brand e-commerce site",
+      "Organic skincare or wellness app",
+      "Environmental non-profit campaign page"
