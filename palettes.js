@@ -77,7 +77,7 @@ const PALETTE_LIBRARY = [
     complementary: ["Typography: Cinzel + Lora", "Textures: Velvet, polished marble", "Elements: Gold foil borders"],
     followUp: "Focus on gold or burgundy?", followUpOptions: ["Gold", "Burgundy"]
   },
-  
+
   {
     keywords: ["retro", "80s", "arcade", "vintage", "pixel", "outrun", "vaporwave", "nostalgia"],
     name: "Arcade Glow",
@@ -98,3 +98,23 @@ const PALETTE_LIBRARY = [
   },
   
   {
+    keywords: ["autumn", "fall", "harvest", "leaves", "pumpkin", "cozy", "sweater", "october"],
+    name: "October Rust",
+    moodDesc: "The crisp air of October, falling leaves, and the warmth of a spiced drink.",
+    tones: ["Warm", "Earthy", "Cozy", "Muted"],
+    colors: [
+      { hex: "#f4f1ea", name: "Wool Sweater", role: "Background", psychology: "Comfort and softness." },
+      { hex: "#d35400", name: "Pumpkin Spice", role: "Primary", psychology: "Warmth, energy, and autumn." },
+      { hex: "#c0392b", name: "Fallen Maple", role: "Secondary", psychology: "Passion and transition." },
+      { hex: "#f39c12", name: "Golden Birch", role: "Accent", psychology: "Joy and fading sunlight." },
+      { hex: "#f1c40f", name: "Crisp Sun", role: "Highlight", psychology: "Bright, fleeting warmth." },
+      { hex: "#7f8c8d", name: "Overcast", role: "Neutral", psychology: "The chill in the air." },
+      { hex: "#2c3e50", name: "Night Frost", role: "Shadow", psychology: "The early sunset." }
+    ],
+    designs: ["Bakery website", "Seasonal campaign", "Cozy blog"],
+    complementary: ["Typography: Merriweather", "Textures: Knit, fallen leaves", "Elements: Soft organic shapes"],
+    followUp: "More orange or more red?", followUpOptions: ["Orange", "Red"]
+  },
+  
+  {
+    keywords: ["corporate", "tech", "business", "saas", "professional", "clean", "trust", "blue"],
