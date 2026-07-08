@@ -278,3 +278,23 @@ const PALETTE_LIBRARY = [
       { hex: "#39ff14", name: "Toxic Lime", role: "Primary", psychology: "Piercing, unnatural energy." },
       { hex: "#ff00ff", name: "Rave Pink", role: "Secondary", psychology: "Wild, uninhibited fun." },
       { hex: "#00ffff", name: "Laser Cyan", role: "Accent", psychology: "Electric sharpness." },
+      { hex: "#ffffff", name: "Strobe White", role: "Highlight", psychology: "Blinding flashes." },
+      { hex: "#222222", name: "Speaker Grill", role: "Neutral", psychology: "Industrial backing." },
+      { hex: "#000000", name: "Total Black", role: "Shadow", psychology: "The baseline." }
+    ],
+    designs: ["DJ portfolio", "Event ticketing", "Energy drink"],
+    complementary: ["Typography: Space Grotesk", "Textures: LED grids", "Elements: Glowing borders"],
+    followUp: "Focus on green or pink?", followUpOptions: ["Green", "Pink"]
+  },
+  
+  {
+    keywords: ["vintage", "academia", "dark academia", "leather", "books", "green", "brown", "study"],
+    name: "Oxford Library",
+    moodDesc: "Dusty books, leather armchairs, and the quiet pursuit of knowledge.",
+    tones: ["Dark", "Warm", "Muted", "Intellectual"],
+    colors: [
+      { hex: "#1e221b", name: "Library Dark", role: "Background", psychology: "Quiet, insulated focus." },
+      { hex: "#3b4d3a", name: "Hunter Green", role: "Primary", psychology: "Tradition, growth, and wealth." },
+      { hex: "#5a3a29", name: "Old Leather", role: "Secondary", psychology: "History and tactile comfort." },
+      { hex: "#cda434", name: "Brass Lamp", role: "Accent", psychology: "Illumination and classic elegance." },
+      { hex: "#e8dcc4", name: "Parchment", role: "Highlight", psychology: "The pages of an old book." },
