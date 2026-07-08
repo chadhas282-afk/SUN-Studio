@@ -338,3 +338,23 @@ const PALETTE_LIBRARY = [
       { hex: "#ffb6c1", name: "Cotton Candy", role: "Highlight", psychology: "Soft sweetness." },
       { hex: "#e6e6fa", name: "Grape Taffy", role: "Neutral", psychology: "Playful backing." },
       { hex: "#ff4500", name: "Cherry Pop", role: "Shadow", psychology: "Intense flavor." }
+      ],
+    designs: ["Toy store", "Candy brand", "Kids app"],
+    complementary: ["Typography: Fredoka One", "Textures: Glossy plastics", "Elements: Heavy rounded corners, bouncy animations"],
+    followUp: "More pink or more blue?", followUpOptions: ["Pink", "Blue"]
+  },
+  
+  {
+    keywords: ["mountain", "majestic", "slate", "pine", "snow", "outdoor", "hiking", "adventure"],
+    name: "Alpine Peak",
+    moodDesc: "The thin air, massive rock faces, and towering pines of a mountain range.",
+    tones: ["Cool", "Earthy", "Muted", "Vast"],
+    colors: [
+      { hex: "#e2e8f0", name: "Cloud Cover", role: "Background", psychology: "Airy, high-altitude openness." },
+      { hex: "#475569", name: "Slate Rock", role: "Primary", psychology: "Immovable strength." },
+      { hex: "#1e293b", name: "Deep Pine", role: "Secondary", psychology: "Endurance and nature." },
+      { hex: "#0ea5e9", name: "Alpine Sky", role: "Accent", psychology: "Clarity and vastness." },
+      { hex: "#ffffff", name: "Snow Cap", role: "Highlight", psychology: "Purity and isolation." },
+      { hex: "#cbd5e1", name: "Mist", role: "Neutral", psychology: "The haze between peaks." },
+      { hex: "#0f172a", name: "Gorge Shadow", role: "Shadow", psychology: "Deep, intimidating drops." }
+    ],
