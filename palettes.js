@@ -138,3 +138,23 @@ const PALETTE_LIBRARY = [
   {
     keywords: ["pastel", "dream", "soft", "baby", "cute", "kawaii", "lavender", "mint", "cotton candy"],
     name: "Cotton Candy Haze",
+    moodDesc: "A soft, floating dreamscape made of sugar, clouds, and gentle afternoon light.",
+    tones: ["Soft", "Light", "Sweet", "Airy"],
+    colors: [
+      { hex: "#fdfbfb", name: "Cloud Fluff", role: "Background", psychology: "Airy, weightless base." },
+      { hex: "#ffb3ba", name: "Baby Pink", role: "Primary", psychology: "Innocence, sweetness, and comfort." },
+      { hex: "#ffdfba", name: "Peach Sorbet", role: "Secondary", psychology: "Warmth and approachability." },
+      { hex: "#baffc9", name: "Mint Breeze", role: "Accent", psychology: "Freshness and calm." },
+      { hex: "#bae1ff", name: "Clear Sky", role: "Highlight", psychology: "Openness and peace." },
+      { hex: "#e8daef", name: "Lavender Dust", role: "Neutral", psychology: "Gentle transition." },
+      { hex: "#aeb6bf", name: "Soft Shadow", role: "Shadow", psychology: "Gentle grounding without harshness." }
+    ],
+    designs: ["Baby product store", "Dessert shop", "Cute stationery blog"],
+    complementary: ["Typography: Quicksand", "Textures: Soft gradients, clouds", "Elements: Very rounded corners"],
+    followUp: "More pinks or more blues?", followUpOptions: ["Pinks", "Blues"]
+  },
+  
+  {
+    keywords: ["space", "galaxy", "universe", "stars", "nebula", "cosmos", "astronomy", "purple"],
+    name: "Deep Cosmos",
+    moodDesc: "The infinite, terrifying, and beautiful expanse of the universe.",
