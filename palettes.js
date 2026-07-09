@@ -1118,3 +1118,23 @@ const PALETTE_LIBRARY = [
       { hex: "#ff4080", name: "Heliconia Flame",     role: "Complement", psychology: "The shocking pink of tropical flowers advertising themselves to pollinators; unapologetic beauty." },
       { hex: "#2a8040", name: "Vine Green",          role: "Secondary",  psychology: "Slow, relentless growth; the green that will reclaim everything given enough time." },
       { hex: "#0a2a14", name: "Understory",          role: "Surface",    psychology: "The dim layer below the canopy; patience, adaptation, life finding its way." },
+      { hex: "#c0ff80", name: "Leaf Light",          role: "Highlight",  psychology: "Light through a giant philodendron leaf; the green of growth catching sun." }
+    ],
+    designs: [
+      "Eco-resort or adventure travel brand with lush, immersive tropical visual identity",
+      "Botanical garden app or tropical plant shop with vibrant, living atmosphere",
+      "Environmental nonprofit or conservation campaign with urgent, alive visual energy"
+    ],
+    complementary: [
+      "Typography: Fraunces (organic, variable weight display) + Source Serif 4 (body)",
+      "Textures: Leaf vein macro, bark texture, water droplets on tropical foliage",
+      "Elements: Organic flowing shapes, insect motifs, dense layered botanical illustration"
+    ],
+    followUp: "Should this feel more **dark and mysterious** (denser shadows, fewer light points) or more **vibrant and alive** (brighter greens, more exotic pops of color)?",
+    followUpOptions: ["Darker — denser, mysterious", "More vibrant — bright exotic pops"]
+  },
+
+  
+  {
+    keywords: ["brutalist", "concrete", "architecture", "urban", "grey", "industrial", "stark", "raw", "monumental", "soviet", "modernist", "structure"],
+    name: "Raw Concrete",
