@@ -1238,3 +1238,23 @@ const PALETTE_LIBRARY = [
     ],
     designs: [
       "Luxury candle brand or artisanal wax goods shop with sacred, handcrafted reverence",
+      "Retreat center, meditation space, or spiritual wellness brand with contemplative depth",
+      "Heritage cultural institution or sacred music recording label with timeless warmth"
+    ],
+    complementary: [
+      "Typography: Cinzel (classical Roman capitals) + Garamond (warm, reverent body text)",
+      "Textures: Dripped wax, burnished gold leaf, hammered copper, stone rubbing",
+      "Elements: Flame flicker animations, halo light effects, gothic arch silhouettes"
+    ],
+    followUp: "Should this feel more **intimate and personal** (smaller scale, softer) or more **grand and ceremonial** (more gold, higher contrast)?",
+    followUpOptions: ["More intimate — personal, soft", "Grander — ceremonial, gold"]
+  },
+
+  
+  {
+    keywords: ["witch", "apothecary", "herbs", "botanical", "dark botanical", "moon", "garden", "potion", "mystical", "plant", "ritual", "herbalist", "occult nature"],
+    name: "Apothecary Dusk",
+    moodDesc: "A herbalist's garden at twilight — the smell of mugwort and valerian, jars of dried things labeled in careful ink, the knowledge that plants have always known things medicine is still learning to ask.",
+    tones: ["Cool-Warm", "Dark", "Earthy", "Mystical"],
+    colors: [
+      { hex: "#0a0c08", name: "Peat Dark",           role: "Background", psychology: "Rich black soil and composted leaf matter; the dark generativity everything grows from." },
