@@ -778,3 +778,23 @@ const PALETTE_LIBRARY = [
       "Valentine's campaign or anniversary brand identity with genuine warmth"
     ],
     complementary: [
+      "Typography: Cormorant Garamond Italic + Lato Light — romantic weight contrast",
+      "Textures: Silk charmeuse, dried rose petals, watercolor blooms, tulle",
+      "Elements: Soft-focus photography, flowing organic shapes, petal scatter patterns"
+    ],
+    followUp: "Should this be more **sweet and playful** (brighter pinks, lighthearted) or more **deep and passionate** (darker roses, more emotional weight)?",
+    followUpOptions: ["Sweeter — brighter and playful", "Deeper — darker, more passionate"]
+  },
+
+  
+  {
+    keywords: ["dark", "gothic", "mystery", "shadow", "night", "moon", "haunted", "witch", "occult", "black", "purple", "dramatic", "eerie", "moody"],
+    name: "Midnight Grimoire",
+    moodDesc: "Pages of an old book that shouldn't exist — the ink still wet, the candle guttering, something beautiful and dangerous waiting in the margins where the light doesn't reach.",
+    tones: ["Cool", "Dark", "Saturated", "Mystical"],
+    colors: [
+      { hex: "#0a050f", name: "Void Ink",          role: "Background", psychology: "The dark before creation; absolute potential, the fertile nothing before form." },
+      { hex: "#4a1f6e", name: "Witch's Plum",      role: "Primary",    psychology: "Power, mystery, and deliberate transgression; magic that costs something real." },
+      { hex: "#8a3ca8", name: "Amethyst Spell",    role: "Accent",     psychology: "Psychic sensitivity and hidden wisdom; the color of things seen between worlds." },
+      { hex: "#c4a0d8", name: "Moonstone Pale",    role: "Highlight",  psychology: "Reflected light in darkness; what is beautiful because it refuses to hide." },
+      { hex: "#1e0a2e", name: "Crypt Shadow",      role: "Surface",    psychology: "The density of old stone, of things that persist underground, patient and cold." },
