@@ -978,3 +978,23 @@ const PALETTE_LIBRARY = [
     designs: [
       "Climate technology brand or weather data visualization with dramatic authority",
       "Heavy metal album artwork or extreme sports brand with raw atmospheric power",
+      "Thriller novel cover or documentary series about natural phenomena"
+    ],
+    complementary: [
+      "Typography: Barlow Condensed (heavy) + Source Sans Pro (readability under pressure)",
+      "Textures: Rain-streaked glass, static noise, cloud formation photography",
+      "Elements: Diagonal slash compositions, lightning bolt motifs, pressure-gauge dials"
+    ],
+    followUp: "Should this lean more **ominous and brooding** (darker, more indigo) or more **dramatically beautiful** (more gold and silver contrast)?",
+    followUpOptions: ["More ominous — darker indigo", "More dramatic — gold and silver"]
+  },
+
+  
+  {
+    keywords: ["bioluminescent", "deep sea", "glow", "creature", "abyssal", "jellyfish", "luminous", "underwater fantasy", "alien", "phosphorescent", "firefly"],
+    name: "Lucent Depths",
+    moodDesc: "Two miles below the surface where sunlight has never reached — creatures carrying their own light, the impossible colors of things that evolved in perfect darkness, beauty that exists without any witness.",
+    tones: ["Cool", "Dark", "Luminous", "Alien"],
+    colors: [
+      { hex: "#020810", name: "Hadal Black",         role: "Background", psychology: "The absolute dark where pressure crushes steel; the void that gives light meaning." },
+      { hex: "#00ff9f", name: "Bioluminescent",      role: "Primary",    psychology: "Life making light from nothing; evolution's most extravagant, purposeful beauty." },
