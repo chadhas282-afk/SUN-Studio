@@ -1038,3 +1038,23 @@ const PALETTE_LIBRARY = [
       "Morning productivity app or journaling tool with warm, grounded aesthetic",
       "Lifestyle brand for slow mornings, intentional living, and mindful ritual"
     ],
+    complementary: [
+      "Typography: Libre Baskerville (editorial warmth) + Nunito (friendly, approachable)",
+      "Textures: Roasted bean close-up, burlap sack grain, crema foam macro photography",
+      "Elements: Steam wisps, circular pour-over filter shapes, arabica leaf illustrations"
+    ],
+    followUp: "Should this feel more **dark and bold** (stronger contrasts, moodier atmosphere) or more **warm and welcoming** (lighter, more creamy tones)?",
+    followUpOptions: ["Darker — bold and moody", "Warmer — creamy and welcoming"]
+  },
+
+  
+  {
+    keywords: ["moroccan", "souk", "marrakech", "spice", "tile", "mosaic", "mediterranean", "north africa", "bazaar", "exotic", "warm", "vibrant", "clay"],
+    name: "Medina at Dusk",
+    moodDesc: "Golden hour in a Moroccan medina — the call to prayer echoing off tiled walls, spice stalls releasing saffron and cinnamon into evening air, the labyrinth of colours that no map could capture.",
+    tones: ["Warm", "Saturated", "Rich", "Earthy"],
+    colors: [
+      { hex: "#2a0e04", name: "Dried Blood Cedar",   role: "Background", psychology: "Ancient cedar doors and blood-orange walls; the dark frame of centuries of trade." },
+      { hex: "#c4501a", name: "Saffron Fire",        role: "Primary",    psychology: "The most expensive color in the spice market; warmth and value concentrated." },
+      { hex: "#e8a020", name: "Turmeric Gold",       role: "Accent",     psychology: "The pigment of sacred powder and ancient dye; warmth that stains memory." },
+      { hex: "#1a4a5c", name: "Zellige Blue",        role: "Complement", psychology: "The mosaic tile blue of fountains in carved plaster; cool order in hot chaos." },
