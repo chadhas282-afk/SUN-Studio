@@ -818,3 +818,23 @@ const PALETTE_LIBRARY = [
   
   {
     keywords: ["tech", "modern", "minimal", "startup", "saas", "digital", "clean", "professional", "innovation", "silicon", "app", "interface", "ux", "product"],
+    name: "Chrome Meridian",
+    moodDesc: "The confidence of a product that knows exactly what it is — precision-engineered, nothing wasted, every choice deliberate, the cool authority of systems that simply work.",
+    tones: ["Cool", "Light-Dark", "Neutral", "Clinical"],
+    colors: [
+      { hex: "#f8fafc", name: "Interface White",     role: "Background",       psychology: "Maximum legibility and clarity; the color of uncluttered thinking." },
+      { hex: "#1a2332", name: "Deep System",         role: "Primary",          psychology: "Authority without aggression; the navy of trusted institutions, now digital." },
+      { hex: "#2563eb", name: "Electric Blue",       role: "Accent",           psychology: "Actionability and confidence; the universal signal for 'something to click.'" },
+      { hex: "#64748b", name: "Slate Mid",           role: "Secondary",        psychology: "Professional pragmatism; the gray of systems thinking and calm expertise." },
+      { hex: "#e2e8f0", name: "Fog Surface",         role: "Surface",          psychology: "Subtle structural differentiation; the hierarchy revealed without shouting." },
+      { hex: "#0f172a", name: "Midnight System",     role: "Dark Mode Primary", psychology: "For dark interfaces: full-depth background that makes content luminous." },
+      { hex: "#38bdf8", name: "Sky Accent",          role: "Highlight",        psychology: "The lighter, friendlier face of blue; progress indicators, success states." }
+    ],
+    designs: [
+      "B2B SaaS dashboard or enterprise analytics platform with clean data visualization",
+      "Technical documentation or developer tool with accessible, scannable design",
+      "Fintech or productivity app that needs to communicate trustworthiness and precision"
+    ],
+    complementary: [
+      "Typography: Inter (all weights) — the perfect workhorse for digital interfaces",
+      "Textures: Subtle grid patterns, noise grain at low opacity, clean geometric shapes",
