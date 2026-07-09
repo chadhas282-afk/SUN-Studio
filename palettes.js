@@ -737,3 +737,24 @@ const PALETTE_LIBRARY = [
     tones: ["Neutral", "Warm-Neutral", "Minimal", "Restful"],
     colors: [
       { hex: "#f8f6f2", name: "Washi White",      role: "Background", psychology: "The warm white of handmade paper; presence without assertion, space that breathes." },
+      { hex: "#2c2c2c", name: "Sumi Black",       role: "Primary",    psychology: "The black of calligraphy ink — decisive, pure, complete without being harsh." },
+      { hex: "#8c8c8c", name: "Stone Mist",       role: "Secondary",  psychology: "The gray of wet river stones; contemplative, balanced, effortlessly neutral." },
+      { hex: "#c8b99a", name: "Natural Reed",     role: "Neutral",    psychology: "Organic warmth without theatrics; the satisfying imperfection of natural materials." },
+      { hex: "#6b7b6b", name: "Pine Shadow",      role: "Accent",     psychology: "The muted green of old cedar; grounding, enduring, quietly alive." },
+      { hex: "#e8e0d4", name: "Linen Breath",     role: "Surface",    psychology: "The warmth of untreated cloth; comfort without excess, texture without noise." }
+    ],
+    designs: [
+      "Meditation or mindfulness app with rigorous negative space and intentional typography",
+      "Luxury architectural studio or interior design firm with Japanese aesthetic sensibility",
+      "Premium skincare or wellness brand that communicates through restraint and purity"
+    ],
+    complementary: [
+      "Typography: Noto Serif JP (elegantly bilingual) + Inter (crisp UI sans-serif)",
+      "Textures: Hand-pressed paper, raked sand, unglazed ceramic, raw linen",
+      "Elements: Maximum negative space, hairline rules, single focal point per view"
+    ],
+    followUp: "Should this feel more **purely monochrome** (true blacks and whites) or keep the **warm earthy undertones** that give it humanity?",
+    followUpOptions: ["Purely monochrome — no warm tones", "Keep earthy warmth and humanity"]
+  },
+
+  
