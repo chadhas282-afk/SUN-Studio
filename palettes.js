@@ -938,3 +938,23 @@ const PALETTE_LIBRARY = [
     moodDesc: "Cherry blossoms falling in slow motion through spring rain — the Japanese concept of mono no aware, the poignant beauty of things that are precious precisely because they don't last.",
     tones: ["Warm", "Light", "Delicate", "Melancholic"],
     colors: [
+      { hex: "#fdf4f5", name: "Petal White",        role: "Background", psychology: "The silence before a bloom opens; purity that holds space for something beautiful." },
+      { hex: "#e8a0b0", name: "Sakura Blush",       role: "Primary",    psychology: "Soft, feminine, ephemeral — the exact pink of cherry blossoms against pale sky." },
+      { hex: "#c4607a", name: "Deep Petal",         role: "Accent",     psychology: "The richer heart of a bloom; passion with fragility, desire that knows it will pass." },
+      { hex: "#f0cad4", name: "Morning Cloud",      role: "Secondary",  psychology: "Diffuse warmth of a spring dawn; gentle optimism, unwilling to be hurried." },
+      { hex: "#8b6a72", name: "Branch Shadow",      role: "Neutral",    psychology: "The grey-violet of bare branches; the frame that makes blossoms possible." },
+      { hex: "#d4a0b0", name: "Faded Petal",        role: "Surface",    psychology: "A blossom days after peak — beauty in the letting go, grace in endings." },
+      { hex: "#4a2a38", name: "Old Lacquer",        role: "Shadow",     psychology: "Deep red-black of Japanese lacquerware; grounded tradition beneath transience." }
+    ],
+    designs: [
+      "Japanese beauty or skincare brand with seasonal, nature-connected aesthetic",
+      "Spring fashion editorial or wedding brand with soft romantic elegance",
+      "Mindfulness or poetry app celebrating impermanence and present-moment beauty"
+    ],
+    complementary: [
+      "Typography: Noto Serif JP (elegant Japanese-influenced) + Cormorant (light italic)",
+      "Textures: Washi paper, ink wash painting (sumi-e), pressed petal patterns",
+      "Elements: Falling petal animations, asymmetric branch compositions, negative space"
+    ],
+    followUp: "Should this feel more **dreamy and ethereal** (lighter, more white space) or more **melancholic and deep** (richer pinks, darker shadows)?",
+    followUpOptions: ["Dreamier — more white, ethereal", "Deeper — richer, melancholic"]
