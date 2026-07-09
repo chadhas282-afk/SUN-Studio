@@ -1058,3 +1058,23 @@ const PALETTE_LIBRARY = [
       { hex: "#c4501a", name: "Saffron Fire",        role: "Primary",    psychology: "The most expensive color in the spice market; warmth and value concentrated." },
       { hex: "#e8a020", name: "Turmeric Gold",       role: "Accent",     psychology: "The pigment of sacred powder and ancient dye; warmth that stains memory." },
       { hex: "#1a4a5c", name: "Zellige Blue",        role: "Complement", psychology: "The mosaic tile blue of fountains in carved plaster; cool order in hot chaos." },
+      { hex: "#8b3a2a", name: "Terracotta Dust",     role: "Secondary",  psychology: "Sun-baked clay walls that have absorbed centuries of stories; enduring warmth." },
+      { hex: "#d4880a", name: "Hammered Brass",      role: "Highlight",  psychology: "Tea trays and lanterns catching fire at dusk; the alchemy of ordinary light." },
+      { hex: "#4a2010", name: "Dark Oud",            role: "Shadow",     psychology: "The resinous darkness beneath everything; rich, complex, unforgettable." }
+    ],
+    designs: [
+      "Luxury travel brand or riad hotel with intense, immersive North African identity",
+      "Artisanal homeware or tile company celebrating handcrafted Islamic geometric beauty",
+      "Spice brand, North African restaurant, or food blog with rich cultural narrative"
+    ],
+    complementary: [
+      "Typography: Tajawal (Arabic-inspired) + Merriweather (editorial body text)",
+      "Textures: Zellige tile pattern, hammered metal, woven kilim, carved plaster (tadelakt)",
+      "Elements: Eight-pointed stars, arabesque geometric interlace, mashrabiyya lattice"
+    ],
+    followUp: "Should this feel more **vibrant and maximalist** (more color, more pattern density) or more **refined and luxurious** (more restraint, darker palette)?",
+    followUpOptions: ["More vibrant — maximalist, pattern-rich", "More refined — restrained luxury"]
+  },
+
+  
+  {
