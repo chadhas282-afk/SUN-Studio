@@ -1198,3 +1198,23 @@ const PALETTE_LIBRARY = [
     name: "Alpine Threshold",
     moodDesc: "Summit at 4 AM — headlamp switched off as the sky begins to lighten, the world below still dark and small, the particular solitude of being above the weather, the reward that only the unreasonable hours earn.",
     tones: ["Cool", "Light-Dark", "Crisp", "Expansive"],
+    colors: [
+      { hex: "#080c18", name: "Pre-Dawn Black",      role: "Background", psychology: "The darkness before any mountain sunrise; the price of admission to beauty." },
+      { hex: "#4a6080", name: "Granite Blue",        role: "Primary",    psychology: "The blue of stone above treeline; ancient, unyielding, indifferent to time." },
+      { hex: "#f0a040", name: "Alpenglow",           role: "Accent",     psychology: "The orange-pink of peaks catching first light; the most earned color in nature." },
+      { hex: "#d0e8f8", name: "Ice Cloud",           role: "Secondary",  psychology: "Cloud seen from above — the strange privilege of looking down on weather." },
+      { hex: "#2a3a4a", name: "Slate Shadow",        role: "Surface",    psychology: "The grey of a glaciated face; permanence that makes human ambition look brief." },
+      { hex: "#8a9ab8", name: "Ridge Mist",          role: "Neutral",    psychology: "Morning mist at altitude; the threshold between what is clear and what is mystery." },
+      { hex: "#f8e0c0", name: "Summit Pale",         role: "Highlight",  psychology: "The pale gold of dawn at elevation; the feeling that you earned this specific light." }
+    ],
+    designs: [
+      "Outdoor gear brand or mountaineering equipment company with earned-adventure ethos",
+      "High-altitude trekking operator or alpine resort with wilderness authenticity",
+      "Endurance sports app or training platform with aspirational, dawn-patrol energy"
+    ],
+    complementary: [
+      "Typography: Montserrat (clean, modern height) + Lato (accessible, clear body)",
+      "Textures: Granite rock face, topo contour lines, frost crystal close-up, worn map paper",
+      "Elements: Elevation profile graphs, compass rose, summit silhouette, headlamp beam"
+    ],
+    followUp: "Should this feel more **dark and austere** (more night sky, less color) or more **luminous and triumphant** (brighter alpenglow, dawn breaking)?",
