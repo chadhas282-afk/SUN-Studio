@@ -1158,3 +1158,23 @@ const PALETTE_LIBRARY = [
       "Typography: Neue Haas Grotesk (Swiss International) + Courier (uncompromising mono)",
       "Textures: Concrete formwork imprint, aggregate surface, rust stain, rain-streaked facade",
       "Elements: Grid-based layouts, exposed bolt details, shadow-cast relief, raw edge treatments"
+      ],
+    followUp: "Should this feel more **purely monolithic** (only greys, no accent) or keep the **rust and warmth** that shows the life within the material?",
+    followUpOptions: ["Purely monolithic — greys only", "Keep rust and warmth"]
+  },
+
+  
+  {
+    keywords: ["retro", "arcade", "80s", "gaming", "pixel", "8-bit", "joystick", "pac-man", "neon", "cassette", "vhs", "synthwave", "outrun", "retrowave"],
+    name: "Quarter Drop",
+    moodDesc: "A dark arcade in 1984 — the smell of circuitry and soda, the rattle and clack of joysticks, eight colors making worlds you could disappear into, the quarter in your pocket the most valuable thing you owned.",
+    tones: ["Vivid", "Dark", "Retro", "Playful"],
+    colors: [
+      { hex: "#0a0a14", name: "Cabinet Black",       role: "Background", psychology: "The arcade at the back of the mall; the productive darkness that made screens luminous." },
+      { hex: "#ff0066", name: "Joystick Magenta",    role: "Primary",    psychology: "The oversaturated pink of 8-bit health bars and player-one readiness." },
+      { hex: "#00ffcc", name: "High Score Cyan",     role: "Accent",     psychology: "The text of a new record; achievement, the reward for mastery and persistence." },
+      { hex: "#ffcc00", name: "Coin Gold",           role: "Secondary",  psychology: "The color of a quarter in fluorescent light; currency of childhood concentration." },
+      { hex: "#8800ff", name: "Sprite Purple",       role: "Complement", psychology: "Enemy sprites and power-up auras; the color of danger and reward simultaneously." },
+      { hex: "#1a1a2e", name: "Screen Glow Dark",    role: "Surface",    psychology: "The dark behind a CRT; the electric potential of a screen about to come alive." },
+      { hex: "#ff6600", name: "Pixel Orange",        role: "Alert",      psychology: "Warning screens and game over text; the color of consequence and retry." }
+    ],
