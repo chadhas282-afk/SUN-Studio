@@ -1078,3 +1078,23 @@ const PALETTE_LIBRARY = [
 
   
   {
+    keywords: ["prairie", "midwest", "wheat", "farm", "horizon", "open sky", "american", "vast", "rural", "honest", "golden fields", "barn", "great plains"],
+    name: "Endless Horizon",
+    moodDesc: "Standing in a wheat field at harvest — horizon in every direction, the sky taking up three-quarters of existence, the profound freedom and loneliness of landscapes that refuse to hold you.",
+    tones: ["Warm", "Muted", "Expansive", "Honest"],
+    colors: [
+      { hex: "#1a1008", name: "Prairie Dark",         role: "Background", psychology: "Rich loam and long shadow; what is beneath every harvest, patient and fertile." },
+      { hex: "#c8962a", name: "Wheat Gold",           role: "Primary",    psychology: "Acres of ripe grain in late light; abundance, honest labor, the color of enough." },
+      { hex: "#8b4a1a", name: "Barn Red",             role: "Accent",     psychology: "A red barn against flat sky — functional beauty, the landmark in emptiness." },
+      { hex: "#e8d08a", name: "Pale Straw",           role: "Highlight",  psychology: "Dry grass in August heat; the beauty of things simplified by sun and time." },
+      { hex: "#6b5a3a", name: "Dust Road",            role: "Neutral",    psychology: "Packed earth tracks that go somewhere and nowhere; the texture of vast distance." },
+      { hex: "#4a7a9a", name: "Great Plains Sky",     role: "Complement", psychology: "The enormous blue of a sky unimpeded by hills; freedom and exposure in equal measure." },
+      { hex: "#3a2808", name: "Deep Soil",            role: "Shadow",     psychology: "Black earth rich with decades of seasons; what makes the gold possible." }
+    ],
+    designs: [
+      "Artisanal grain or craft beer brand with honest, agricultural American identity",
+      "Literary magazine or memoir about rural life and middle-American landscapes",
+      "National park or heritage conservation brand celebrating open land and sky"
+    ],
+    complementary: [
+      "Typography: Abril Fatface (bold display) + Lora (warm body text)",
