@@ -1017,3 +1017,24 @@ const PALETTE_LIBRARY = [
     followUp: "Should this lean more **scientific and precise** (more muted, data-like) or more **fantastical and dreamlike** (more saturated glows, deeper black)?",
     followUpOptions: ["More scientific — muted, precise", "More fantastical — deep glows"]
   },
+
+    
+  {
+    keywords: ["coffee", "espresso", "morning", "café", "barista", "roast", "warm", "ritual", "dawn", "awakening", "first cup", "brew", "moka"],
+    name: "First Cup",
+    moodDesc: "The morning before the world asks anything of you — just the sound of a moka pot, the smell of dark roast, a window going from black to grey to gold, the sacred ritual of beginning.",
+    tones: ["Warm", "Dark", "Earthy", "Intimate"],
+    colors: [
+      { hex: "#120a04", name: "Dark Roast",          role: "Background", psychology: "The rich, almost-black of perfectly pulled espresso; depth that wakes the senses." },
+      { hex: "#6b3a1f", name: "Mahogany Bitter",     role: "Primary",    psychology: "The dry bitterness before sweetness arrives; the productive discomfort of waking." },
+      { hex: "#c47a3a", name: "Crema Gold",          role: "Accent",     psychology: "The golden foam of a perfect shot; the reward for ritual, beauty in process." },
+      { hex: "#e8c090", name: "Milk Steam",          role: "Highlight",  psychology: "Warmth entering darkness; comfort, care, the small luxuries that make mornings work." },
+      { hex: "#3a2010", name: "Bean Shadow",         role: "Surface",    psychology: "The deep brown of fresh grounds; earthy, immediate, full of potential energy." },
+      { hex: "#8a5a32", name: "Walnut Warm",         role: "Secondary",  psychology: "The burnished warmth of a well-worn café table; familiarity, routine made beautiful." },
+      { hex: "#f5e8d0", name: "Morning Light",       role: "Neutral",    psychology: "First light through a kitchen window; the color of pages in a morning journal." }
+    ],
+    designs: [
+      "Specialty coffee brand, café, or roastery with artisanal, process-focused story",
+      "Morning productivity app or journaling tool with warm, grounded aesthetic",
+      "Lifestyle brand for slow mornings, intentional living, and mindful ritual"
+    ],
