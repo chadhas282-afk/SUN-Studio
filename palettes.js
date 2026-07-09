@@ -1218,3 +1218,23 @@ const PALETTE_LIBRARY = [
       "Elements: Elevation profile graphs, compass rose, summit silhouette, headlamp beam"
     ],
     followUp: "Should this feel more **dark and austere** (more night sky, less color) or more **luminous and triumphant** (brighter alpenglow, dawn breaking)?",
+    followUpOptions: ["Darker — austere, pre-dawn", "More luminous — dawn breaking"]
+  },
+
+  
+  {
+    keywords: ["candle", "sacred", "church", "spiritual", "devotion", "prayer", "vigil", "wax", "flame", "quiet", "holy", "incense", "contemplative"],
+    name: "Vigil Light",
+    moodDesc: "A cathedral at dusk when the tourists have left — only the votive candles now, flame and wax and gold leaf, the particular silence of a space that has held every human grief and joy for centuries and holds yours too.",
+    tones: ["Warm", "Dark", "Sacred", "Intimate"],
+    colors: [
+      { hex: "#0e0804", name: "Chapel Dark",         role: "Background", psychology: "The rich dark of stone walls absorbing centuries of candle smoke and prayer." },
+      { hex: "#c4802a", name: "Flame Core",          role: "Primary",    psychology: "The orange heart of a candle flame; focused, warm, trembling with meaning." },
+      { hex: "#f0c060", name: "Gold Leaf",           role: "Accent",     psychology: "Gilded icons and altar details; light made permanent, the divine made visible." },
+      { hex: "#8b4a10", name: "Beeswax",             role: "Secondary",  psychology: "Hand-dipped candles and old wood pews; the texture of devotion made material." },
+      { hex: "#2a1a0a", name: "Censer Dark",         role: "Surface",    psychology: "The dark of incense smoke and old stone; atmosphere thick with accumulated prayer." },
+      { hex: "#e8c090", name: "Candlelight",         role: "Highlight",  psychology: "Warm light pooling on a face in contemplation; the intimacy of chosen darkness." },
+      { hex: "#6a4020", name: "Copper Old",          role: "Neutral",    psychology: "Verdigris-tinged copper, old offering plates; the beauty of metal worn by hands." }
+    ],
+    designs: [
+      "Luxury candle brand or artisanal wax goods shop with sacred, handcrafted reverence",
