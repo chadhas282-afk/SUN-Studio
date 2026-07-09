@@ -1178,3 +1178,23 @@ const PALETTE_LIBRARY = [
       { hex: "#1a1a2e", name: "Screen Glow Dark",    role: "Surface",    psychology: "The dark behind a CRT; the electric potential of a screen about to come alive." },
       { hex: "#ff6600", name: "Pixel Orange",        role: "Alert",      psychology: "Warning screens and game over text; the color of consequence and retry." }
     ],
+    designs: [
+      "Retro gaming bar, vintage arcade, or collector's emporium with 80s nostalgia identity",
+      "Indie game studio or pixel art portfolio with period-accurate chromatic energy",
+      "Music festival or synthwave electronic event with analog-era visual language"
+    ],
+    complementary: [
+      "Typography: Press Start 2P (pixel display) + VT323 (monospaced CRT readout)",
+      "Textures: CRT scanlines, RGB pixel grid, static noise, phosphor burn-in glow",
+      "Elements: Pixel art characters, score counter numerals, joystick silhouettes, sprite sheets"
+    ],
+    followUp: "Should this lean more **authentic retro** (more limited 8-bit palette, simpler) or more **synthwave glamour** (richer colors, more neon depth)?",
+    followUpOptions: ["Authentic retro — 8-bit limited", "Synthwave — richer neon depth"]
+  },
+
+  
+  {
+    keywords: ["mountain", "alpine", "dawn", "hiking", "summit", "altitude", "mist", "fog", "peak", "wilderness", "trekking", "sunrise above clouds", "solitude"],
+    name: "Alpine Threshold",
+    moodDesc: "Summit at 4 AM — headlamp switched off as the sky begins to lighten, the world below still dark and small, the particular solitude of being above the weather, the reward that only the unreasonable hours earn.",
+    tones: ["Cool", "Light-Dark", "Crisp", "Expansive"],
