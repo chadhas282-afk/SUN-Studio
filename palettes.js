@@ -698,3 +698,23 @@ const PALETTE_LIBRARY = [
     ],
     followUp: "Should the palette feel more **hot and intense** (deeper reds, burning midtones) or more **pale and ethereal** (bleached golds, cool purples at the edges)?",
     followUpOptions: ["Hotter — deeper reds, burning", "Paler — bleached golds, ethereal"]
+    },
+
+  
+  {
+    keywords: ["nostalgia", "retro", "memory", "vintage", "past", "childhood", "90s", "80s", "faded", "film", "analog", "old", "remember", "polaroid"],
+    name: "Faded Summer",
+    moodDesc: "The saturated warmth of a memory that hasn't quite faded — summer afternoons from another decade, colors slightly off, edges blurred, the ache of something beautiful that's gone.",
+    tones: ["Warm", "Muted", "Nostalgic", "Analog"],
+    colors: [
+      { hex: "#f5ede0", name: "Sun-Bleached Cream",  role: "Background",   psychology: "The warm fade of old photographs; time that has softened everything it touched." },
+      { hex: "#d4845a", name: "Terracotta Blush",    role: "Primary",      psychology: "Seventies warmth distilled — comfortable, handmade, earnest without irony." },
+      { hex: "#8fb8a8", name: "Sage Washed",         role: "Secondary",    psychology: "The green of vintage clothing; muted by sun and wash cycles, more beautiful for it." },
+      { hex: "#e8c4a0", name: "Polaroid Gold",       role: "Highlight",    psychology: "The color-shift of expired film; the imperfect record of something real." },
+      { hex: "#7a5c48", name: "Dark Roast",          role: "Dark Neutral", psychology: "The brown of old leather and worn-wood; presence without pretension." },
+      { hex: "#c4a882", name: "Linen Warm",          role: "Neutral",      psychology: "The middle distance of memory — present but not sharp, warm but not hot." },
+      { hex: "#4a7a6a", name: "Forest Teal",         role: "Accent",       psychology: "A pop of the unexpected; the detail in a memory that makes it suddenly vivid." }
+    ],
+    designs: [
+      "Vintage clothing or thrift store brand with analog, handcrafted visual language",
+      "Personal photography portfolio or film-photography zine with nostalgic warmth",
