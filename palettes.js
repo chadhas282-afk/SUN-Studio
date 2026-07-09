@@ -1278,3 +1278,23 @@ const PALETTE_LIBRARY = [
     followUp: "Should this lean more **dark and mystical** (deeper purples, more shadow) or more **earthy and grounded** (more greens and warm neutrals)?",
     followUpOptions: ["Darker — mystical, purple-dominant", "Earthier — green and warm neutrals"]
   },
+
+  
+  {
+    keywords: ["coral", "reef", "tropical fish", "ocean", "colorful", "underwater", "vibrant", "marine", "snorkel", "caribbean", "bright", "turquoise"],
+    name: "Living Reef",
+    moodDesc: "The first breath after you put your face underwater on a coral reef — an entire civilization of color and motion existing in perfect indifference, more complex than any city, more beautiful than anything made by hands.",
+    tones: ["Warm-Cool", "Light", "Vivid", "Abundant"],
+    colors: [
+      { hex: "#e8f8fc", name: "Surface Blue",        role: "Background", psychology: "Shallow tropical water seen from below; light and warmth and transparent abundance." },
+      { hex: "#ff6040", name: "Fire Coral",          role: "Primary",    psychology: "The bright warning of living coral; beauty that demands you look without touching." },
+      { hex: "#00c8d0", name: "Parrotfish Blue",     role: "Accent",     psychology: "The turquoise of tropical shallows; tropical clarity, the color of somewhere better." },
+      { hex: "#ff9020", name: "Clownfish Orange",    role: "Secondary",  psychology: "The brave orange of anemone dwellers; small lives with vivid, unmissable presence." },
+      { hex: "#a040c0", name: "Sea Fan Violet",      role: "Complement", psychology: "Purple sea fans and urchin spines; the unexpected beauty of filter feeders." },
+      { hex: "#40a060", name: "Algae Green",         role: "Neutral",    psychology: "The productive green of photosynthesizing organisms; the base of abundance." },
+      { hex: "#ffe8a0", name: "Sand Bright",         role: "Highlight",  psychology: "Sunlight refracted on white sand; the substrate that makes everything else visible." }
+    ],
+    designs: [
+      "Marine conservation brand or ocean awareness campaign with urgent tropical beauty",
+      "Tropical resort or dive operator brand with vibrant, alive coral ecosystem energy",
+      "Children's ocean education platform or aquarium with joyful, wonder-full palette"
