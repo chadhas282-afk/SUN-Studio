@@ -858,3 +858,23 @@ const PALETTE_LIBRARY = [
       { hex: "#ff6b9d", name: "Stellar Pink",        role: "Complement", psychology: "The rare pink aurora; extraordinary, unexpected, unforgettable." },
       { hex: "#1a3a4a", name: "Tundra Shadow",       role: "Surface",    psychology: "The dark earth beneath the light show; grounded reality beneath transcendence." },
       { hex: "#a0f0d8", name: "Glacial Mist",        role: "Highlight",  psychology: "The soft edge of a light curtain; the beauty of something barely there." }
+      ],
+    designs: [
+      "Space tech startup or astronomy app with deep cosmic wonder",
+      "Northern travel brand or arctic expedition company with epic atmospheric palette",
+      "Music festival or immersive art installation with otherworldly visual identity"
+    ],
+    complementary: [
+      "Typography: Space Grotesk (futuristic) + Outfit Light (body text)",
+      "Textures: Star field noise, flowing iridescent gradients, ice crystal patterns",
+      "Elements: Particle animations, flowing ribbon shapes, borealis-inspired gradients"
+    ],
+    followUp: "Should this feel more **cosmic and space-like** (deeper darks, more blue-violet) or more **magical and dreamy** (more pink, softer greens)?",
+    followUpOptions: ["More cosmic — deep space blues", "More magical — dreamy pinks and greens"]
+  },
+
+  
+  {
+    keywords: ["autumn", "fall", "harvest", "leaves", "october", "november", "burnt", "crimson", "spice", "pumpkin", "maple", "seasonal", "change"],
+    name: "Ember Harvest",
+    moodDesc: "The particular grief and beauty of autumn — everything burning with color as it lets go, the smell of fallen leaves and wood smoke, the understanding that endings can be spectacular.",
