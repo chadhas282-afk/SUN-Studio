@@ -798,3 +798,23 @@ const PALETTE_LIBRARY = [
       { hex: "#8a3ca8", name: "Amethyst Spell",    role: "Accent",     psychology: "Psychic sensitivity and hidden wisdom; the color of things seen between worlds." },
       { hex: "#c4a0d8", name: "Moonstone Pale",    role: "Highlight",  psychology: "Reflected light in darkness; what is beautiful because it refuses to hide." },
       { hex: "#1e0a2e", name: "Crypt Shadow",      role: "Surface",    psychology: "The density of old stone, of things that persist underground, patient and cold." },
+      { hex: "#6a3a8a", name: "Twilight Violet",   role: "Secondary",  psychology: "The thin hour between world states; liminality, thresholds, transformation." },
+      { hex: "#3d1a54", name: "Bruised Dusk",      role: "Shadow",     psychology: "The pressure before something breaks open — intense, foreboding, electric." }
+    ],
+    designs: [
+      "Dark fantasy novel cover or gothic fiction brand with ceremonial gravitas",
+      "Independent witch-aesthetic shop or alternative cosmetics brand",
+      "Horror or thriller podcast with deeply immersive, atmospheric branding"
+    ],
+    complementary: [
+      "Typography: Cinzel Decorative (Roman display) + Crimson Text (body)",
+      "Textures: Velvet, cracked wax seal, aged parchment, smoke and candle wax",
+      "Elements: Celestial symbols, geometric pentagram motifs, ink-wash illustrations"
+    ],
+    followUp: "Should this be more **classically gothic and elegant** (deep purples, silver) or more **modern dark aesthetic** (matte blacks, electric purple neons)?",
+    followUpOptions: ["Classical gothic — deep purples, silver", "Modern dark — matte, neon purple"]
+  },
+
+  
+  {
+    keywords: ["tech", "modern", "minimal", "startup", "saas", "digital", "clean", "professional", "innovation", "silicon", "app", "interface", "ux", "product"],
