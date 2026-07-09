@@ -918,3 +918,23 @@ const PALETTE_LIBRARY = [
       { hex: "#e8c86a", name: "Warm Brass",          role: "Accent",     psychology: "The middle note between gold and age; accessible opulence, attainable luxury." }
     ],
     designs: [
+      "Luxury brand identity or fine jewelry editorial with timeless geometric elegance",
+      "High-end restaurant or hotel branding with 1920s architectural grandeur",
+      "Wedding stationery or black-tie event branding with formal glamour"
+    ],
+    complementary: [
+      "Typography: Cormorant Garamond (condensed display) + Optima (clean geometric sans)",
+      "Textures: Gold foil stamping, black velvet, geometrically-patterned mosaic tile",
+      "Elements: Sunburst motifs, chevron patterns, stepped architectural shapes"
+    ],
+    followUp: "Should this feel more **dark and dramatic** (more black, jewel-toned accents) or more **light and luminous** (cream backgrounds, brighter gold)?",
+    followUpOptions: ["Darker — black and jewel-toned", "Lighter — cream and bright gold"]
+  },
+
+  
+  {
+    keywords: ["cherry blossom", "sakura", "japan", "spring", "petals", "delicate", "japanese", "pink", "soft", "fleeting", "ephemeral", "hanami", "zen garden"],
+    name: "Sakura Fugue",
+    moodDesc: "Cherry blossoms falling in slow motion through spring rain — the Japanese concept of mono no aware, the poignant beauty of things that are precious precisely because they don't last.",
+    tones: ["Warm", "Light", "Delicate", "Melancholic"],
+    colors: [
