@@ -878,3 +878,23 @@ const PALETTE_LIBRARY = [
     keywords: ["autumn", "fall", "harvest", "leaves", "october", "november", "burnt", "crimson", "spice", "pumpkin", "maple", "seasonal", "change"],
     name: "Ember Harvest",
     moodDesc: "The particular grief and beauty of autumn — everything burning with color as it lets go, the smell of fallen leaves and wood smoke, the understanding that endings can be spectacular.",
+    tones: ["Warm", "Saturated", "Earthy", "Transitional"],
+    colors: [
+      { hex: "#1c0a00", name: "Scorched Earth",      role: "Background", psychology: "The fertile darkness of rich soil; what remains after the burning, ready for spring." },
+      { hex: "#c0390b", name: "Crimson Blaze",       role: "Primary",    psychology: "The shocking beauty of a maple at peak color; passion that comes with letting go." },
+      { hex: "#e86a1c", name: "Pumpkin Fire",        role: "Accent",     psychology: "Harvest warmth and abundance; the orange of jack-o-lanterns and cider warmth." },
+      { hex: "#f5b946", name: "Ginkgo Gold",         role: "Highlight",  psychology: "The yellow of ginkgo leaves against grey sky; pure, brief, radiant joy." },
+      { hex: "#7a3010", name: "Chestnut Shell",      role: "Surface",    psychology: "The brown of freshly fallen chestnuts; grounded, complete, quietly perfect." },
+      { hex: "#8b6344", name: "Oak Bark",            role: "Neutral",    psychology: "The steady permanence beneath the seasonal drama; what endures." },
+      { hex: "#4a1a08", name: "Deep Loam",           role: "Shadow",     psychology: "Rich dark earth; the promise held in darkness, the fertility of endings." }
+    ],
+    designs: [
+      "Seasonal harvest festival branding or artisanal food market with warm abundance",
+      "Autumn fashion editorial or lifestyle brand celebrating seasonal change",
+      "Cozy gaming or tabletop RPG interface with earthy medieval warmth"
+    ],
+    complementary: [
+      "Typography: Playfair Display (dramatic serif) + Crimson Pro (warm body text)",
+      "Textures: Pressed leaf prints, rough-hewn wood grain, burlap weave, dried corn husk",
+      "Elements: Leaf fall animations, harvest moon silhouettes, cider-jar illustrations"
+    ],
