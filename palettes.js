@@ -838,3 +838,23 @@ const PALETTE_LIBRARY = [
     complementary: [
       "Typography: Inter (all weights) — the perfect workhorse for digital interfaces",
       "Textures: Subtle grid patterns, noise grain at low opacity, clean geometric shapes",
+      "Elements: Rounded rectangles, precise icon grid, data visualization with color encoding"
+    ],
+    followUp: "Should this feel more **warm and approachable** (add a hint of warm gray) or stay **cool and precise** (keep the blue-grays pure and clinical)?",
+    followUpOptions: ["Warmer — approachable warm grays", "Cooler — pure clinical blue-grays"]
+  },
+
+  
+  {
+    keywords: ["aurora", "northern lights", "cosmic", "space", "galaxy", "stars", "night sky", "borealis", "ethereal", "otherworldly", "magical"],
+    name: "Aurora Drift",
+    moodDesc: "Standing in silence under the northern lights — colors that have no earthly equivalent, the feeling of watching something that doesn't need you to witness it, but how glad you are that you did.",
+    tones: ["Cool", "Dark", "Iridescent", "Cosmic"],
+    colors: [
+      { hex: "#030814", name: "Polar Night",         role: "Background", psychology: "The infinite dark of arctic night; vast, cold, and full of hidden light." },
+      { hex: "#00c9a0", name: "Aurora Green",        role: "Primary",    psychology: "Otherworldly vitality; the first color you see when the lights begin to move." },
+      { hex: "#7b4de8", name: "Cosmic Violet",       role: "Secondary",  psychology: "Deep space mystery; the color of things that exist beyond ordinary understanding." },
+      { hex: "#00e5ff", name: "Ice Electric",        role: "Accent",     psychology: "The sharp intake of breath at overwhelming beauty; pure electric wonder." },
+      { hex: "#ff6b9d", name: "Stellar Pink",        role: "Complement", psychology: "The rare pink aurora; extraordinary, unexpected, unforgettable." },
+      { hex: "#1a3a4a", name: "Tundra Shadow",       role: "Surface",    psychology: "The dark earth beneath the light show; grounded reality beneath transcendence." },
+      { hex: "#a0f0d8", name: "Glacial Mist",        role: "Highlight",  psychology: "The soft edge of a light curtain; the beauty of something barely there." }
