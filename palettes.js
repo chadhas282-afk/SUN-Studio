@@ -998,3 +998,22 @@ const PALETTE_LIBRARY = [
     colors: [
       { hex: "#020810", name: "Hadal Black",         role: "Background", psychology: "The absolute dark where pressure crushes steel; the void that gives light meaning." },
       { hex: "#00ff9f", name: "Bioluminescent",      role: "Primary",    psychology: "Life making light from nothing; evolution's most extravagant, purposeful beauty." },
+      { hex: "#0066ff", name: "Deep Signal",         role: "Secondary",  psychology: "The blue light that travels farthest in water; communication across impossible distance." },
+      { hex: "#cc00ff", name: "Abyssal Violet",      role: "Accent",     psychology: "Wavelengths visible only to creatures with different eyes; alien perception." },
+      { hex: "#00ffff", name: "Cyan Pulse",          role: "Highlight",  psychology: "The flash of a startled anglerfish; warning and wonder in the same breath." },
+      { hex: "#0a1830", name: "Pressure Dark",       role: "Surface",    psychology: "The cold crushing weight of miles of ocean; darkness with depth and density." },
+      { hex: "#40c080", name: "Ghost Glow",          role: "Neutral",    psychology: "Faint phosphorescence in a wake; traces of life, breadcrumbs in the dark." }
+    ],
+    designs: [
+      "Marine biology research platform or ocean conservation brand with scientific wonder",
+      "Sci-fi video game with alien biome aesthetic or VR experience design",
+      "Electronic music label or festival brand for experimental ambient electronic music"
+    ],
+    complementary: [
+      "Typography: Space Grotesk (scientific) + Roboto Mono (data/specimen labels)",
+      "Textures: Dark field photography, cell microscopy patterns, water caustics",
+      "Elements: Particle bloom effects, pulsing glow animations, radial bioluminescent halos"
+    ],
+    followUp: "Should this lean more **scientific and precise** (more muted, data-like) or more **fantastical and dreamlike** (more saturated glows, deeper black)?",
+    followUpOptions: ["More scientific — muted, precise", "More fantastical — deep glows"]
+  },
