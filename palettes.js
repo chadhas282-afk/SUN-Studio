@@ -718,3 +718,22 @@ const PALETTE_LIBRARY = [
     designs: [
       "Vintage clothing or thrift store brand with analog, handcrafted visual language",
       "Personal photography portfolio or film-photography zine with nostalgic warmth",
+      "Podcast or newsletter about culture, memory, and the recent past"
+    ],
+    complementary: [
+      "Typography: Playfair Display (weathered serif) + Josefin Sans (1970s geometric touch)",
+      "Textures: Film grain overlay, slightly off-register printing, aged newsprint",
+      "Elements: Rounded corners on photos, Polaroid-style frames, hand-lettered labels"
+    ],
+    followUp: "Should it feel more **warm and golden (70s film)** or more **cool and washed out (90s Kodak)**?",
+    followUpOptions: ["Warmer — 70s golden film", "Cooler — 90s washed Kodak"]
+  },
+
+  
+  {
+    keywords: ["minimal", "zen", "calm", "peaceful", "simple", "clean", "quiet", "meditate", "breathe", "still", "serene", "japanese", "wabi", "sabi"],
+    name: "Still Water",
+    moodDesc: "Absolute interior calm — the moment between breath in and breath out, a single stone in raked gravel, the understanding that less is not deprivation but precision.",
+    tones: ["Neutral", "Warm-Neutral", "Minimal", "Restful"],
+    colors: [
+      { hex: "#f8f6f2", name: "Washi White",      role: "Background", psychology: "The warm white of handmade paper; presence without assertion, space that breathes." },
