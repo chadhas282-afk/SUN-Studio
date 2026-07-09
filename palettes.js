@@ -1258,3 +1258,23 @@ const PALETTE_LIBRARY = [
     tones: ["Cool-Warm", "Dark", "Earthy", "Mystical"],
     colors: [
       { hex: "#0a0c08", name: "Peat Dark",           role: "Background", psychology: "Rich black soil and composted leaf matter; the dark generativity everything grows from." },
+      { hex: "#2a4a2a", name: "Sage Hollow",         role: "Primary",    psychology: "Old sage, dried lavender, the grey-green of knowledge stored in plant form." },
+      { hex: "#8a3a7a", name: "Belladonna",          role: "Accent",     psychology: "The purple of a dangerous beautiful plant; power that requires respect, not fear." },
+      { hex: "#c0a040", name: "Pollen Gold",         role: "Secondary",  psychology: "The gold of chamomile and calendula; warmth with purpose, healing with beauty." },
+      { hex: "#3a2a1a", name: "Bark Brown",          role: "Surface",    psychology: "The rough outer layer of medicine trees; protection holding something vital inside." },
+      { hex: "#7a9a6a", name: "Damp Fern",           role: "Neutral",    psychology: "A frond catching morning mist; the green of things that need shadow to thrive." },
+      { hex: "#4a1a4a", name: "Elder Dark",          role: "Shadow",     psychology: "The deep purple of elderberries and evening — harvest and threshold, use and caution." }
+    ],
+    designs: [
+      "Botanical skincare or apothecary brand with earth-rooted, plant-science narrative",
+      "Herbalism school or alternative wellness practitioner with grounded mystical aesthetic",
+      "Fantasy world-building project or dark nature aesthetic editorial with botanical depth"
+    ],
+    complementary: [
+      "Typography: IM Fell English (antiquarian) + Literata (warm, legible body)",
+      "Textures: Pressed botanical specimens, aged specimen labels, linen, dark wood grain",
+      "Elements: Detailed botanical illustration (engraving style), moon phase charts, root systems"
+    ],
+    followUp: "Should this lean more **dark and mystical** (deeper purples, more shadow) or more **earthy and grounded** (more greens and warm neutrals)?",
+    followUpOptions: ["Darker — mystical, purple-dominant", "Earthier — green and warm neutrals"]
+  },
