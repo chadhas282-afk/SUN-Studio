@@ -898,3 +898,23 @@ const PALETTE_LIBRARY = [
       "Textures: Pressed leaf prints, rough-hewn wood grain, burlap weave, dried corn husk",
       "Elements: Leaf fall animations, harvest moon silhouettes, cider-jar illustrations"
     ],
+    followUp: "Should this lean more **fiery and dramatic** (brighter reds, more intensity) or more **cozy and muted** (softer ochres, more warmth)?",
+    followUpOptions: ["Fierier — brighter reds, dramatic", "Cozier — soft ochres, muted warmth"]
+  },
+
+  
+  {
+    keywords: ["art deco", "1920s", "gatsby", "gilded", "gold", "glamour", "opulent", "luxurious", "jazz age", "geometric", "elegant", "deco"],
+    name: "Gilded Geometry",
+    moodDesc: "The roaring twenties distilled — champagne in crystal glasses, jazz rising through a marble floor, every surface catching the light just so, excess made into art.",
+    tones: ["Warm-Cool", "Dark", "Metallic", "Opulent"],
+    colors: [
+      { hex: "#0d0e0a", name: "Jet Noir",            role: "Background", psychology: "The theatrical black of a grand stage; absence that makes gold impossible to ignore." },
+      { hex: "#c9a84c", name: "Champagne Foil",      role: "Primary",    psychology: "Real gold, not cheap imitation; earned luxury that doesn't need to shout." },
+      { hex: "#1a3a5c", name: "Sapphire Depth",      role: "Secondary",  psychology: "The blue of luxury packaging and midnight tuxedos; sophisticated restraint." },
+      { hex: "#f0d080", name: "Gilded Light",        role: "Highlight",  psychology: "The reflection of candlelight on gold leaf; ephemeral beauty at its apex." },
+      { hex: "#2a1a08", name: "Dark Mahogany",       role: "Surface",    psychology: "The paneled walls of a private club; exclusion that makes entry more desirable." },
+      { hex: "#8a6a2a", name: "Antique Bronze",      role: "Neutral",    psychology: "Aged gold; things that have been beautiful for a long time and know it." },
+      { hex: "#e8c86a", name: "Warm Brass",          role: "Accent",     psychology: "The middle note between gold and age; accessible opulence, attainable luxury." }
+    ],
+    designs: [
