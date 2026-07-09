@@ -1098,3 +1098,23 @@ const PALETTE_LIBRARY = [
     ],
     complementary: [
       "Typography: Abril Fatface (bold display) + Lora (warm body text)",
+      "Textures: Wheat chaff, cracked clay, worn barn-wood grain, vintage seed packet print",
+      "Elements: Wide-format horizontal compositions, lone tree silhouettes, windmill motifs"
+    ],
+    followUp: "Should this feel more **golden and nostalgic** (warmer, richer golds) or more **stark and contemporary** (more contrast, cleaner forms)?",
+    followUpOptions: ["More golden — nostalgic warmth", "Starker — contemporary contrast"]
+  },
+
+  
+  {
+    keywords: ["tropical", "jungle", "midnight", "lush", "rainforest", "night", "exotic", "humid", "firefly", "insects", "dense", "green", "wild"],
+    name: "Jungle After Dark",
+    moodDesc: "A rainforest at 2 AM — the living darkness pulsing with sound, fireflies threading through leaves, the overwhelming fecundity of a world that needs no permission to be extravagant.",
+    tones: ["Cool", "Dark", "Lush", "Wild"],
+    colors: [
+      { hex: "#030e06", name: "Canopy Void",         role: "Background", psychology: "The dark beneath a closed jungle canopy; alive with things you can't see." },
+      { hex: "#1a5c2a", name: "Deep Emerald",        role: "Primary",    psychology: "The saturated green of tropical leaves; life so abundant it seems aggressive." },
+      { hex: "#80ff40", name: "Firefly Flash",       role: "Accent",     psychology: "A single firefly in deep darkness — the outsized impact of one small light." },
+      { hex: "#ff4080", name: "Heliconia Flame",     role: "Complement", psychology: "The shocking pink of tropical flowers advertising themselves to pollinators; unapologetic beauty." },
+      { hex: "#2a8040", name: "Vine Green",          role: "Secondary",  psychology: "Slow, relentless growth; the green that will reclaim everything given enough time." },
+      { hex: "#0a2a14", name: "Understory",          role: "Surface",    psychology: "The dim layer below the canopy; patience, adaptation, life finding its way." },
