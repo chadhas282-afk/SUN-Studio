@@ -758,3 +758,23 @@ const PALETTE_LIBRARY = [
   },
 
   
+  {
+    keywords: ["romance", "love", "tender", "soft", "dreamy", "pink", "delicate", "gentle", "flutter", "blush", "rose", "feminine", "ethereal"],
+    name: "Rose Reverie",
+    moodDesc: "The soft disorientation of falling — everything slightly blurred, the world warm and rose-tinted, every small detail charged with meaning, time moving strangely slow.",
+    tones: ["Warm", "Light", "Soft", "Romantic"],
+    colors: [
+      { hex: "#fff0f3", name: "First Blush",        role: "Background", psychology: "The color of anticipation and open-heartedness; vulnerability made beautiful." },
+      { hex: "#e8789a", name: "Rose Petal",         role: "Primary",    psychology: "Tender romantic love, femininity at its most confident and unconflicted." },
+      { hex: "#c45882", name: "Twilight Fuchsia",   role: "Accent",     psychology: "Passion with depth; love that has texture and courage, not just sweetness." },
+      { hex: "#f4b8cc", name: "Flutter Pink",       role: "Secondary",  psychology: "The giddy levity of a new crush; delicate, hopeful, unable to stop smiling." },
+      { hex: "#d4a0b8", name: "Dusk Mauve",         role: "Neutral",    psychology: "Romantic melancholy; the beautiful ache of loving something ephemeral." },
+      { hex: "#8b4a6a", name: "Dark Rose",          role: "Shadow",     psychology: "Depth within romance — desire, longing, the complexity of true intimacy." },
+      { hex: "#ffe4ec", name: "Champagne Blush",    role: "Surface",    psychology: "Celebration and softness; the gentle effervescence of joy in love." }
+    ],
+    designs: [
+      "Romantic fiction cover design or wedding brand with tender, dreamy aesthetic",
+      "Beauty or fragrance brand targeting emotional resonance over clinical precision",
+      "Valentine's campaign or anniversary brand identity with genuine warmth"
+    ],
+    complementary: [
