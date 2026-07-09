@@ -958,3 +958,23 @@ const PALETTE_LIBRARY = [
     ],
     followUp: "Should this feel more **dreamy and ethereal** (lighter, more white space) or more **melancholic and deep** (richer pinks, darker shadows)?",
     followUpOptions: ["Dreamier — more white, ethereal", "Deeper — richer, melancholic"]
+    },
+
+  
+  {
+    keywords: ["storm", "thunder", "lightning", "rain", "dark clouds", "dramatic", "electric", "weather", "tempest", "powerful", "grey", "charging"],
+    name: "Before the Break",
+    moodDesc: "The ten minutes before a summer thunderstorm — air pressure dropping, light turning green-gold, the charged silence of something enormous gathering itself to speak.",
+    tones: ["Cool", "Dark", "Electric", "Dramatic"],
+    colors: [
+      { hex: "#0f1218", name: "Stormfront Black",    role: "Background", psychology: "The absolute dark of a sky about to break; compressed potential, held breath." },
+      { hex: "#2a3a5c", name: "Anvil Blue",          role: "Primary",    psychology: "The color of a cumulonimbus towering 60,000 feet — awesome, indifferent power." },
+      { hex: "#e8e040", name: "Lightning Gold",      role: "Accent",     psychology: "Pure electrical discharge; the briefest, most violent beauty in nature." },
+      { hex: "#4a6080", name: "Rain Curtain",        role: "Secondary",  psychology: "The blue-grey of a wall of rain approaching across an open field." },
+      { hex: "#8a9ab8", name: "Pre-Storm Pale",      role: "Highlight",  psychology: "The eerie, greenish light before a severe storm; beauty in wrongness." },
+      { hex: "#1e2840", name: "Charged Indigo",      role: "Surface",    psychology: "Ionized air just before lightning — the smell of ozone, the taste of anticipation." },
+      { hex: "#c0c8d8", name: "Silver Downpour",     role: "Neutral",    psychology: "Rain in motion; release after unbearable tension, the relief of what breaks open." }
+    ],
+    designs: [
+      "Climate technology brand or weather data visualization with dramatic authority",
+      "Heavy metal album artwork or extreme sports brand with raw atmospheric power",
