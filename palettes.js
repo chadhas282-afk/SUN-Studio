@@ -1138,3 +1138,23 @@ const PALETTE_LIBRARY = [
   {
     keywords: ["brutalist", "concrete", "architecture", "urban", "grey", "industrial", "stark", "raw", "monumental", "soviet", "modernist", "structure"],
     name: "Raw Concrete",
+    moodDesc: "Standing inside a brutalist building — the honesty of exposed form-work, weight made visible, the strange beauty of materials that refuse to pretend to be anything other than what they are.",
+    tones: ["Neutral", "Cool", "Stark", "Monumental"],
+    colors: [
+      { hex: "#141414", name: "Aggregate Black",     role: "Background", psychology: "The compressed darkness within concrete; weight, permanence, silence without apology." },
+      { hex: "#6a6a6a", name: "Fair-Faced Grey",     role: "Primary",    psychology: "Raw concrete in full light; the honest face of material stripped of ornament." },
+      { hex: "#d4c8b8", name: "Board-Mark Pale",     role: "Secondary",  psychology: "The imprint of wooden formwork in cured concrete; process made permanently visible." },
+      { hex: "#c84a1a", name: "Oxide Red",           role: "Accent",     psychology: "Rusted rebar showing through cracked concrete; honest decay, beautiful deterioration." },
+      { hex: "#3a3a3a", name: "Shadow Reveal",       role: "Surface",    psychology: "The deep shadow in a corbelled wall; structure revealed by light, not by paint." },
+      { hex: "#9a9a8a", name: "Weathered Surface",   role: "Neutral",    psychology: "Patina of rain and decades; concrete accepting time without complaint." },
+      { hex: "#f0e8d8", name: "Limestone Break",     role: "Highlight",  psychology: "The pale mineral at a fresh break; what's been hidden becoming visible." }
+    ],
+    designs: [
+      "Architecture studio or urban design firm with material-honest, anti-decorative identity",
+      "Independent art magazine or cultural institution with rigorous graphic design sensibility",
+      "Streetwear or industrial fashion brand with brutalist, anti-luxury aesthetic"
+    ],
+    complementary: [
+      "Typography: Neue Haas Grotesk (Swiss International) + Courier (uncompromising mono)",
+      "Textures: Concrete formwork imprint, aggregate surface, rust stain, rain-streaked facade",
+      "Elements: Grid-based layouts, exposed bolt details, shadow-cast relief, raw edge treatments"
