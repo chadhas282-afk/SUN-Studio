@@ -38,7 +38,7 @@ const PALETTE_LIBRARY = [
     designs: ["Boho apparel brand", "Travel blog", "Ceramics store"],
     complementary: ["Typography: Playfair Display", "Textures: Sand grain, baked clay", "Elements: Soft arches"],
     followUp: "More orange heat or purple dusk?", followUpOptions: ["Orange", "Purple"]
-     },
+  },
   
   {
     keywords: ["arctic", "winter", "ice", "snow", "cold", "frost", "glacier", "polar"],
@@ -58,7 +58,7 @@ const PALETTE_LIBRARY = [
     complementary: ["Typography: Inter", "Textures: Frost patterns", "Elements: Sharp edges"],
     followUp: "More white snow or blue ice?", followUpOptions: ["Snow", "Ice"]
   },
-    
+  
   {
     keywords: ["royal", "elegant", "luxury", "gold", "navy", "burgundy", "king", "queen", "wealth"],
     name: "Imperial Velvet",
@@ -77,7 +77,7 @@ const PALETTE_LIBRARY = [
     complementary: ["Typography: Cinzel + Lora", "Textures: Velvet, polished marble", "Elements: Gold foil borders"],
     followUp: "Focus on gold or burgundy?", followUpOptions: ["Gold", "Burgundy"]
   },
-
+  
   {
     keywords: ["retro", "80s", "arcade", "vintage", "pixel", "outrun", "vaporwave", "nostalgia"],
     name: "Arcade Glow",
@@ -338,7 +338,7 @@ const PALETTE_LIBRARY = [
       { hex: "#ffb6c1", name: "Cotton Candy", role: "Highlight", psychology: "Soft sweetness." },
       { hex: "#e6e6fa", name: "Grape Taffy", role: "Neutral", psychology: "Playful backing." },
       { hex: "#ff4500", name: "Cherry Pop", role: "Shadow", psychology: "Intense flavor." }
-      ],
+    ],
     designs: ["Toy store", "Candy brand", "Kids app"],
     complementary: ["Typography: Fredoka One", "Textures: Glossy plastics", "Elements: Heavy rounded corners, bouncy animations"],
     followUp: "More pink or more blue?", followUpOptions: ["Pink", "Blue"]
@@ -439,7 +439,7 @@ const PALETTE_LIBRARY = [
     followUpOptions: ["Cold calculated villainy", "Explosive chaotic rage"]
   },
 
-  
+   
   {
     keywords: ["green", "forest", "nature", "leaves", "earth", "calm", "growth", "life", "moss", "pine", "botanical"],
     name: "Canopy Whisper",
@@ -458,7 +458,7 @@ const PALETTE_LIBRARY = [
       "Sustainable fashion brand e-commerce site",
       "Organic skincare or wellness app",
       "Environmental non-profit campaign page"
-      ],
+   ],
     complementary: [
       "Typography: Lora + Inter (organic serif paired with clean sans)",
       "Textures: Linen weave, watercolor paper, subtle leaf shadows",
@@ -598,7 +598,7 @@ const PALETTE_LIBRARY = [
       { hex: "#9ab8a0", name: "Sage Mist",        role: "Neutral",      psychology: "Calm amid abundance; the refreshing counterpoint to lush, saturated vitality." },
       { hex: "#c8856f", name: "Terra Rosa",       role: "Warm Neutral",  psychology: "Grounding warmth; old clay pots and sun-baked terracotta — timeless and honest." },
       { hex: "#8b4f6e", name: "Lavender Dusk",    role: "Complement",   psychology: "The sweet mystery of evening gardens; adds sophistication to unguarded joy." }
-      ],
+    ],
     designs: [
       "Farm-to-table restaurant branding or organic food marketplace with earthy vitality",
       "Botanical illustration app or plant-care guide with warm, handcrafted feel",
@@ -698,7 +698,7 @@ const PALETTE_LIBRARY = [
     ],
     followUp: "Should the palette feel more **hot and intense** (deeper reds, burning midtones) or more **pale and ethereal** (bleached golds, cool purples at the edges)?",
     followUpOptions: ["Hotter — deeper reds, burning", "Paler — bleached golds, ethereal"]
-    },
+  },
 
   
   {
@@ -858,7 +858,7 @@ const PALETTE_LIBRARY = [
       { hex: "#ff6b9d", name: "Stellar Pink",        role: "Complement", psychology: "The rare pink aurora; extraordinary, unexpected, unforgettable." },
       { hex: "#1a3a4a", name: "Tundra Shadow",       role: "Surface",    psychology: "The dark earth beneath the light show; grounded reality beneath transcendence." },
       { hex: "#a0f0d8", name: "Glacial Mist",        role: "Highlight",  psychology: "The soft edge of a light curtain; the beauty of something barely there." }
-      ],
+    ],
     designs: [
       "Space tech startup or astronomy app with deep cosmic wonder",
       "Northern travel brand or arctic expedition company with epic atmospheric palette",
@@ -958,7 +958,7 @@ const PALETTE_LIBRARY = [
     ],
     followUp: "Should this feel more **dreamy and ethereal** (lighter, more white space) or more **melancholic and deep** (richer pinks, darker shadows)?",
     followUpOptions: ["Dreamier — more white, ethereal", "Deeper — richer, melancholic"]
-    },
+  },
 
   
   {
@@ -1018,7 +1018,7 @@ const PALETTE_LIBRARY = [
     followUpOptions: ["More scientific — muted, precise", "More fantastical — deep glows"]
   },
 
-    
+  
   {
     keywords: ["coffee", "espresso", "morning", "café", "barista", "roast", "warm", "ritual", "dawn", "awakening", "first cup", "brew", "moka"],
     name: "First Cup",
@@ -1158,7 +1158,7 @@ const PALETTE_LIBRARY = [
       "Typography: Neue Haas Grotesk (Swiss International) + Courier (uncompromising mono)",
       "Textures: Concrete formwork imprint, aggregate surface, rust stain, rain-streaked facade",
       "Elements: Grid-based layouts, exposed bolt details, shadow-cast relief, raw edge treatments"
-      ],
+    ],
     followUp: "Should this feel more **purely monolithic** (only greys, no accent) or keep the **rust and warmth** that shows the life within the material?",
     followUpOptions: ["Purely monolithic — greys only", "Keep rust and warmth"]
   },
@@ -1298,7 +1298,7 @@ const PALETTE_LIBRARY = [
       "Marine conservation brand or ocean awareness campaign with urgent tropical beauty",
       "Tropical resort or dive operator brand with vibrant, alive coral ecosystem energy",
       "Children's ocean education platform or aquarium with joyful, wonder-full palette"
-      ],
+    ],
     complementary: [
       "Typography: Quicksand (rounded, warm) + Nunito Sans (accessible, ocean-friendly)",
       "Textures: Coral polyp close-up, underwater caustic light, tropical fish scale patterns",
@@ -1318,7 +1318,7 @@ const PALETTE_LIBRARY = [
       { hex: "#0c0a08", name: "Studio Night",        role: "Background", psychology: "The absolute dark that makes a desk lamp into a sanctuary; chosen, productive darkness." },
       { hex: "#c87040", name: "Lamp Amber",          role: "Primary",    psychology: "The color of a desk lamp at work; focused warmth, the light of making something." },
       { hex: "#4a80c0", name: "Midnight Blue",       role: "Accent",     psychology: "The blue visible through a studio window at 3 AM; the world asleep while you work." },
-            { hex: "#e8c090", name: "Canvas Raw",          role: "Highlight",  psychology: "Unprimed linen, the beginning of something — potential before the first mark." },
+      { hex: "#e8c090", name: "Canvas Raw",          role: "Highlight",  psychology: "Unprimed linen, the beginning of something — potential before the first mark." },
       { hex: "#2a1e14", name: "Coffee Cold",         role: "Surface",    psychology: "Coffee gone cold beside a working hand; the forgotten comfort of deep focus." },
       { hex: "#8a6848", name: "Dried Paint",         role: "Neutral",    psychology: "The crust of mixed colors on a palette edge; the record of all previous attempts." },
       { hex: "#c04060", name: "Red Underpainting",   role: "Complement", psychology: "The red ground beneath the finished surface; foundations that make everything else sing." }
@@ -1358,7 +1358,7 @@ function findBestPalette(input) {
     if (score > bestScore) {
       bestScore = score;
       bestPalette = palette;
-      }
+    }
   }
   return { palette: bestPalette, score: bestScore };
 }
@@ -1397,4 +1397,14 @@ function contrastRatio(hex1, hex2) {
   const l1 = relativeLuminance(hex1);
   const l2 = relativeLuminance(hex2);
   return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+}
+
+function wcagRating(hex) {
+  const white = '#ffffff', black = '#000000';
+  const ratioW = contrastRatio(hex, white);
+  const ratioB = contrastRatio(hex, black);
+  const best = Math.max(ratioW, ratioB);
+  if (best >= 7)   return { label: 'AAA', ratio: best.toFixed(1), cls: 'wcag-badge--aaa' };
+  if (best >= 4.5) return { label: 'AA',  ratio: best.toFixed(1), cls: 'wcag-badge--aa' };
+  return           { label: 'Fail', ratio: best.toFixed(1), cls: 'wcag-badge--fail' };
 }
