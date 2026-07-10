@@ -77,3 +77,24 @@ body::before {
   padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124,93,244,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,93,244,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-orb {
+  position: fixed; border-radius: 50%; filter: blur(120px);
+  z-index: 0; opacity: 0.6; pointer-events: none;
+  animation: orbDrift 20s infinite alternate ease-in-out;
+  transition: background 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.bg-orb--1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(124,93,244,0.16) 0%, transparent 70%);
