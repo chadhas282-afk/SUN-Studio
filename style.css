@@ -198,3 +198,23 @@ body::before {
 }
 .surprise-btn span:first-child {
   font-size: 16px;
+  display: inline-block;
+  animation: diceRoll 4s ease-in-out infinite;
+}
+@keyframes diceRoll {
+  0%,80%,100% { transform: rotate(0deg); }
+  85% { transform: rotate(-20deg); }
+  90% { transform: rotate(20deg); }
+  95% { transform: rotate(-10deg); }
+}
+
+.main { flex: 1; padding-bottom: 80px; }
+.hero { text-align: center; padding: 20px 0 44px; }
+
+.hero__title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(40px, 7.5vw, 72px);
+  line-height: 1.08; letter-spacing: -2px;
+  margin-bottom: 22px;
+  display: flex; flex-direction: column; gap: 6px;
+}
