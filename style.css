@@ -398,3 +398,22 @@ body::before {
 @keyframes ringSpn { to { transform: rotate(360deg); } }
 
 .loading-orbs { display: flex; gap: 6px; }
+.loading-orb {
+  display: block; border-radius: 50%;
+  animation: orbPop 1.4s ease-in-out infinite;
+}
+.loading-orb--1 { width: 8px; height: 8px; background: var(--accent-violet); animation-delay: 0s; }
+.loading-orb--2 { width: 10px; height: 10px; background: #9b7bf8; animation-delay: 0.15s; }
+.loading-orb--3 { width: 12px; height: 12px; background: var(--accent-indigo); animation-delay: 0.3s; }
+.loading-orb--4 { width: 10px; height: 10px; background: #eb8ab8; animation-delay: 0.45s; }
+.loading-orb--5 { width: 8px; height: 8px; background: var(--accent-rose); animation-delay: 0.6s; }
+
+@keyframes orbPop {
+  0%,100% { transform: scaleY(0.4) scaleX(0.8); opacity: 0.5; }
+  50%      { transform: scaleY(1.2) scaleX(1); opacity: 1; }
+}
+.loading-text {
+  color: var(--text-secondary); font-size: 15px; font-style: italic;
+  animation: textFade 1.8s ease-in-out infinite alternate;
+}
+@keyframes textFade { from { opacity: 0.4; } to { opacity: 1; } }
