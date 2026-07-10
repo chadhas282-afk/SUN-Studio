@@ -378,3 +378,23 @@ body::before {
 .mood-tag::before {
   content: ''; position: absolute; inset: 0;
   background: var(--grad-primary); opacity: 0;
+  transition: opacity var(--transition-base);
+}
+.mood-tag:hover { border-color: rgba(124,93,244,0.4); color: var(--text-primary); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.mood-tag:hover::before { opacity: 0.08; }
+
+.loading-state { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 64px 0; }
+.loading-state[hidden] { display: none; }
+
+.loading-visual { position: relative; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; }
+.loading-ring {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--accent-violet);
+  border-right-color: var(--accent-rose);
+  animation: ringSpn 1s linear infinite;
+}
+@keyframes ringSpn { to { transform: rotate(360deg); } }
+
+.loading-orbs { display: flex; gap: 6px; }
