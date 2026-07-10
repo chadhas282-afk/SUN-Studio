@@ -417,3 +417,24 @@ body::before {
   animation: textFade 1.8s ease-in-out infinite alternate;
 }
 @keyframes textFade { from { opacity: 0.4; } to { opacity: 1; } }
+
+.palette-output { }
+.palette-output[hidden] { display: none; }
+
+.palette-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--ambient-border, var(--border-subtle));
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.03) inset;
+  animation: cardReveal 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+  transition: border-color 1.5s ease-in-out, box-shadow 1.5s ease-in-out;
+}
+.palette-card.ambient-breathing {
+  animation: cardReveal 0.6s cubic-bezier(0.34,1.56,0.64,1) both, ambientBreathing 4s infinite alternate ease-in-out 0.6s;
+}
+@keyframes ambientBreathing {
+  0% { box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.03) inset, 0 0 20px var(--ambient-glow); }
+  100% { box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.03) inset, 0 0 60px var(--ambient-glow); }
+}
+@keyframes cardReveal {
