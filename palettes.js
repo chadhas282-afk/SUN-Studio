@@ -1318,3 +1318,22 @@ const PALETTE_LIBRARY = [
       { hex: "#0c0a08", name: "Studio Night",        role: "Background", psychology: "The absolute dark that makes a desk lamp into a sanctuary; chosen, productive darkness." },
       { hex: "#c87040", name: "Lamp Amber",          role: "Primary",    psychology: "The color of a desk lamp at work; focused warmth, the light of making something." },
       { hex: "#4a80c0", name: "Midnight Blue",       role: "Accent",     psychology: "The blue visible through a studio window at 3 AM; the world asleep while you work." },
+            { hex: "#e8c090", name: "Canvas Raw",          role: "Highlight",  psychology: "Unprimed linen, the beginning of something — potential before the first mark." },
+      { hex: "#2a1e14", name: "Coffee Cold",         role: "Surface",    psychology: "Coffee gone cold beside a working hand; the forgotten comfort of deep focus." },
+      { hex: "#8a6848", name: "Dried Paint",         role: "Neutral",    psychology: "The crust of mixed colors on a palette edge; the record of all previous attempts." },
+      { hex: "#c04060", name: "Red Underpainting",   role: "Complement", psychology: "The red ground beneath the finished surface; foundations that make everything else sing." }
+    ],
+    designs: [
+      "Creative agency or design studio that works at the intersection of art and craft",
+      "Art supply brand or independent music label with maker-culture authenticity",
+      "Portfolio site for visual artists, illustrators, or musicians who work by feel"
+    ],
+    complementary: [
+      "Typography: DM Serif Display (art-director's serif) + IBM Plex Mono (technical notes)",
+      "Textures: Canvas weave, paint tube metal, vinyl record groove, paper watercolor grain",
+      "Elements: Loose brush stroke marks, smudged annotations, paint-drip accents"
+    ],
+    followUp: "Should this lean more **warm and painterly** (more amber, more texture) or more **cool and digital** (more blue, more precision)?",
+    followUpOptions: ["Warmer — painterly, amber-toned", "Cooler — digital, precise blue"]
+  }
+];
