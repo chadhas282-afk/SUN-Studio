@@ -458,3 +458,43 @@ body::before {
   background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.07) 50%, transparent 60%);
   animation: shimmer 4s ease-in-out infinite;
 }
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+.palette-banner__content {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 36px 44px;
+}
+.palette-name {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(32px, 5.5vw, 54px);
+  font-style: italic; letter-spacing: -1.5px;
+  color: #fff; text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+  animation: bannerReveal 0.6s ease both 0.1s;
+}
+@keyframes bannerReveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.palette-mood-desc {
+  font-size: 14px; color: rgba(240,239,248,0.8);
+  line-height: 1.7; max-width: 580px; font-weight: 300;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  animation: bannerReveal 0.6s ease both 0.2s;
+}
+
+.palette-dna-row {
+  display: flex; align-items: center; gap: 24px;
+  padding: 22px 44px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(255,255,255,0.012);
+}
+.palette-dna-canvas { border-radius: 50%; flex-shrink: 0; }
+.palette-dna-meta { flex: 1; }
+.palette-dna-meta__label {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2.5px; color: var(--text-muted); margin-bottom: 8px;
+}
+.palette-tone-tags { display: flex; flex-wrap: wrap; gap: 6px; }
