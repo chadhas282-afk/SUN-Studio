@@ -1358,3 +1358,22 @@ function findBestPalette(input) {
     if (score > bestScore) {
       bestScore = score;
       bestPalette = palette;
+      }
+  }
+  return { palette: bestPalette, score: bestScore };
+}
+
+function getRandomPalette() {
+  return PALETTE_LIBRARY[Math.floor(Math.random() * PALETTE_LIBRARY.length)];
+}
+
+
+function sanitizeHex(hex) {
+  if (typeof hex !== 'string') return null;
+  const m = hex.trim().match(/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/);
+  if (!m) return null;
+  
+  let h = m[1];
+  if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+  return '#' + h.toLowerCase();
+}
