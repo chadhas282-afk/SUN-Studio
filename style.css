@@ -158,3 +158,23 @@ body::before {
 }
 .loading-logo {
   width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
+  animation: pulseLogo 2s ease-in-out infinite;
+}
+.header__logo-sub {
+  font-size: 11px; font-weight: 500; color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+.header__logo-text {
+  font-size: 22px; font-weight: 700; letter-spacing: -0.5px;
+  background: var(--grad-primary);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.header__actions {
+  display: flex; align-items: center; gap: 8px;
+}
+.header__tagline {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 3.5px; color: var(--text-muted);
+}
+
+.surprise-btn {
