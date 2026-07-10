@@ -218,3 +218,23 @@ body::before {
   margin-bottom: 22px;
   display: flex; flex-direction: column; gap: 6px;
 }
+.hero__title-line { color: var(--text-primary); }
+.hero__title-line--accent {
+  background: var(--grad-primary);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  font-style: italic;
+  filter: drop-shadow(0 0 15px rgba(124, 93, 244, 0.4)) drop-shadow(0 0 40px rgba(244, 91, 138, 0.2));
+  animation: textGlowPulse 4s ease-in-out infinite;
+}
+@keyframes textGlowPulse {
+  0%, 100% { filter: drop-shadow(0 0 15px rgba(124, 93, 244, 0.4)) drop-shadow(0 0 40px rgba(244, 91, 138, 0.2)); }
+  50% { filter: drop-shadow(0 0 25px rgba(124, 93, 244, 0.6)) drop-shadow(0 0 60px rgba(244, 91, 138, 0.4)); }
+}
+
+.hero__subtitle {
+  font-size: 17px; color: var(--text-secondary);
+  max-width: 540px; margin: 0 auto 40px;
+  line-height: 1.75; font-weight: 300;
+}
+
+.input-area {
