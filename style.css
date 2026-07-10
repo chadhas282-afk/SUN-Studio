@@ -1,0 +1,20 @@
+
+:root {
+  --bg-base:         #070710;
+  --bg-surface:      #0e0e1e;
+  --bg-elevated:     #161628;
+  --bg-card:         #1c1c36;
+
+  --border-subtle:   rgba(255,255,255,0.05);
+  --border-mid:      rgba(255,255,255,0.10);
+  --border-strong:   rgba(255,255,255,0.20);
+
+  --text-primary:    #f0eff8;
+  --text-secondary:  #9b9ab8;
+  --text-muted:      #4e4d6a;
+
+  --accent-violet:   #7c5df4;
+  --accent-indigo:   #5b7af4;
+  --accent-rose:     #f45b8a;
+  --accent-amber:    #f4a85b;
+  --accent-cyan:     #5bf4e0;
