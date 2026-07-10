@@ -298,3 +298,23 @@ body::before {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+.fade-out {
+  animation: fadeOut 0.4s ease forwards;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.input-buttons { display: flex; gap: 10px; }
+.generate-btn {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 18px 32px;
+  background: var(--grad-primary);
+  border: none; border-radius: var(--radius-lg);
+  color: #fff; font-family: 'Outfit', sans-serif;
+  font-size: 17px; font-weight: 700; letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), opacity var(--transition-base);
+  position: relative; overflow: hidden;
