@@ -138,3 +138,23 @@ body::before {
   border: 1px solid var(--border-subtle);
   border-radius: 100px;
   position: relative;
+  border-color: var(--ambient-border, var(--border-subtle));
+  transition: border-color 1.5s ease-in-out;
+}
+.header__logo {
+  display: flex; align-items: center; gap: 10px;
+}
+.header__logo-img {
+  width: 60px; height: 60px; border-radius: 50%; object-fit: cover;
+}
+.header__logo-text-wrap {
+  display: flex; flex-direction: column;
+}
+
+@keyframes pulseLogo {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; box-shadow: 0 0 30px rgba(91,122,244,0.6); }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+.loading-logo {
+  width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
