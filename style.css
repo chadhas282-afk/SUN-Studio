@@ -18,3 +18,23 @@
   --accent-rose:     #f45b8a;
   --accent-amber:    #f4a85b;
   --accent-cyan:     #5bf4e0;
+
+  --grad-primary: linear-gradient(135deg, #7c5df4 0%, #5b7af4 45%, #f45b8a 100%);
+  --grad-subtle:  linear-gradient(135deg, rgba(124,93,244,0.12) 0%, rgba(91,122,244,0.08) 100%);
+  --grad-glow:    linear-gradient(135deg, rgba(124,93,244,0.3), rgba(244,91,138,0.2));
+
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   22px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  --shadow-sm:           0 2px 12px rgba(0,0,0,0.4);
+  --shadow-md:           0 8px 32px rgba(0,0,0,0.5);
+  --shadow-lg:           0 20px 64px rgba(0,0,0,0.65);
+  --shadow-glow-violet:  0 0 60px rgba(124,93,244,0.35);
+  --shadow-inset:        inset 0 1px 0 rgba(255,255,255,0.06);
+
+  --transition-fast:   150ms cubic-bezier(0.4,0,0.2,1);
+  --transition-base:   250ms cubic-bezier(0.4,0,0.2,1);
+  --transition-slow:   450ms cubic-bezier(0.4,0,0.2,1);
