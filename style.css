@@ -118,3 +118,23 @@ body::before {
 
 .app-shell {
   position: relative; z-index: 1;
+  min-height: 100vh; display: flex; flex-direction: column;
+  max-width: 980px; margin: 0 auto; padding: 0 28px;
+}
+
+.header {
+  display: flex; flex-direction: column;
+  align-items: center; padding: 40px 0 28px;
+  text-align: center;
+}
+.header__bar {
+  display: flex; align-items: center; justify-content: space-between;
+  width: min(90vw, 800px);
+  margin: 0 auto;
+  padding: 16px 32px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 100px;
+  position: relative;
