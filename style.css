@@ -98,3 +98,23 @@ body::before {
 .bg-orb--1 {
   width: 700px; height: 700px;
   background: radial-gradient(circle, rgba(124,93,244,0.16) 0%, transparent 70%);
+  top: -250px; left: -250px; animation-delay: 0s;
+}
+.bg-orb--2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(244,91,138,0.11) 0%, transparent 70%);
+  top: 25%; right: -150px; animation-delay: -7s; animation-direction: alternate-reverse;
+}
+.bg-orb--3 {
+  width: 450px; height: 450px;
+  background: radial-gradient(circle, rgba(91,244,224,0.08) 0%, transparent 70%);
+  bottom: -100px; left: 35%; animation-delay: -14s;
+}
+@keyframes orbDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, -30px) scale(1.08); }
+  100% { transform: translate(-25px, 50px) scale(0.94); }
+}
+
+.app-shell {
+  position: relative; z-index: 1;
