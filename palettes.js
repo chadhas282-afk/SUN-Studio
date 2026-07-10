@@ -1337,3 +1337,24 @@ const PALETTE_LIBRARY = [
     followUpOptions: ["Warmer — painterly, amber-toned", "Cooler — digital, precise blue"]
   }
 ];
+
+
+function findBestPalette(input) {
+  const normalized = input.toLowerCase().replace(/[^a-z0-9\s]/g, ' ');
+  const words = normalized.split(/\s+/).filter(Boolean);
+
+  let bestScore = -1;
+  let bestPalette = PALETTE_LIBRARY[Math.floor(Math.random() * PALETTE_LIBRARY.length)];
+
+  for (const palette of PALETTE_LIBRARY) {
+    let score = 0;
+    for (const keyword of palette.keywords) {
+      for (const word of words) {
+        if (word === keyword) { score += 4; }
+        else if (keyword.includes(word) && word.length > 3) { score += 2; }
+        else if (word.includes(keyword) && keyword.length > 3) { score += 1; }
+      }
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      bestPalette = palette;
