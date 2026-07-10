@@ -318,3 +318,23 @@ body::before {
   cursor: pointer;
   transition: transform var(--transition-base), box-shadow var(--transition-base), opacity var(--transition-base);
   position: relative; overflow: hidden;
+  box-shadow: 0 4px 24px rgba(124,93,244,0.4);
+  animation: gentlePulse 3s infinite alternate ease-in-out;
+}
+@keyframes gentlePulse {
+  0% { box-shadow: 0 4px 24px rgba(124,93,244,0.3); }
+  100% { box-shadow: 0 12px 40px rgba(124,93,244,0.65); }
+}
+.generate-btn::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+.generate-btn::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--grad-primary);
+  opacity: 0; transition: opacity var(--transition-base);
+  filter: brightness(1.2);
+}
