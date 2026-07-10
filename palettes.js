@@ -1298,3 +1298,23 @@ const PALETTE_LIBRARY = [
       "Marine conservation brand or ocean awareness campaign with urgent tropical beauty",
       "Tropical resort or dive operator brand with vibrant, alive coral ecosystem energy",
       "Children's ocean education platform or aquarium with joyful, wonder-full palette"
+      ],
+    complementary: [
+      "Typography: Quicksand (rounded, warm) + Nunito Sans (accessible, ocean-friendly)",
+      "Textures: Coral polyp close-up, underwater caustic light, tropical fish scale patterns",
+      "Elements: Refracted light beams, swimming fish silhouettes, wave-edge transitions"
+    ],
+    followUp: "Should this feel more **bright and joyful** (more white, more contrast) or more **deep and immersive** (richer colors, darker water tones)?",
+    followUpOptions: ["Brighter — more joyful contrast", "Deeper — richer, darker water"]
+  },
+
+  
+  {
+    keywords: ["studio", "creative", "2am", "artist", "making", "flow state", "late night", "painting", "music production", "desk", "lamp", "work", "inspiration"],
+    name: "The Making Hour",
+    moodDesc: "2 AM when you forgot to be tired — the desk lamp the only light, paint on your hands, the particular clarity that arrives when the world's demands have gone quiet and the work is all there is.",
+    tones: ["Warm", "Dark", "Focused", "Creative"],
+    colors: [
+      { hex: "#0c0a08", name: "Studio Night",        role: "Background", psychology: "The absolute dark that makes a desk lamp into a sanctuary; chosen, productive darkness." },
+      { hex: "#c87040", name: "Lamp Amber",          role: "Primary",    psychology: "The color of a desk lamp at work; focused warmth, the light of making something." },
+      { hex: "#4a80c0", name: "Midnight Blue",       role: "Accent",     psychology: "The blue visible through a studio window at 3 AM; the world asleep while you work." },
