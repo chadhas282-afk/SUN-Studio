@@ -518,3 +518,23 @@ body::before {
   gap: 0;
 }
 .color-swatch {
+  position: relative; cursor: pointer;
+  transition: transform var(--transition-base), z-index 0s;
+}
+.color-swatch:hover { transform: scale(1.06); z-index: 2; }
+.color-swatch__block {
+  width: 100%; aspect-ratio: 1 / 1.45;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 12px; position: relative; overflow: hidden;
+  transition: all var(--transition-base);
+}
+.color-swatch__block::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+}
+.color-swatch--animate {
+  animation: swatchReveal 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes swatchReveal {
+  from { opacity: 0; transform: scaleY(0.2) translateY(20px); transform-origin: bottom; }
