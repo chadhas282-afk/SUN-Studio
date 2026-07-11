@@ -558,3 +558,23 @@ body::before {
   text-transform: uppercase; opacity: 0.85; font-variant-numeric: tabular-nums;
 }
 .color-swatch__name { display: block; font-size: 11px; font-weight: 500; opacity: 0.8; line-height: 1.3; margin-top: 2px; }
+
+.color-details {
+  padding: 36px 44px;
+  border-top: 1px solid var(--border-subtle);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+.color-detail-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid transparent;
+  border-radius: var(--radius-md);
+  padding: 20px; display: flex; gap: 16px; align-items: flex-start;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+  cursor: pointer;
+  animation: detailCardIn 0.4s ease both;
+}
+@keyframes detailCardIn {
+  from { opacity: 0; transform: translateY(16px); }
