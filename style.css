@@ -658,3 +658,23 @@ body::before {
 .follow-up-option::before {
   content: ''; position: absolute; inset: 0;
   background: var(--grad-primary); opacity: 0;
+  transition: opacity var(--transition-base);
+}
+.follow-up-option:hover { border-color: rgba(124,93,244,0.6); color: var(--text-primary); transform: translateY(-1px); }
+.follow-up-option:hover::before { opacity: 0.08; }
+
+.palette-actions {
+  padding: 22px 40px; border-top: 1px solid var(--border-subtle);
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.action-btn {
+  display: flex; align-items: center; gap: 7px;
+  padding: 11px 20px; border-radius: var(--radius-md);
+  font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all var(--transition-base); border: none;
+  letter-spacing: 0.2px;
+}
+.action-btn--primary {
+  background: var(--bg-elevated); border: 1.5px solid var(--border-mid); color: var(--text-primary);
+}
+.action-btn--primary:hover {
