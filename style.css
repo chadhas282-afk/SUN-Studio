@@ -858,3 +858,23 @@ button:focus:not(:focus-visible) { outline: none; }
 .browse-btn:hover {
   border-color: rgba(91,122,244,0.6);
   color: var(--text-primary);
+  background: rgba(91,122,244,0.12);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(91,122,244,0.25);
+}
+.browse-btn span:first-child { font-size: 14px; }
+
+.header-btn.ambient-btn--active {
+  border-color: rgba(244,168,91,0.6);
+  color: var(--accent-amber);
+  background: rgba(244,168,91,0.1);
+  box-shadow: 0 0 20px rgba(244,168,91,0.3);
+  animation: ambientPulse 2.5s ease-in-out infinite;
+}
+@keyframes ambientPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(244,168,91,0.3); border-color: rgba(244,168,91,0.6); }
+  50% { box-shadow: 0 0 36px rgba(244,168,91,0.6); border-color: rgba(244,168,91,0.9); }
+}
+
+body.ambient-active .bg-orb--1 {
+  transition: background 2s ease, filter 2s ease;
