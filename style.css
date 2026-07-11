@@ -578,3 +578,23 @@ body::before {
 }
 @keyframes detailCardIn {
   from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.color-detail-card:hover { border-color: var(--border-mid); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.color-detail-dot {
+  width: 44px; height: 44px; border-radius: var(--radius-sm); flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  transition: transform var(--transition-spring), box-shadow var(--transition-base);
+}
+.color-detail-card:hover .color-detail-dot { transform: scale(1.1); box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+.color-detail-info { flex: 1; min-width: 0; }
+.color-detail-hex {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.color-detail-name { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+.color-detail-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+.color-detail-role {
+  display: inline-block; font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
