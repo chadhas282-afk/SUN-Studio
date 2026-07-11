@@ -918,3 +918,23 @@ body.ambient-active .bg-orb--3 {
 .header-btn--primary {
   background: linear-gradient(135deg, rgba(124, 93, 244, 0.2), rgba(244, 91, 138, 0.2));
   border: 1px solid rgba(124, 93, 244, 0.4);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(124, 93, 244, 0.1);
+}
+.header-btn--primary:hover {
+  background: linear-gradient(135deg, rgba(124, 93, 244, 0.3), rgba(244, 91, 138, 0.3));
+  border-color: rgba(244, 91, 138, 0.6);
+  box-shadow: 0 0 24px rgba(244, 91, 138, 0.2);
+}
+.header-btn--ghost {
+  background: transparent;
+  border-color: transparent;
+}
+.header-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.gallery-modal {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+}
