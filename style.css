@@ -538,3 +538,23 @@ body::before {
 }
 @keyframes swatchReveal {
   from { opacity: 0; transform: scaleY(0.2) translateY(20px); transform-origin: bottom; }
+  to   { opacity: 1; transform: scaleY(1) translateY(0); }
+}
+.color-swatch__copy-hint {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(0,0,0,0.65); backdrop-filter: blur(10px);
+  border-radius: var(--radius-sm); padding: 6px 12px;
+  font-size: 11px; font-weight: 700; color: #fff;
+  opacity: 0; transition: opacity var(--transition-base), transform var(--transition-spring);
+  pointer-events: none; white-space: nowrap; z-index: 3; letter-spacing: 0.5px;
+}
+.color-swatch:hover .color-swatch__copy-hint {
+  opacity: 1; transform: translate(-50%, -50%) scale(1);
+}
+.color-swatch__info { position: relative; z-index: 2; }
+.color-swatch__hex {
+  display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; opacity: 0.85; font-variant-numeric: tabular-nums;
+}
+.color-swatch__name { display: block; font-size: 11px; font-weight: 500; opacity: 0.8; line-height: 1.3; margin-top: 2px; }
