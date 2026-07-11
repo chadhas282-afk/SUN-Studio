@@ -618,3 +618,23 @@ body::before {
 }
 @media (max-width: 600px) { .palette-insights { grid-template-columns: 1fr; } }
 .insight-block {
+  background: var(--bg-elevated); border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md); padding: 22px;
+}
+.insight-block__title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--text-muted); margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.insight-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.insight-list__item {
+  font-size: 13px; color: var(--text-secondary); line-height: 1.5;
+  display: flex; align-items: flex-start; gap: 8px; font-weight: 300;
+}
+.insight-list__item::before { content: '→'; color: var(--accent-violet); flex-shrink: 0; font-size: 11px; margin-top: 2px; }
+
+.follow-up {
+  padding: 24px 40px; border-top: 1px solid var(--border-subtle);
+  background: rgba(124,93,244,0.03);
+}
+.follow-up__label {
