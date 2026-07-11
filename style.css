@@ -898,3 +898,23 @@ body.ambient-active .bg-orb--3 {
   font-weight: 500;
   border-radius: var(--radius-full);
   padding: 6px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.header-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.header-btn--icon {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+.header-btn--primary {
+  background: linear-gradient(135deg, rgba(124, 93, 244, 0.2), rgba(244, 91, 138, 0.2));
+  border: 1px solid rgba(124, 93, 244, 0.4);
