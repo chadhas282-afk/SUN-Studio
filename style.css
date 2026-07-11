@@ -698,3 +698,23 @@ body::before {
 }
 .history-title {
   font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2.5px; color: var(--text-muted);
+}
+.clear-history-btn {
+  font-size: 12px; font-weight: 600; color: var(--text-muted);
+  background: none; border: none; cursor: pointer; letter-spacing: 0.5px;
+  transition: color var(--transition-base);
+}
+.clear-history-btn:hover { color: #f87171; }
+.history-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px;
+}
+.history-card {
+  background: var(--bg-surface); border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg); overflow: hidden; cursor: pointer;
+  transition: all var(--transition-spring);
+  animation: historyCardIn 0.35s ease both;
+}
+@keyframes historyCardIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+.history-card:hover { 
+  border-color: rgba(91,122,244,0.6); 
