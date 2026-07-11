@@ -678,3 +678,23 @@ body::before {
   background: var(--bg-elevated); border: 1.5px solid var(--border-mid); color: var(--text-primary);
 }
 .action-btn--primary:hover {
+  border-color: rgba(124,93,244,0.5); background: rgba(124,93,244,0.1); color: #c4b5fd;
+  transform: translateY(-1px); box-shadow: 0 4px 16px rgba(124,93,244,0.2);
+}
+.action-btn--secondary {
+  background: transparent; border: 1.5px solid var(--border-subtle); color: var(--text-secondary);
+}
+.action-btn--secondary:hover { border-color: var(--border-mid); color: var(--text-primary); transform: translateY(-1px); }
+.action-btn--danger {
+  background: rgba(239,68,68,0.08); border: 1.5px solid rgba(239,68,68,0.2); color: #f87171;
+}
+.action-btn--danger:hover { background: rgba(239,68,68,0.15); border-color: rgba(239,68,68,0.4); transform: translateY(-1px); }
+
+.history-section { margin-top: 64px; }
+.history-section[hidden] { display: none; }
+.history-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px;
+}
+.history-title {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
