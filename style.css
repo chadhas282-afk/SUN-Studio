@@ -838,3 +838,23 @@ body::before {
   .input-field { font-size: 16px; padding: 16px; }
   .quick-vibes { margin-top: 24px; }
   .history-grid { grid-template-columns: 1fr; }
+  }
+
+:focus-visible { outline: 2px solid rgba(124,93,244,0.8); outline-offset: 3px; border-radius: 4px; }
+button:focus:not(:focus-visible) { outline: none; }
+
+.browse-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 16px;
+  background: var(--bg-elevated);
+  border: 1.5px solid var(--border-mid);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.browse-btn:hover {
+  border-color: rgba(91,122,244,0.6);
+  color: var(--text-primary);
