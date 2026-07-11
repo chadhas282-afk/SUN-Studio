@@ -778,3 +778,23 @@ body::before {
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
 .color-modal__hex {
+  font-family: 'Space Grotesk', monospace; font-size: 32px; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase; color: #fff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  margin-bottom: 8px;
+}
+.color-modal__name {
+  font-family: 'DM Serif Display', Georgia, serif; font-size: 28px; font-style: italic;
+  color: #fff; margin-bottom: 8px; text-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+.color-modal__role {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  padding: 4px 14px; border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.85);
+  border: 1px solid rgba(255,255,255,0.2); margin-bottom: 20px;
+}
+.color-modal__psychology {
+  font-size: 15px; color: rgba(255,255,255,0.7);
+  line-height: 1.65; font-weight: 300; margin-bottom: 20px;
+}
