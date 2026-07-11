@@ -1078,3 +1078,23 @@ body.ambient-active .bg-orb--3 {
 }
 .gallery-card:hover .gallery-card__swatch {
   filter: brightness(0.9);
+  }
+.gallery-card:hover .gallery-card__swatch:hover {
+  flex: 3;
+  filter: brightness(1.2) saturate(1.2);
+}
+.gallery-card__info {
+  padding: 12px 14px 14px;
+  flex: 1;
+  display: block;
+}
+.gallery-card__name {
+  font-size: 13px; font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.gallery-card__tones {
+  display: flex; flex-wrap: wrap; gap: 4px;
+}
+.gallery-card__tone {
