@@ -638,3 +638,23 @@ body::before {
   background: rgba(124,93,244,0.03);
 }
 .follow-up__label {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--text-muted); margin-bottom: 14px;
+}
+.follow-up__question {
+  font-size: 14px; color: var(--text-secondary); font-style: italic;
+  line-height: 1.6; font-weight: 300; margin-bottom: 14px;
+}
+.follow-up__question strong { color: #a78bfa; font-style: normal; font-weight: 600; }
+.follow-up-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.follow-up-option {
+  background: var(--bg-elevated); border: 1.5px solid var(--border-mid);
+  border-radius: var(--radius-full); color: var(--text-secondary);
+  font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600;
+  padding: 8px 20px; cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative; overflow: hidden;
+}
+.follow-up-option::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--grad-primary); opacity: 0;
