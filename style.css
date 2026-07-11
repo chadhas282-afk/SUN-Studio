@@ -978,3 +978,23 @@ body.ambient-active .bg-orb--3 {
 }
 .gallery-modal__count {
   font-size: 13px; color: var(--text-muted); font-weight: 500;
+  }
+.gallery-modal__close {
+  position: absolute; top: 24px; right: 24px;
+  width: 36px; height: 36px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-size: 14px; cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex; align-items: center; justify-content: center;
+}
+.gallery-modal__close:hover {
+  background: rgba(244,91,138,0.15);
+  border-color: var(--accent-rose);
+  color: var(--accent-rose);
+  transform: rotate(90deg);
+}
+.gallery-modal__search-row {
+  display: flex; flex-direction: column; gap: 12px;
