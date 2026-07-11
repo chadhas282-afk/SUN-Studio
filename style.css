@@ -1018,3 +1018,23 @@ body.ambient-active .bg-orb--3 {
   display: flex; flex-wrap: wrap; gap: 6px;
 }
 .gallery-chip {
+  padding: 4px 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  cursor: pointer; transition: all var(--transition-fast);
+}
+.gallery-chip:hover, .gallery-chip--active {
+  background: rgba(124,93,244,0.18);
+  border-color: rgba(124,93,244,0.5);
+  color: var(--text-primary);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 24px 32px 32px;
+  overflow-y: auto;
