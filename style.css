@@ -1258,3 +1258,23 @@ body.ambient-active .bg-orb--3 {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(124,93,244,0.5);
 }
+.mixer-result {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: none;
+}
+.mixer-result.mixer-result--visible { display: block; }
+.mixer-result__strip {
+  display: flex; gap: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 14px;
+  height: 64px;
+}
+.mixer-result__swatch {
+  flex: 1;
+  transition: flex 0.3s ease;
+  cursor: pointer; position: relative;
+}
+.mixer-result__swatch:hover { flex: 2; }
