@@ -178,7 +178,7 @@ body::before {
 }
 
 .surprise-btn {
-    display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; gap: 6px;
   padding: 8px 16px;
   background: var(--bg-elevated);
   border: 1.5px solid var(--border-mid);
@@ -238,7 +238,7 @@ body::before {
 }
 
 .input-area {
-    display: flex; flex-direction: column; gap: 14px;
+  display: flex; flex-direction: column; gap: 14px;
   max-width: 700px; margin: 0 auto 32px;
 }
 .input-wrapper { position: relative; }
@@ -278,7 +278,7 @@ body::before {
   border-radius: var(--radius-md);
   margin-top: 8px;
   animation: fadeIn 0.3s ease both;
-  }
+}
 .live-preview[hidden] { display: none; }
 .live-preview__label { font-size: 11px; color: var(--text-muted); white-space: nowrap; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
 .live-preview__swatches { display: flex; gap: 4px; }
@@ -438,7 +438,7 @@ body::before {
   100% { box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.03) inset, 0 0 60px var(--ambient-glow); }
 }
 @keyframes cardReveal {
-    from { opacity: 0; transform: translateY(48px) scale(0.97); }
+  from { opacity: 0; transform: translateY(48px) scale(0.97); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
@@ -738,7 +738,7 @@ body::before {
   box-shadow: var(--shadow-md); z-index: 1000;
   opacity: 0; transition: opacity var(--transition-base), transform var(--transition-base);
   white-space: nowrap; backdrop-filter: blur(12px);
-  }
+}
 .toast--visible { opacity: 1; transform: translateX(-50%) translateY(0); }
 .toast[hidden] { display: none; }
 
@@ -838,7 +838,7 @@ body::before {
   .input-field { font-size: 16px; padding: 16px; }
   .quick-vibes { margin-top: 24px; }
   .history-grid { grid-template-columns: 1fr; }
-  }
+}
 
 :focus-visible { outline: 2px solid rgba(124,93,244,0.8); outline-offset: 3px; border-radius: 4px; }
 button:focus:not(:focus-visible) { outline: none; }
@@ -878,7 +878,7 @@ button:focus:not(:focus-visible) { outline: none; }
 
 body.ambient-active .bg-orb--1 {
   transition: background 2s ease, filter 2s ease;
-  }
+}
 body.ambient-active .bg-orb--2 {
   transition: background 2.5s ease, filter 2.5s ease;
 }
@@ -978,7 +978,7 @@ body.ambient-active .bg-orb--3 {
 }
 .gallery-modal__count {
   font-size: 13px; color: var(--text-muted); font-weight: 500;
-  }
+}
 .gallery-modal__close {
   position: absolute; top: 24px; right: 24px;
   width: 36px; height: 36px;
@@ -998,7 +998,7 @@ body.ambient-active .bg-orb--3 {
 }
 .gallery-modal__search-row {
   display: flex; flex-direction: column; gap: 12px;
-  }
+}
 .gallery-search {
   width: 100%; max-width: 440px;
   padding: 10px 16px;
@@ -1058,7 +1058,7 @@ body.ambient-active .bg-orb--3 {
   border-color: var(--border-strong);
   transform: translateY(-4px) scale(1.02);
   box-shadow: var(--shadow-md);
-  }
+}
 @keyframes galleryCardIn {
   from { opacity: 0; transform: scale(0.9) translateY(10px); }
   to   { opacity: 1; transform: scale(1) translateY(0); }
@@ -1078,7 +1078,7 @@ body.ambient-active .bg-orb--3 {
 }
 .gallery-card:hover .gallery-card__swatch {
   filter: brightness(0.9);
-  }
+}
 .gallery-card:hover .gallery-card__swatch:hover {
   flex: 3;
   filter: brightness(1.2) saturate(1.2);
@@ -1218,7 +1218,7 @@ body.ambient-active .bg-orb--3 {
 }
 .palette-mixer__subtitle {
   font-size: 13px; color: var(--text-muted); margin-bottom: 18px;
-  }
+}
 .palette-mixer__controls {
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
 }
@@ -1378,3 +1378,22 @@ body.ambient-active .bg-orb--3 {
   width: 10px; height: 10px; border-radius: 50%;
   background: rgba(255,255,255,0.3); transition: all 0.3s ease;
   cursor: pointer;
+}
+.story-dot.active { background: #fff; transform: scale(1.4); }
+
+.story-modal__auto-row {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+  z-index: 10;
+}
+.story-auto-btn {
+  background: transparent; border: none; color: rgba(255,255,255,0.7);
+  font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2px; cursor: pointer;
+  transition: color 0.3s ease;
+}
+.story-auto-btn:hover, .story-auto-btn.active { color: #fff; }
+
+#share-canvas {
+  display: none;
+}
+
