@@ -1178,3 +1178,23 @@ body.ambient-active .bg-orb--3 {
   box-shadow: var(--shadow-md);
 }
 .gradient-card__preview {
+  height: 80px;
+  width: 100%;
+}
+.gradient-card__meta {
+  padding: 10px 14px;
+  background: var(--bg-card);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.gradient-card__label {
+  font-size: 11px; font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.8px;
+}
+.gradient-card__copy {
+  font-size: 11px; font-weight: 600;
+  color: var(--accent-violet);
+  background: none; border: none; cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: color var(--transition-fast);
+}
