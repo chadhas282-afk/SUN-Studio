@@ -1238,3 +1238,23 @@ body.ambient-active .bg-orb--3 {
   box-shadow: 0 0 0 3px rgba(124,93,244,0.12);
 }
 .palette-mixer__operator {
+  font-size: 20px; color: var(--accent-violet); flex-shrink: 0;
+  animation: operatorSpin 3s ease-in-out infinite;
+}
+@keyframes operatorSpin {
+  0%, 80%, 100% { transform: rotate(0deg) scale(1); }
+  40% { transform: rotate(180deg) scale(1.2); }
+}
+.palette-mixer__blend-btn {
+  padding: 10px 22px;
+  background: var(--grad-primary);
+  border: none; border-radius: var(--radius-full);
+  color: #fff; font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 20px rgba(124,93,244,0.35);
+}
+.palette-mixer__blend-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(124,93,244,0.5);
+}
