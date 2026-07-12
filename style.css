@@ -1218,3 +1218,23 @@ body.ambient-active .bg-orb--3 {
 }
 .palette-mixer__subtitle {
   font-size: 13px; color: var(--text-muted); margin-bottom: 18px;
+  }
+.palette-mixer__controls {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.palette-mixer__select {
+  flex: 1; min-width: 160px;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif; font-size: 13px;
+  cursor: pointer; outline: none;
+  transition: all var(--transition-fast);
+}
+.palette-mixer__select:focus {
+  border-color: rgba(124,93,244,0.6);
+  box-shadow: 0 0 0 3px rgba(124,93,244,0.12);
+}
+.palette-mixer__operator {
