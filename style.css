@@ -1278,3 +1278,23 @@ body.ambient-active .bg-orb--3 {
   cursor: pointer; position: relative;
 }
 .mixer-result__swatch:hover { flex: 2; }
+.mixer-result__swatch-label {
+  position: absolute; bottom: 6px; left: 6px;
+  font-size: 9px; font-weight: 700;
+  color: rgba(255,255,255,0.8);
+  font-family: monospace;
+  pointer-events: none;
+}
+.mixer-result__label {
+  font-size: 12px; color: var(--text-muted);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.mixer-result__name {
+  font-weight: 700; color: var(--text-primary);
+}
+
+.cvd-filters-svg { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.story-modal {
+  position: fixed; inset: 0; z-index: 2500;
+  display: flex; flex-direction: column;
