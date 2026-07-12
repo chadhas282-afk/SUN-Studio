@@ -1118,3 +1118,23 @@ body.ambient-active .bg-orb--3 {
   flex-wrap: wrap;
 }
 .cvd-toolbar__label {
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-muted); flex-shrink: 0;
+}
+.cvd-btn {
+  padding: 5px 13px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: all var(--transition-fast);
+}
+.cvd-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+.cvd-btn--active {
+  background: rgba(91,122,244,0.18);
