@@ -1098,3 +1098,23 @@ body.ambient-active .bg-orb--3 {
   display: flex; flex-wrap: wrap; gap: 4px;
 }
 .gallery-card__tone {
+  font-size: 10px; font-weight: 600;
+  color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.3px;
+}
+.gallery-card__tone:not(:last-child)::after { content: ' ·'; margin-left: 2px; }
+.gallery-no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.cvd-toolbar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 28px;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+}
+.cvd-toolbar__label {
