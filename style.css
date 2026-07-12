@@ -1138,3 +1138,23 @@ body.ambient-active .bg-orb--3 {
 }
 .cvd-btn--active {
   background: rgba(91,122,244,0.18);
+  border-color: rgba(91,122,244,0.6);
+  color: #a0b4f8;
+}
+.color-swatches.cvd-deuteranopia { filter: url(#cvd-deuteranopia); }
+.color-swatches.cvd-protanopia   { filter: url(#cvd-protanopia); }
+.color-swatches.cvd-tritanopia   { filter: url(#cvd-tritanopia); }
+.color-swatches.cvd-achromatopsia { filter: grayscale(1); }
+
+.gradient-studio {
+  padding: 28px;
+  border-top: 1px solid var(--border-subtle);
+}
+.gradient-studio__header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 18px;
+}
+.gradient-studio__title {
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-muted);
